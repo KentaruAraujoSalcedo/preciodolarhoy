@@ -5,3 +5,4 @@ beautifulsoup4
 lxml
 pytz
 python-dateutil
+playwright
