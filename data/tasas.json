@@ -31,8 +31,8 @@
   {
     "casa": "CambioSeguro",
     "url": "https://cambioseguro.com/",
-    "compra": 3.344,
-    "venta": 3.37
+    "compra": 3.347,
+    "venta": 3.367
   },
   {
     "casa": "Okane",
@@ -49,8 +49,8 @@
   {
     "casa": "Dichikash",
     "url": "https://dichikash.com/",
-    "compra": 3.352,
-    "venta": 3.36
+    "compra": 3.353,
+    "venta": 3.361
   },
   {
     "casa": "Instakash",
@@ -109,8 +109,8 @@
   {
     "casa": "Safex",
     "url": "https://www.safex.pe/",
-    "compra": 3.348,
-    "venta": 3.372
+    "compra": null,
+    "venta": null
   },
   {
     "casa": "CambiaFX",
