@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El dólar hoy en Perú</title>
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+
+<body>
+  <div class="page-wrapper">
+
+    <!-- Publicidad lateral izquierda -->
+    <aside class="ads left" aria-label="Publicidad lateral izquierda">
+      <img src="/IMG/publicidad.jpg" alt="" loading="lazy" />
+      <img src="/IMG/publicidad.jpg" alt="" loading="lazy" />
+      <img src="/IMG/publicidad.jpg" alt="" loading="lazy" />
+    </aside>
+
+    <main>
+   <h1 class="sr-only">Precio del dólar hoy en Perú</h1>
+
+      <!-- Encabezado con logo -->
+<header class="pdh-header">
+  <div class="pdh-header__top">
+    <img src="IMG/logo/logo.png" alt="precio dolarhoy .pe" class="pdh-logo" />
+  </div>
+
+<p class="pdh-updated">
+  Actualizado el <strong id="fecha">—</strong> - <strong id="hora">—</strong>
+</p>
+
+  <div class="pdh-cards">
+    <article class="pdh-card pdh-card--sunat">
+      <h3>Compra SUNAT</h3>
+      <div class="pdh-value" id="sunat-compra">—</div>
+    </article>
+
+    <article class="pdh-card pdh-card--sunat">
+      <h3>Venta SUNAT</h3>
+      <div class="pdh-value" id="sunat-venta">—</div>
+    </article>
+
+    <article class="pdh-card pdh-card--best">
+      <h3>Mejor Compra</h3>
+      <div class="pdh-value" id="best-compra">—</div>
+    </article>
+
+    <article class="pdh-card pdh-card--best">
+      <h3>Mejor Venta</h3>
+      <div class="pdh-value" id="best-venta">—</div>
+    </article>
+  </div>
+</header>
+
+      <!-- Contenedor principal en dos columnas -->
+      <div class="contenedor-2-columnas">
+
+        <!-- Columna izquierda: título, SUNAT y conversor -->
+        <div class="columna izquierda">
+          <div class="contenido-izquierda">
+
+            <!-- Conversor -->
+            <section class="panel panel-eq conversor-wrapper-modern" aria-labelledby="t-conversor">
+  <header class="section-head">
+    <h2 class="section-title" id="t-conversor">Calculadora de Cambio</h2>
+  </header>
+
+  <!-- Modo -->
+  <div class="modo-opciones">
+    <label class="radio-pill">
+      <input type="radio" name="modo" value="recibir" checked>
+      <span>¿Cuánto obtengo?</span>
+    </label>
+    <label class="radio-pill">
+      <input type="radio" name="modo" value="necesito">
+      <span>¿Cuánto necesito?</span>
+    </label>
+  </div>
+
+  <!-- Atajos de monto -->
+  <div class="quick-row" aria-label="Atajos de monto">
+    <button type="button" class="chip quick-amt" data-amt="100">S/ 100</button>
+    <button type="button" class="chip quick-amt" data-amt="200">S/ 200</button>
+    <button type="button" class="chip quick-amt" data-amt="500">S/ 500</button>
+    <button type="button" class="chip quick-amt" data-amt="1000">S/ 1,000</button>
+  </div>
+
+  <!-- Grid de controles -->
+  <div class="fila-triple">
+    <div class="grupo-campo gc-monto">   
+      <label id="label-monto" for="monto">Monto</label>
+      <div class="input-with-icon">
+        <input type="number" id="monto" inputmode="decimal" placeholder="Ej: 100">
+        <span class="icon-left">S/</span> <!-- decorativa; no afecta JS -->
+      </div>
+
+    </div>
+
+    <div class="grupo-campo gc-moneda">
+      <label id="label-moneda-tengo" for="moneda-tengo">Moneda</label>
+      <select id="moneda-tengo">
+        <option value="PEN">Soles (PEN)</option>
+        <option value="USD">Dólares (USD)</option>
+      </select>
+    </div>
+
+    <div class="grupo-campo swap-cell gc-swap">
+      <button type="button" class="swap-btn" id="btn-swap" aria-label="Invertir monedas" title="Invertir">
+        ⇄
+      </button>
+    </div>
+
+    <div class="grupo-campo gc-quiero">
+      <label id="label-convertir" for="moneda-quiero">Quiero en</label>
+      <select id="moneda-quiero" disabled>
+        <option value="USD">Dólares (USD)</option>
+        <option value="PEN">Soles (PEN)</option>
+      </select>
+    </div>
+
+  </div>
+
+  <!-- Resultado -->
+  <div id="resultado-modern" class="resultado-modern"></div>
+
+  <!-- Nota SUNAT compacta -->
+  <div class="tc-mini" aria-live="polite">
+    Tipo de cambio SUNAT:
+    <strong>Compra <span id="mini-c">—</span></strong> /
+    <strong>Venta <span id="mini-v">—</span></strong>
+  </div>
+</section>
+
+          </div>
+        </div>
+
+        <!-- Columna derecha: tabla de casas -->
+        <div class="columna derecha">
+          <section class="panel panel-eq casas-cambio">
+  <header class="section-head">
+    <h2 class="section-title">Casas de cambio online en Perú</h2>
+  </header>
+  <div class="tabla-casas-wrapper">
+    <table class="tabla-casas">
+                <thead>
+                  <tr>
+                    <th>Casa</th>
+                    <th class="compra">Compra</th>
+                    <th class="venta">Venta</th>
+                    <th id="columna-dolares">Dólares recibidos</th>
+                    <th id="columna-soles">Soles recibidos</th>
+                  </tr>
+                </thead>
+                <!-- IMPORTANTE: tbody vacío; se rellena dinámicamente con JS -->
+                <tbody id="tablaCuerpo"></tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Sección de gráfico -->
+<section class="grafica">
+  <div class="panel">
+    <header class="section-head">
+      <h2 class="section-title">Variación del Tipo de Cambio del Dólar en Perú</h2>
+    </header>
+    <div class="chart-container">
+      <canvas id="graficoSunat"></canvas>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <!-- Publicidad lateral derecha -->
+    <aside class="ads right" aria-label="Publicidad lateral derecha">
+      <img src="/IMG/publicidad.jpg" alt="" loading="lazy" />
+      <img src="/IMG/publicidad.jpg" alt="" loading="lazy" />
+      <img src="/IMG/publicidad.jpg" alt="" loading="lazy" />
+    </aside>
+  </div>
+
+  <!-- Librería Chart.js para la gráfica -->
+  <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Tu código modular (main.js se encarga de todo) -->
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
