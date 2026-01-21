@@ -19,8 +19,8 @@
   {
     "casa": "Tkambio",
     "url": "https://tkambio.com/",
-    "compra": 3.34,
-    "venta": 3.365
+    "compra": 3.344,
+    "venta": 3.369
   },
   {
     "casa": "InkaMoney",
@@ -31,31 +31,32 @@
   {
     "casa": "CambioSeguro",
     "url": "https://cambioseguro.com/",
-    "compra": 3.341,
-    "venta": 3.368
+    "compra": 3.342,
+    "venta": 3.369
   },
   {
     "casa": "Okane",
     "url": "https://okanecambiodigital.com/",
-    "compra": 3.35,
+    "compra": 3.351,
     "venta": 3.359
   },
   {
     "casa": "JetPerú",
     "url": "https://jetperu.com.pe/cambiar-dinero/",
-    "compra": 3.351,
-    "venta": 3.354
+    "compra": 3.352,
+    "venta": 3.356
   },
   {
     "casa": "Dichikash",
     "url": "https://dichikash.com/",
-    "compra": 3.352,
-    "venta": 3.358
+    "compra": 3.351,
+    "venta": 3.359
   },
   {
     "casa": "Instakash",
     "url": "https://instakash.net/",
-    "error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div.flex.items-center.justify-center .font-semibold\") to be visible\n"
+    "compra": 3.344,
+    "venta": 3.363
   },
   {
     "casa": "MegaMoney",
@@ -72,25 +73,26 @@
   {
     "casa": "CambioX",
     "url": "https://cambiox.pe/",
-    "error": "No se pudo scrapear: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://cambiox.pe/\", waiting until \"load\"\n"
+    "compra": 3.34,
+    "venta": 3.37
   },
   {
     "casa": "ChaskiDolar",
     "url": "https://chaskidolar.com/",
-    "compra": 3.361,
-    "venta": 3.344
+    "compra": 3.365,
+    "venta": 3.348
   },
   {
     "casa": "Intercambialo",
     "url": "https://intercambialo.pe/",
-    "compra": 3.34,
-    "venta": 3.366
+    "compra": 3.344,
+    "venta": 3.369
   },
   {
     "casa": "WesternUnion",
     "url": "https://www.westernunionperu.pe/cambiodemoneda",
-    "compra": 3.337,
-    "venta": 3.363
+    "compra": 3.339,
+    "venta": 3.365
   },
   {
     "casa": "KallpaCambios",
@@ -101,14 +103,14 @@
   {
     "casa": "Billex",
     "url": "https://www.billex.pe/",
-    "compra": 3.371,
-    "venta": 3.338
+    "compra": 3.37,
+    "venta": 3.337
   },
   {
     "casa": "Safex",
     "url": "https://www.safex.pe/",
-    "compra": 3.345,
-    "venta": 3.366
+    "compra": 3.343,
+    "venta": 3.365
   },
   {
     "casa": "CambiaFX",
@@ -120,7 +122,7 @@
   {
     "casa": "Acomo",
     "url": "https://acomo.com.pe/",
-    "compra": 3.345,
+    "compra": 3.346,
     "venta": 3.361
   },
   {
@@ -208,14 +210,14 @@
   {
     "casa": "IntiCambio",
     "url": "https://inticambio.pe/",
-    "compra": 3.352,
-    "venta": 3.357
+    "compra": 3.353,
+    "venta": 3.358
   },
   {
     "casa": "Dolarex",
     "url": "https://dolarex.pe/",
     "compra": 3.354,
-    "venta": 3.357
+    "venta": 3.358
   },
   {
     "casa": "Cambix",
@@ -242,8 +244,8 @@
   {
     "casa": "ChapaCambio",
     "url": "https://chapacambio.com/",
-    "compra": 3.342,
-    "venta": 3.368
+    "compra": 3.341,
+    "venta": 3.366
   },
   {
     "casa": "TuCambista",
@@ -266,8 +268,8 @@
   {
     "casa": "DollarHouse",
     "url": "https://app.dollarhouse.pe/",
-    "compra": 3.353,
-    "venta": 3.361
+    "compra": 3.351,
+    "venta": 3.36
   },
   {
     "casa": "Global66",
