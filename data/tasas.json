@@ -121,8 +121,9 @@
   {
     "casa": "Acomo",
     "url": "https://acomo.com.pe/",
-    "compra": 3.349,
-    "venta": 3.367
+    "compra": null,
+    "venta": null,
+    "error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"#current_bid\") to be visible\n"
   },
   {
     "casa": "ZonaDólar",
