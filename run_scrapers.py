@@ -133,9 +133,13 @@ def apply_backup_to_results(results, backup_map, fecha_backup=None):
                 merged_item["scraper_error"] = r["error"]
             merged.append(merged_item)
         else:
-            # 3) No hay backup útil => dejamos lo que vino
-            r["source"] = "scraper"
-            merged.append(r)
+            # 3) No hay datos del scraper y tampoco hay backup útil
+            r["source"] = "missing"
+            if r.get("error"):
+             r["scraper_error"] = r["error"]
+             del r["error"]  # opcional para no duplicar
+        r["backup_fecha"] = fecha_backup
+        merged.append(r)
 
     return merged
 
