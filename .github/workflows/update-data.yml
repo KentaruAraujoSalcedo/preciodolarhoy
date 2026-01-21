@@ -1,8 +1,10 @@
-name: Update dollar data
+name: Update dolar data
 
 on:
+  push:
+    branches: [ "main" ]
   schedule:
-    - cron: "*/30 * * * *"   # cada 30 minutos
+    - cron: "*/30 * * * *"
   workflow_dispatch:
 
 permissions:
