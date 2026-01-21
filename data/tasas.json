@@ -2,8 +2,8 @@
   {
     "casa": "Yanki",
     "url": "https://yanki.pe",
-    "compra": 3.351,
-    "venta": 3.367
+    "compra": 3.345,
+    "venta": 3.37
   },
   {
     "casa": "Rextie",
@@ -13,14 +13,14 @@
   {
     "casa": "Kambista",
     "url": "https://kambista.com/",
-    "compra": 3.343,
-    "venta": 3.374
+    "compra": 3.34,
+    "venta": 3.376
   },
   {
     "casa": "Tkambio",
     "url": "https://tkambio.com/",
     "compra": 3.345,
-    "venta": 3.37
+    "venta": 3.376
   },
   {
     "casa": "InkaMoney",
@@ -50,7 +50,7 @@
     "casa": "Dichikash",
     "url": "https://dichikash.com/",
     "compra": 3.353,
-    "venta": 3.361
+    "venta": 3.367
   },
   {
     "casa": "Instakash",
@@ -151,8 +151,8 @@
   {
     "casa": "TraderPeruFX",
     "url": "https://traderperufx.com/",
-    "compra": 3.353,
-    "venta": 3.36
+    "compra": 3.355,
+    "venta": 3.365
   },
   {
     "casa": "PeruDolar",
@@ -175,8 +175,8 @@
   {
     "casa": "X-Cambio",
     "url": "https://x-cambio.com/",
-    "compra": 3.341,
-    "venta": 3.377
+    "compra": 3.3385,
+    "venta": 3.3775
   },
   {
     "casa": "RissanPE",
@@ -240,7 +240,7 @@
     "casa": "Securex",
     "url": "https://securex.pe/",
     "compra": 3.34,
-    "venta": 3.372
+    "venta": 3.367
   },
   {
     "casa": "ChapaCambio",
@@ -258,7 +258,7 @@
     "casa": "HirPower",
     "url": "https://hirpower.com/",
     "compra": 3.34,
-    "venta": 3.365
+    "venta": 3.37
   },
   {
     "casa": "CambioDigitalPeru",
