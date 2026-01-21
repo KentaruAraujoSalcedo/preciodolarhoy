@@ -16,12 +16,6 @@
     "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 10000ms exceeded.\nCall log:\n  - waiting for locator(\".buy.flex-1\") to be visible\n"
   },
   {
-    "casa": "Rextie",
-    "url": "https://www.rextie.com/",
-    "error": "No se pudo scrapear: Page.wait_for_selector: Timeout 10000ms exceeded.\nCall log:\n  - waiting for locator(\".buy.flex-1\") to be visible\n",
-    "backup_fecha": "2026-01-20"
-  },
-  {
     "casa": "Kambista",
     "url": "https://kambista.com/",
     "compra": 3.341,
@@ -128,13 +122,6 @@
     "backup_fecha": "2026-01-20"
   },
   {
-    "casa": "KallpaCambios",
-    "url": "https://kallpacambios.com/",
-    "compra": null,
-    "venta": null,
-    "backup_fecha": "2026-01-20"
-  },
-  {
     "casa": "Billex",
     "url": "https://www.billex.pe/",
     "compra": 3.371,
@@ -156,14 +143,6 @@
     "source": "backup",
     "backup_fecha": "2026-01-20",
     "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\".txt_compra\") to be visible\n"
-  },
-  {
-    "casa": "CambiaFX",
-    "url": "https://cambiafx.pe/",
-    "compra": null,
-    "venta": null,
-    "error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\".txt_compra\") to be visible\n",
-    "backup_fecha": "2026-01-20"
   },
   {
     "casa": "Acomo",
@@ -189,12 +168,6 @@
     "scraper_error": "No se pudo scrapear: Page.wait_for_function: Timeout 15000ms exceeded."
   },
   {
-    "casa": "SRCambio",
-    "url": "https://srcambio.pe/",
-    "error": "No se pudo scrapear: Page.wait_for_function: Timeout 15000ms exceeded.",
-    "backup_fecha": "2026-01-20"
-  },
-  {
     "casa": "Kambio",
     "url": "https://www.kambio.online/",
     "compra": 3.353,
@@ -204,27 +177,11 @@
     "scraper_error": "No se pudo scrapear: Locator.inner_text: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"div.precioMoneda\").first\n"
   },
   {
-    "casa": "Kambio",
-    "url": "https://www.kambio.online/",
-    "error": "No se pudo scrapear: Locator.inner_text: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"div.precioMoneda\").first\n",
-    "backup_fecha": "2026-01-20"
-  },
-  {
     "casa": "CambioMundial",
     "url": "https://www.cambiomundial.com/",
     "compra": 3.352,
     "venta": 3.358,
-    "source": "backup",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"#lblvalorcompra\") to be visible\n"
-  },
-  {
-    "casa": "CambioMundial",
-    "url": "https://www.cambiomundial.com/",
-    "compra": null,
-    "venta": null,
-    "error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"#lblvalorcompra\") to be visible\n",
-    "backup_fecha": "2026-01-20"
+    "source": "scraper"
   },
   {
     "casa": "TraderPeruFX",
@@ -234,12 +191,6 @@
     "source": "backup",
     "backup_fecha": "2026-01-20",
     "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"b\") to be visible\n"
-  },
-  {
-    "casa": "TraderPeruFX",
-    "url": "https://traderperufx.com/",
-    "error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"b\") to be visible\n",
-    "backup_fecha": "2026-01-20"
   },
   {
     "casa": "PeruDolar",
@@ -286,44 +237,18 @@
     "scraper_error": "No se pudo scrapear: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://cambiomas.com.pe/\nCall log:\n  - navigating to \"https://cambiomas.com.pe/\", waiting until \"load\"\n"
   },
   {
-    "casa": "CambioMas",
-    "url": "https://cambiomas.com.pe/",
-    "compra": null,
-    "venta": null,
-    "error": "No se pudo scrapear: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://cambiomas.com.pe/\nCall log:\n  - navigating to \"https://cambiomas.com.pe/\", waiting until \"load\"\n",
-    "backup_fecha": "2026-01-20"
-  },
-  {
     "casa": "MoneyHouse",
     "url": "https://moneyhouse.pe/",
-    "compra": 3.351,
-    "venta": 3.357,
-    "source": "backup",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: No se encontraron suficientes tasas"
-  },
-  {
-    "casa": "MoneyHouse",
-    "url": "https://moneyhouse.pe/",
-    "error": "No se pudo scrapear: No se encontraron suficientes tasas",
-    "backup_fecha": "2026-01-20"
+    "compra": 3.353,
+    "venta": 3.359,
+    "source": "scraper"
   },
   {
     "casa": "MercadoCambiario",
     "url": "https://mercadocambiario.pe/",
-    "compra": 3.347,
-    "venta": 3.357,
-    "source": "backup",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div.buy span.amount\") to be visible\n"
-  },
-  {
-    "casa": "MercadoCambiario",
-    "url": "https://mercadocambiario.pe/",
-    "compra": null,
-    "venta": null,
-    "error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div.buy span.amount\") to be visible\n",
-    "backup_fecha": "2026-01-20"
+    "compra": 3.353,
+    "venta": 3.362,
+    "source": "scraper"
   },
   {
     "casa": "VipCapital",
@@ -331,13 +256,6 @@
     "compra": 3.345,
     "venta": 3.365,
     "source": "backup",
-    "backup_fecha": "2026-01-20"
-  },
-  {
-    "casa": "VipCapital",
-    "url": "https://www.vipcapitalbusiness.com/",
-    "compra": null,
-    "venta": null,
     "backup_fecha": "2026-01-20"
   },
   {
@@ -365,8 +283,8 @@
     "casa": "DLS Money",
     "url": "https://dlsmoney.com/",
     "source": "missing",
-    "scraper_error": "No se pudo scrapear: Page.goto: net::ERR_CERT_DATE_INVALID at https://dlsmoney.com/\nCall log:\n  - navigating to \"https://dlsmoney.com/\", waiting until \"load\"\n",
-    "backup_fecha": "2026-01-20"
+    "backup_fecha": "2026-01-20",
+    "scraper_error": "No se pudo scrapear: Page.goto: net::ERR_CERT_DATE_INVALID at https://dlsmoney.com/\nCall log:\n  - navigating to \"https://dlsmoney.com/\", waiting until \"load\"\n"
   },
   {
     "casa": "DinersFX",
@@ -376,12 +294,6 @@
     "source": "backup",
     "backup_fecha": "2026-01-20",
     "scraper_error": "No se pudo scrapear: Page.wait_for_function: Timeout 15000ms exceeded."
-  },
-  {
-    "casa": "DinersFX",
-    "url": "https://dinersfx.pe/",
-    "error": "No se pudo scrapear: Page.wait_for_function: Timeout 15000ms exceeded.",
-    "backup_fecha": "2026-01-20"
   },
   {
     "casa": "Securex",
@@ -421,14 +333,6 @@
     "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"#dolarcompra\") to be visible\n"
   },
   {
-    "casa": "CambioDigitalPeru",
-    "url": "https://cambiodigitalperu.com",
-    "compra": null,
-    "venta": null,
-    "error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"#dolarcompra\") to be visible\n",
-    "backup_fecha": "2026-01-20"
-  },
-  {
     "casa": "DollarHouse",
     "url": "https://app.dollarhouse.pe/",
     "compra": 3.354,
@@ -443,12 +347,6 @@
     "source": "backup",
     "backup_fecha": "2026-01-20",
     "scraper_error": "No se pudo scrapear: Page.wait_for_function: Timeout 20000ms exceeded."
-  },
-  {
-    "casa": "Global66",
-    "url": "https://www.global66.com/pe/envios-de-dinero/",
-    "error": "No se pudo scrapear: Page.wait_for_function: Timeout 20000ms exceeded.",
-    "backup_fecha": "2026-01-20"
   },
   {
     "casa": "SUNAT",

@@ -102,24 +102,29 @@ def is_valid_rate(item: dict) -> bool:
 
 def apply_backup_to_results(results, backup_map, fecha_backup=None):
     """
-    Para cada casa:
-    - Si el scraper trae compra/venta => usar scraper
-    - Si falla => intentar usar backup
-    - Si no hay backup => dejar lo que vino (con error)
+    Mezcla resultados con backup:
+    - 1 SOLO item por casa.
+    - Prioridad: scraper válido > backup válido > missing
     """
-    merged = []
+    merged_by_casa = {}
 
     for r in results:
-        casa = r.get("casa")
-        b = backup_map.get(casa) if casa else None
-
-        # 1) Si scraper OK => queda tal cual
-        if is_valid_rate(r):
-            r["source"] = "scraper"
-            merged.append(r)
+        if not isinstance(r, dict):
             continue
 
-        # 2) Si scraper falló => usar backup si existe
+        casa = r.get("casa")
+        if not casa:
+            continue
+
+        b = backup_map.get(casa)
+
+        # Caso 1: scraper válido
+        if is_valid_rate(r):
+            r["source"] = "scraper"
+            merged_by_casa[casa] = r
+            continue
+
+        # Caso 2: scraper falló pero hay backup válido
         if b and b.get("compra") is not None and b.get("venta") is not None:
             merged_item = {
                 "casa": casa,
@@ -131,17 +136,21 @@ def apply_backup_to_results(results, backup_map, fecha_backup=None):
             }
             if r.get("error"):
                 merged_item["scraper_error"] = r["error"]
-            merged.append(merged_item)
-        else:
-            # 3) No hay datos del scraper y tampoco hay backup útil
-            r["source"] = "missing"
-            if r.get("error"):
-             r["scraper_error"] = r["error"]
-             del r["error"]  # opcional para no duplicar
-        r["backup_fecha"] = fecha_backup
-        merged.append(r)
+            merged_by_casa[casa] = merged_item
+            continue
 
-    return merged
+        # Caso 3: no hay scraper válido y tampoco backup válido => missing
+        merged_item = {
+            "casa": casa,
+            "url": r.get("url") or (b.get("url") if isinstance(b, dict) else None),
+            "source": "missing",
+            "backup_fecha": fecha_backup,
+        }
+        if r.get("error"):
+            merged_item["scraper_error"] = r["error"]
+        merged_by_casa[casa] = merged_item
+
+    return list(merged_by_casa.values())
 
 # 3) MAIN: ejecuta scrapers, aplica backup, guarda tasas, histórico
 async def main():
