@@ -52,15 +52,15 @@
   {
     "casa": "Okane",
     "url": "https://okanecambiodigital.com/",
-    "compra": 3.35,
-    "venta": 3.36,
+    "compra": 3.351,
+    "venta": 3.363,
     "source": "scraper"
   },
   {
     "casa": "JetPerú",
     "url": "https://jetperu.com.pe/cambiar-dinero/",
-    "compra": 3.355,
-    "venta": 3.358,
+    "compra": 3.356,
+    "venta": 3.359,
     "source": "scraper"
   },
   {
@@ -73,8 +73,8 @@
   {
     "casa": "Instakash",
     "url": "https://instakash.net/",
-    "compra": 3.345,
-    "venta": 3.363,
+    "compra": 3.348,
+    "venta": 3.364,
     "source": "scraper"
   },
   {
@@ -169,7 +169,7 @@
     "casa": "Acomo",
     "url": "https://acomo.com.pe/",
     "compra": 3.348,
-    "venta": 3.363,
+    "venta": 3.362,
     "source": "scraper"
   },
   {
@@ -259,7 +259,7 @@
     "casa": "CambioSol",
     "url": "https://cambiosol.pe/",
     "compra": 3.354,
-    "venta": 3.367,
+    "venta": 3.37,
     "source": "scraper"
   },
   {
@@ -311,9 +311,19 @@
   {
     "casa": "MercadoCambiario",
     "url": "https://mercadocambiario.pe/",
-    "compra": 3.354,
-    "venta": 3.36,
-    "source": "scraper"
+    "compra": 3.347,
+    "venta": 3.357,
+    "source": "backup",
+    "backup_fecha": "2026-01-20",
+    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div.buy span.amount\") to be visible\n"
+  },
+  {
+    "casa": "MercadoCambiario",
+    "url": "https://mercadocambiario.pe/",
+    "compra": null,
+    "venta": null,
+    "error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div.buy span.amount\") to be visible\n",
+    "backup_fecha": "2026-01-20"
   },
   {
     "casa": "VipCapital",
@@ -332,7 +342,7 @@
   {
     "casa": "Dolarex",
     "url": "https://dolarex.pe/",
-    "compra": 3.353,
+    "compra": 3.354,
     "venta": 3.357,
     "source": "scraper"
   },
@@ -368,22 +378,22 @@
   {
     "casa": "Securex",
     "url": "https://securex.pe/",
-    "compra": 3.343,
-    "venta": 3.366,
+    "compra": 3.342,
+    "venta": 3.3665,
     "source": "scraper"
   },
   {
     "casa": "ChapaCambio",
     "url": "https://chapacambio.com/",
     "compra": 3.344,
-    "venta": 3.369,
+    "venta": 3.368,
     "source": "scraper"
   },
   {
     "casa": "TuCambista",
     "url": "https://tucambista.pe/",
     "compra": 3.342,
-    "venta": 3.371,
+    "venta": 3.37,
     "source": "scraper"
   },
   {
