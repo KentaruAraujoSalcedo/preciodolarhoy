@@ -49,8 +49,7 @@
   {
     "casa": "Dichikash",
     "url": "https://dichikash.com/",
-    "compra": 3.354,
-    "venta": 3.368
+    "error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"input#numero2\")\n"
   },
   {
     "casa": "Instakash",
@@ -61,14 +60,12 @@
   {
     "casa": "MegaMoney",
     "url": "https://megamoney.pe/",
-    "compra": 3.345,
-    "venta": 3.38
+    "error": "No se pudo scrapear: list index out of range"
   },
   {
     "casa": "SmartDollar",
     "url": "https://www.smartdollar.pe/",
-    "compra": 3.354,
-    "venta": 3.372
+    "error": "No se pudo scrapear: Locator.text_content: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\".cantant\").first\n"
   },
   {
     "casa": "CambioX",
@@ -85,8 +82,7 @@
   {
     "casa": "Intercambialo",
     "url": "https://intercambialo.pe/",
-    "compra": 3.342,
-    "venta": 3.371
+    "error": "No se pudo scrapear: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://intercambialo.pe/\", waiting until \"load\"\n"
   },
   {
     "casa": "WesternUnion",
@@ -122,14 +118,13 @@
   {
     "casa": "Acomo",
     "url": "https://acomo.com.pe/",
-    "compra": 3.349,
-    "venta": 3.367
+    "compra": null,
+    "venta": null
   },
   {
     "casa": "ZonaDólar",
     "url": "https://zonadolar.pe/",
-    "compra": 3.399,
-    "venta": 3.321
+    "error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\".text-base\") to be visible\n"
   },
   {
     "casa": "SRCambio",
@@ -157,8 +152,7 @@
   {
     "casa": "PeruDolar",
     "url": "https://perudolar.pe/",
-    "compra": 3.3,
-    "venta": 3.4
+    "error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"#preciosHome\") to be visible\n"
   },
   {
     "casa": "MidpointFX",
@@ -169,8 +163,7 @@
   {
     "casa": "CambioSol",
     "url": "https://cambiosol.pe/",
-    "compra": 3.355,
-    "venta": 3.37
+    "error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"#buy-rate-display\") to be visible\n    - waiting for\" https://cambiosol.pe/\" navigation to finish...\n    - navigated to \"https://cambiosol.pe/\"\n"
   },
   {
     "casa": "X-Cambio",
@@ -181,8 +174,7 @@
   {
     "casa": "RissanPE",
     "url": "https://www.rissanpe.com/",
-    "compra": 3.35,
-    "venta": 3.378
+    "error": "No se pudo scrapear: Page.wait_for_selector: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"h2.elementor-heading-title\") to be visible\n"
   },
   {
     "casa": "CambioMas",
@@ -207,7 +199,8 @@
     "casa": "VipCapital",
     "url": "https://www.vipcapitalbusiness.com/",
     "compra": null,
-    "venta": null
+    "venta": null,
+    "error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"#tc_compra\") to be visible\n    - waiting for\" https://www.vipcapitalbusiness.com/\" navigation to finish...\n    - navigated to \"https://www.vipcapitalbusiness.com/\"\n"
   },
   {
     "casa": "IntiCambio",
