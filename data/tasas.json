@@ -121,8 +121,8 @@
   {
     "casa": "Acomo",
     "url": "https://acomo.com.pe/",
-    "compra": null,
-    "venta": null
+    "compra": 3.349,
+    "venta": 3.367
   },
   {
     "casa": "ZonaDólar",
@@ -150,8 +150,7 @@
   {
     "casa": "TraderPeruFX",
     "url": "https://traderperufx.com/",
-    "compra": 3.355,
-    "venta": 3.365
+    "error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"b\") to be visible\n"
   },
   {
     "casa": "PeruDolar",
