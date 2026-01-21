@@ -205,3 +205,15 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Playwright downloads / browsers (si alguna vez se descargan localmente)
+playwright/.cache/
+ms-playwright/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
