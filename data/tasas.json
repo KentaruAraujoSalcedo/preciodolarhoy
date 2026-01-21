@@ -2,8 +2,8 @@
   {
     "casa": "Yanki",
     "url": "https://yanki.pe",
-    "compra": 3.345,
-    "venta": 3.365
+    "compra": 3.342,
+    "venta": 3.363
   },
   {
     "casa": "Rextie",
@@ -13,26 +13,26 @@
   {
     "casa": "Kambista",
     "url": "https://kambista.com/",
-    "compra": 3.343,
-    "venta": 3.368
+    "compra": 3.342,
+    "venta": 3.366
   },
   {
     "casa": "Tkambio",
     "url": "https://tkambio.com/",
-    "compra": 3.341,
-    "venta": 3.367
+    "compra": 3.34,
+    "venta": 3.365
   },
   {
     "casa": "InkaMoney",
     "url": "https://inkamoney.com/",
-    "compra": 3.375,
-    "venta": 3.352
+    "compra": 3.361,
+    "venta": 3.349
   },
   {
     "casa": "CambioSeguro",
     "url": "https://cambioseguro.com/",
-    "compra": 3.345,
-    "venta": 3.371
+    "compra": 3.341,
+    "venta": 3.368
   },
   {
     "casa": "Okane",
@@ -43,14 +43,14 @@
   {
     "casa": "JetPerú",
     "url": "https://jetperu.com.pe/cambiar-dinero/",
-    "compra": 3.352,
-    "venta": 3.356
+    "compra": 3.351,
+    "venta": 3.354
   },
   {
     "casa": "Dichikash",
     "url": "https://dichikash.com/",
-    "compra": 3.353,
-    "venta": 3.359
+    "compra": 3.352,
+    "venta": 3.358
   },
   {
     "casa": "Instakash",
@@ -61,7 +61,7 @@
     "casa": "MegaMoney",
     "url": "https://megamoney.pe/",
     "compra": 3.345,
-    "venta": 3.38
+    "venta": 3.375
   },
   {
     "casa": "SmartDollar",
@@ -72,26 +72,25 @@
   {
     "casa": "CambioX",
     "url": "https://cambiox.pe/",
-    "compra": 3.34,
-    "venta": 3.37
+    "error": "No se pudo scrapear: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://cambiox.pe/\", waiting until \"load\"\n"
   },
   {
     "casa": "ChaskiDolar",
     "url": "https://chaskidolar.com/",
-    "compra": 3.365,
-    "venta": 3.345
+    "compra": 3.361,
+    "venta": 3.344
   },
   {
     "casa": "Intercambialo",
     "url": "https://intercambialo.pe/",
-    "compra": 3.344,
-    "venta": 3.37
+    "compra": 3.34,
+    "venta": 3.366
   },
   {
     "casa": "WesternUnion",
     "url": "https://www.westernunionperu.pe/cambiodemoneda",
-    "compra": 3.34,
-    "venta": 3.367
+    "compra": 3.337,
+    "venta": 3.363
   },
   {
     "casa": "KallpaCambios",
@@ -109,20 +108,20 @@
     "casa": "Safex",
     "url": "https://www.safex.pe/",
     "compra": 3.345,
-    "venta": 3.369
+    "venta": 3.366
   },
   {
     "casa": "CambiaFX",
     "url": "https://cambiafx.pe/",
     "compra": null,
     "venta": null,
-    "error": "No se pudo scrapear: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://cambiafx.pe/\", waiting until \"load\"\n"
+    "error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\".txt_compra\") to be visible\n"
   },
   {
     "casa": "Acomo",
     "url": "https://acomo.com.pe/",
-    "compra": null,
-    "venta": null
+    "compra": 3.345,
+    "venta": 3.361
   },
   {
     "casa": "ZonaDólar",
@@ -161,20 +160,20 @@
   {
     "casa": "MidpointFX",
     "url": "https://www.midpointfx.com/",
-    "compra": 3.34,
-    "venta": 3.4
+    "compra": 3.325,
+    "venta": 3.385
   },
   {
     "casa": "CambioSol",
     "url": "https://cambiosol.pe/",
-    "compra": 3.352,
+    "compra": 3.35,
     "venta": 3.366
   },
   {
     "casa": "X-Cambio",
     "url": "https://x-cambio.com/",
-    "compra": 3.341,
-    "venta": 3.371
+    "compra": 3.34,
+    "venta": 3.369
   },
   {
     "casa": "RissanPE",
@@ -197,9 +196,8 @@
   {
     "casa": "MercadoCambiario",
     "url": "https://mercadocambiario.pe/",
-    "compra": null,
-    "venta": null,
-    "error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div.buy span.amount\") to be visible\n"
+    "compra": 3.351,
+    "venta": 3.353
   },
   {
     "casa": "VipCapital",
@@ -216,14 +214,14 @@
   {
     "casa": "Dolarex",
     "url": "https://dolarex.pe/",
-    "compra": 3.353,
-    "venta": 3.358
+    "compra": 3.354,
+    "venta": 3.357
   },
   {
     "casa": "Cambix",
     "url": "https://cambix.com.pe/",
-    "compra": 3.34,
-    "venta": 3.38
+    "compra": 3.345,
+    "venta": 3.365
   },
   {
     "casa": "DLS Money",
@@ -238,13 +236,13 @@
   {
     "casa": "Securex",
     "url": "https://securex.pe/",
-    "compra": 3.345,
-    "venta": 3.365
+    "compra": 3.344,
+    "venta": 3.3635
   },
   {
     "casa": "ChapaCambio",
     "url": "https://chapacambio.com/",
-    "compra": 3.343,
+    "compra": 3.342,
     "venta": 3.368
   },
   {
@@ -256,7 +254,7 @@
     "casa": "HirPower",
     "url": "https://hirpower.com/",
     "compra": 3.34,
-    "venta": 3.37
+    "venta": 3.36
   },
   {
     "casa": "CambioDigitalPeru",
