@@ -26,13 +26,13 @@
     "casa": "InkaMoney",
     "url": "https://inkamoney.com/",
     "compra": 3.371,
-    "venta": 3.354
+    "venta": 3.346
   },
   {
     "casa": "CambioSeguro",
     "url": "https://cambioseguro.com/",
-    "compra": 3.347,
-    "venta": 3.367
+    "compra": 3.341,
+    "venta": 3.369
   },
   {
     "casa": "Okane",
@@ -49,8 +49,8 @@
   {
     "casa": "Dichikash",
     "url": "https://dichikash.com/",
-    "compra": 3.354,
-    "venta": 3.368
+    "compra": 3.353,
+    "venta": 3.366
   },
   {
     "casa": "Instakash",
@@ -72,20 +72,19 @@
   {
     "casa": "CambioX",
     "url": "https://cambiox.pe/",
-    "compra": 3.341,
-    "venta": 3.371
+    "compra": 3.34,
+    "venta": 3.37
   },
   {
     "casa": "ChaskiDolar",
     "url": "https://chaskidolar.com/",
-    "compra": 3.367,
-    "venta": 3.348
+    "compra": 3.365,
+    "venta": 3.347
   },
   {
     "casa": "Intercambialo",
     "url": "https://intercambialo.pe/",
-    "compra": 3.342,
-    "venta": 3.376
+    "error": "No se pudo scrapear: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://intercambialo.pe/\", waiting until \"load\"\n"
   },
   {
     "casa": "WesternUnion",
@@ -103,7 +102,7 @@
     "casa": "Billex",
     "url": "https://www.billex.pe/",
     "compra": 3.371,
-    "venta": 3.341
+    "venta": 3.34
   },
   {
     "casa": "Safex",
@@ -121,8 +120,8 @@
   {
     "casa": "Acomo",
     "url": "https://acomo.com.pe/",
-    "compra": 3.349,
-    "venta": 3.367
+    "compra": 3.345,
+    "venta": 3.364
   },
   {
     "casa": "ZonaDólar",
@@ -173,8 +172,8 @@
   {
     "casa": "X-Cambio",
     "url": "https://x-cambio.com/",
-    "compra": 3.3385,
-    "venta": 3.3775
+    "compra": 3.338,
+    "venta": 3.3765
   },
   {
     "casa": "RissanPE",
@@ -210,13 +209,14 @@
   {
     "casa": "IntiCambio",
     "url": "https://inticambio.pe/",
-    "compra": 3.353,
-    "venta": 3.359
+    "compra": 3.352,
+    "venta": 3.357
   },
   {
     "casa": "Dolarex",
     "url": "https://dolarex.pe/",
-    "error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\".compra .valor\") to be visible\n"
+    "compra": 3.355,
+    "venta": 3.365
   },
   {
     "casa": "Cambix",
@@ -237,8 +237,8 @@
   {
     "casa": "Securex",
     "url": "https://securex.pe/",
-    "compra": 3.34,
-    "venta": 3.367
+    "compra": 3.343,
+    "venta": 3.366
   },
   {
     "casa": "ChapaCambio",
@@ -268,8 +268,8 @@
   {
     "casa": "DollarHouse",
     "url": "https://app.dollarhouse.pe/",
-    "compra": 3.356,
-    "venta": 3.364
+    "compra": 3.349,
+    "venta": 3.363
   },
   {
     "casa": "Global66",
