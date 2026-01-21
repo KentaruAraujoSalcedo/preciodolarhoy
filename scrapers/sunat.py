@@ -4,6 +4,7 @@ import re
 
 async def scrap_sunat():
     url = "https://www.sunat.gob.pe/cl-at-ittipcam/tcS01Alias"
+
     try:
         async with async_playwright() as p:
             browser = await p.chromium.launch(
@@ -18,28 +19,35 @@ async def scrap_sunat():
             await page.goto(url, timeout=60000, wait_until="domcontentloaded")
             await page.wait_for_selector("div.event", timeout=30000)
 
-            # Fecha de hoy en formato YYYY-MM-DD
+            # Fecha de hoy (SUNAT usa data-date con un ISO + hora Z)
             hoy = date.today().isoformat()
             selector = f'td[data-date="{hoy}T05:00:00.000Z"]'
 
             celda = await page.query_selector(selector)
             if not celda:
-                raise Exception("No se encontró el día actual en el calendario")
+                raise Exception(f"No se encontró el día actual en el calendario. selector={selector}")
 
             textos = await celda.inner_text()
+
             compra = re.search(r"Compra\s+\"?\s*([\d.]+)", textos)
-            venta = re.search(r"Venta\s+\"?\s*([\d.]+)", textos)
+            venta  = re.search(r"Venta\s+\"?\s*([\d.]+)", textos)
 
-            if compra and venta:
-                return {
-                    "casa": "SUNAT",
-                    "url": url,
-                    "compra": float(compra.group(1)),
-                    "venta": float(venta.group(1)),
-                }
+            if not (compra and venta):
+                raise Exception(f"No se encontró texto de compra/venta. Textos: {textos!r}")
 
-            raise Exception("No se encontró texto de compra o venta")
+            return {
+                "casa": "SUNAT",
+                "url": url,
+                "compra": float(compra.group(1)),
+                "venta": float(venta.group(1)),
+            }
 
     except Exception as e:
-        print(f"❌ Error al scrapear SUNAT: {e}")
-        return None
+        # IMPORTANTE: nunca devolver None, siempre devolver dict para que aparezca en el JSON
+        return {
+            "casa": "SUNAT",
+            "url": url,
+            "compra": None,
+            "venta": None,
+            "error": str(e),
+        }
