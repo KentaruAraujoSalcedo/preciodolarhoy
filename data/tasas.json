@@ -121,8 +121,8 @@
   {
     "casa": "Acomo",
     "url": "https://acomo.com.pe/",
-    "compra": null,
-    "venta": null
+    "compra": 3.349,
+    "venta": 3.367
   },
   {
     "casa": "ZonaDólar",
