@@ -14,7 +14,7 @@
     "casa": "Kambista",
     "url": "https://kambista.com/",
     "compra": 3.343,
-    "venta": 3.37
+    "venta": 3.371
   },
   {
     "casa": "Tkambio",
@@ -26,7 +26,7 @@
     "casa": "InkaMoney",
     "url": "https://inkamoney.com/",
     "compra": 3.366,
-    "venta": 3.349
+    "venta": 3.352
   },
   {
     "casa": "CambioSeguro",
@@ -37,8 +37,8 @@
   {
     "casa": "Okane",
     "url": "https://okanecambiodigital.com/",
-    "compra": 3.352,
-    "venta": 3.365
+    "compra": 3.35,
+    "venta": 3.36
   },
   {
     "casa": "JetPerú",
@@ -49,8 +49,8 @@
   {
     "casa": "Dichikash",
     "url": "https://dichikash.com/",
-    "compra": 3.351,
-    "venta": 3.358
+    "compra": 3.352,
+    "venta": 3.359
   },
   {
     "casa": "Instakash",
@@ -79,14 +79,14 @@
   {
     "casa": "ChaskiDolar",
     "url": "https://chaskidolar.com/",
-    "compra": 3.365,
-    "venta": 3.346
+    "compra": 3.366,
+    "venta": 3.347
   },
   {
     "casa": "Intercambialo",
     "url": "https://intercambialo.pe/",
-    "compra": 3.342,
-    "venta": 3.366
+    "compra": 3.343,
+    "venta": 3.373
   },
   {
     "casa": "WesternUnion",
@@ -122,7 +122,7 @@
   {
     "casa": "Acomo",
     "url": "https://acomo.com.pe/",
-    "compra": 3.349,
+    "compra": 3.348,
     "venta": 3.364
   },
   {
@@ -175,7 +175,7 @@
     "casa": "X-Cambio",
     "url": "https://x-cambio.com/",
     "compra": 3.341,
-    "venta": 3.373
+    "venta": 3.374
   },
   {
     "casa": "RissanPE",
@@ -198,9 +198,8 @@
   {
     "casa": "MercadoCambiario",
     "url": "https://mercadocambiario.pe/",
-    "compra": null,
-    "venta": null,
-    "error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div.buy span.amount\") to be visible\n"
+    "compra": 3.354,
+    "venta": 3.36
   },
   {
     "casa": "VipCapital",
@@ -211,14 +210,14 @@
   {
     "casa": "IntiCambio",
     "url": "https://inticambio.pe/",
-    "compra": 3.352,
-    "venta": 3.357
+    "compra": 3.353,
+    "venta": 3.358
   },
   {
     "casa": "Dolarex",
     "url": "https://dolarex.pe/",
     "compra": 3.353,
-    "venta": 3.359
+    "venta": 3.357
   },
   {
     "casa": "Cambix",
@@ -246,12 +245,13 @@
     "casa": "ChapaCambio",
     "url": "https://chapacambio.com/",
     "compra": 3.344,
-    "venta": 3.368
+    "venta": 3.369
   },
   {
     "casa": "TuCambista",
     "url": "https://tucambista.pe/",
-    "error": "No se pudo scrapear: No se encontraron suficientes tasas válidas"
+    "compra": 3.342,
+    "venta": 3.371
   },
   {
     "casa": "HirPower",
