@@ -2,8 +2,10 @@
 import asyncio
 import json
 import os
+from pathlib import Path
 from datetime import date
 
+# ===== IMPORTS DE SCRAPERS =====
 from scrapers.acomo import scrap_acomo
 from scrapers.billex import scrap_billex
 from scrapers.cambiodigitalperu import scrap_cambiodigitalperu
@@ -53,7 +55,7 @@ from scrapers.dichikash import scrap_dichikash
 from scrapers.instakash import scrap_instakash
 from scrapers.intercambialo import scrap_intercambialo
 
-
+# 1) Helper: correr scrapers sin que uno tumbe todo el proceso
 async def _safe_call(name: str, coro):
     """Ejecuta un scraper y evita que una excepción tumbe todo el proceso."""
     try:
@@ -64,10 +66,82 @@ async def _safe_call(name: str, coro):
     except Exception as e:
         print(f"❌ {name}: error -> {e}")
         return None
+    
+# 2) Backup: cargar backup_tasas.json (manual)
+#    Este file debe estar en: data/backup_tasas.json
+def load_backup_map(path="data/backup_tasas.json"):
+    """
+    Lee el backup manual y lo convierte en un mapa:
+    backup_map["Rextie"] = {...datos...}
+    Retorna (backup_map, fecha_backup).
+    """
+    p = Path(path)
+    if not p.exists():
+        return {}, None
+
+    data = json.loads(p.read_text(encoding="utf-8"))
+    fecha_backup = data.get("fecha_backup")
+    casas = data.get("casas", [])
+
+    # Mapa por nombre exacto de "casa"
+    backup_map = {
+        c.get("casa"): c
+        for c in casas
+        if isinstance(c, dict) and c.get("casa")
+    }
+    return backup_map, fecha_backup
 
 
+def is_valid_rate(item: dict) -> bool:
+    """True si el scraper devolvió compra y venta (no None)."""
+    try:
+        return item.get("compra") is not None and item.get("venta") is not None
+    except Exception:
+        return False
+
+
+def apply_backup_to_results(results, backup_map, fecha_backup=None):
+    """
+    Para cada casa:
+    - Si el scraper trae compra/venta => usar scraper
+    - Si falla => intentar usar backup
+    - Si no hay backup => dejar lo que vino (con error)
+    """
+    merged = []
+
+    for r in results:
+        casa = r.get("casa")
+        b = backup_map.get(casa) if casa else None
+
+        # 1) Si scraper OK => queda tal cual
+        if is_valid_rate(r):
+            r["source"] = "scraper"
+            merged.append(r)
+            continue
+
+        # 2) Si scraper falló => usar backup si existe
+        if b and b.get("compra") is not None and b.get("venta") is not None:
+            merged_item = {
+                "casa": casa,
+                "url": r.get("url") or b.get("url"),
+                "compra": b.get("compra"),
+                "venta": b.get("venta"),
+                "source": "backup",
+                "backup_fecha": fecha_backup,
+            }
+            if r.get("error"):
+                merged_item["scraper_error"] = r["error"]
+            merged.append(merged_item)
+        else:
+            # 3) No hay backup útil => dejamos lo que vino
+            r["source"] = "scraper"
+            merged.append(r)
+
+    return merged
+
+# 3) MAIN: ejecuta scrapers, aplica backup, guarda tasas, histórico
 async def main():
-    # Lista de (nombre, coroutine) para log claro
+    # ---- Lista de scrapers (ordenados) ----
     tasks = [
         ("yanki", scrap_yanki()),
         ("rextie", scrap_rextie()),
@@ -119,21 +193,29 @@ async def main():
         ("sunat", scrap_sunat()),
     ]
 
-    # Ejecutar secuencialmente (más estable para evitar bloqueos).
+    # ---- Ejecutar scrapers secuencialmente (más estable) ----
     resultados = []
     for name, coro in tasks:
         resultados.append(await _safe_call(name, coro))
 
-    # Quitar Nones y cualquier cosa rara
+    # ---- Limpiar resultados (quitar None / cosas raras) ----
     resultados = [r for r in resultados if isinstance(r, dict)]
 
-    # Guardar tasas
+    # ---- Aplicar backup manual (si existe) ----
+    backup_map, fecha_backup = load_backup_map("data/backup_tasas.json")
+    if backup_map:
+        resultados = apply_backup_to_results(resultados, backup_map, fecha_backup)
+        print(f"🛟 Backup aplicado (fecha_backup={fecha_backup})")
+    else:
+        print("ℹ️ No hay backup_tasas.json, se guarda solo lo del scraper")
+
+    # ---- Guardar tasas finales (scraper + backup) ----
     os.makedirs("data", exist_ok=True)
     with open("data/tasas.json", "w", encoding="utf-8") as f:
         json.dump(resultados, f, ensure_ascii=False, indent=2)
     print("✅ Tasas guardadas en data/tasas.json")
 
-    # === HISTÓRICO SUNAT ===
+    # 4) HISTÓRICO SUNAT (solo toma SUNAT y lo guarda por fecha)
     sunat_data = next((r for r in resultados if r.get("casa") == "SUNAT"), None)
     if sunat_data and sunat_data.get("compra") and sunat_data.get("venta"):
         sunat_compra = sunat_data["compra"]
@@ -141,6 +223,8 @@ async def main():
         hoy = str(date.today())
 
         historico_path = "data/historico.json"
+
+        # Leer histórico actual
         if os.path.exists(historico_path):
             with open(historico_path, "r", encoding="utf-8") as f:
                 historico = json.load(f)
@@ -149,9 +233,11 @@ async def main():
         else:
             historico = []
 
+        # Evitar duplicar el mismo día
         historico = [d for d in historico if isinstance(d, dict) and d.get("fecha") != hoy]
         historico.append({"fecha": hoy, "compra": sunat_compra, "venta": sunat_venta})
 
+        # Guardar histórico
         with open(historico_path, "w", encoding="utf-8") as f:
             json.dump(historico, f, ensure_ascii=False, indent=2)
 
