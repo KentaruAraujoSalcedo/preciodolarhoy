@@ -49,8 +49,8 @@
   {
     "casa": "Dichikash",
     "url": "https://dichikash.com/",
-    "compra": 3.353,
-    "venta": 3.367
+    "compra": 3.354,
+    "venta": 3.368
   },
   {
     "casa": "Instakash",
@@ -277,5 +277,11 @@
     "casa": "Global66",
     "url": "https://www.global66.com/pe/envios-de-dinero/",
     "error": "No se pudo scrapear: Page.wait_for_function: Timeout 20000ms exceeded."
+  },
+  {
+    "casa": "SUNAT",
+    "url": "https://www.sunat.gob.pe/cl-at-ittipcam/tcS01Alias",
+    "compra": 3.353,
+    "venta": 3.363
   }
 ]
