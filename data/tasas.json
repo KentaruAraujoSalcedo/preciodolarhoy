@@ -2,31 +2,29 @@
   {
     "casa": "Yanki",
     "url": "https://yanki.pe",
-    "compra": 3.346,
-    "venta": 3.363,
+    "compra": 3.34,
+    "venta": 3.37,
     "source": "scraper"
   },
   {
     "casa": "Rextie",
     "url": "https://www.rextie.com/",
-    "compra": 3.34,
-    "venta": 3.369,
-    "source": "backup",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 10000ms exceeded.\nCall log:\n  - waiting for locator(\".buy.flex-1\") to be visible\n"
+    "compra": 3.3385,
+    "venta": 3.3725,
+    "source": "scraper"
   },
   {
     "casa": "Kambista",
     "url": "https://kambista.com/",
-    "compra": 3.34,
-    "venta": 3.373,
+    "compra": 3.338,
+    "venta": 3.374,
     "source": "scraper"
   },
   {
     "casa": "Tkambio",
     "url": "https://tkambio.com/",
     "compra": 3.343,
-    "venta": 3.37,
+    "venta": 3.373,
     "source": "scraper"
   },
   {
@@ -39,8 +37,8 @@
   {
     "casa": "CambioSeguro",
     "url": "https://cambioseguro.com/",
-    "compra": 3.343,
-    "venta": 3.37,
+    "compra": 3.346,
+    "venta": 3.367,
     "source": "scraper"
   },
   {
@@ -60,8 +58,8 @@
   {
     "casa": "Dichikash",
     "url": "https://dichikash.com/",
-    "compra": 3.353,
-    "venta": 3.364,
+    "compra": 3.352,
+    "venta": 3.365,
     "source": "scraper"
   },
   {
@@ -75,7 +73,7 @@
     "casa": "MegaMoney",
     "url": "https://megamoney.pe/",
     "compra": 3.345,
-    "venta": 3.375,
+    "venta": 3.38,
     "source": "scraper"
   },
   {
@@ -124,8 +122,8 @@
   {
     "casa": "Billex",
     "url": "https://www.billex.pe/",
-    "compra": 3.371,
-    "venta": 3.341,
+    "compra": 3.341,
+    "venta": 3.371,
     "source": "scraper"
   },
   {
@@ -134,8 +132,7 @@
     "compra": 3.343,
     "venta": 3.365,
     "source": "backup",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.goto: net::ERR_TIMED_OUT at https://www.safex.pe/\nCall log:\n  - navigating to \"https://www.safex.pe/\", waiting until \"load\"\n"
+    "backup_fecha": "2026-01-20"
   },
   {
     "casa": "CambiaFX",
@@ -220,7 +217,7 @@
   {
     "casa": "X-Cambio",
     "url": "https://x-cambio.com/",
-    "compra": 3.338,
+    "compra": 3.3365,
     "venta": 3.3755,
     "source": "scraper"
   },
@@ -308,8 +305,8 @@
   {
     "casa": "Securex",
     "url": "https://securex.pe/",
-    "compra": 3.34,
-    "venta": 3.372,
+    "compra": 3.346,
+    "venta": 3.365,
     "source": "scraper"
   },
   {
@@ -322,7 +319,7 @@
   {
     "casa": "TuCambista",
     "url": "https://tucambista.pe/",
-    "compra": 3.34,
+    "compra": 3.338,
     "venta": 3.372,
     "source": "scraper"
   },
@@ -362,7 +359,7 @@
     "casa": "SUNAT",
     "url": "https://www.sunat.gob.pe/cl-at-ittipcam/tcS01Alias",
     "compra": 3.353,
-    "venta": 3.363,
+    "venta": 3.359,
     "source": "scraper"
   }
 ]
