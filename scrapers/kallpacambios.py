@@ -1,48 +1,70 @@
 # scrapers/kallpacambios.py
-from playwright.async_api import async_playwright
 import re
+from playwright.async_api import async_playwright
 from scrapers.utils import normalize_rate
+
 
 async def scrap_kallpacambios():
     url = "https://kallpacambios.com/"
     casa = "KallpaCambios"
     browser = None
+
     try:
         async with async_playwright() as p:
             browser = await p.chromium.launch(headless=True)
             page = await browser.new_page()
-            await page.goto(url, timeout=60000)
+            await page.goto(url, timeout=60000, wait_until="domcontentloaded")
 
-            # Espera a que aparezca algún bloque con las tasas
-            await page.wait_for_selector(".text-white.text-xs", timeout=15000)
-            elementos = await page.locator(".text-white.text-xs").all_text_contents()
+            # 1) Esperar a que exista el bloque
+            await page.locator("h3, p", has_text="Tipo de cambio").first.wait_for(timeout=25000)
 
-            # Extraer valores "S/ 3.56" con regex
+            # 2) Esperar a que aparezcan 2 valores > 3.1 (compra y venta reales)
+            await page.wait_for_function(
+                """
+                () => {
+                    const nodes = Array.from(document.querySelectorAll("font, p"));
+                    const texts = nodes.map(n => (n.innerText || "").trim()).filter(Boolean);
+
+                    const nums = texts
+                      .map(t => t.replace(",", ".").match(/S\\/?\\s*\\.?([0-9]+(?:\\.[0-9]+)?)/))
+                      .filter(Boolean)
+                      .map(m => parseFloat(m[1]))
+                      .filter(n => !isNaN(n) && n > 3.1);
+
+                    return nums.length >= 2;
+                }
+                """,
+                timeout=25000,
+            )
+
+            # 3) Extraer ya con los valores cargados
+            textos = []
+            textos += await page.locator("font").all_text_contents()
+            textos += await page.locator("p").all_text_contents()
+
             valores = []
-            for el in elementos:
-                m = re.search(r"S/\s*([\d.,]+)", el)
+            for t in textos:
+                t = t.replace(",", ".")
+                m = re.search(r"S/?\s*\.?([0-9]+(?:\.[0-9]+)?)", t)
                 if m:
-                    valores.append(m.group(1).replace(",", "."))
+                    v = normalize_rate(m.group(1))
+                    if v and v > 3.1:
+                        valores.append(v)
 
-            # Mapear a compra/venta (si no hay, quedan None)
-            compra = normalize_rate(valores[0]) if len(valores) > 0 else None
-            venta  = normalize_rate(valores[1]) if len(valores) > 1 else None
+            # Quitar duplicados preservando orden (a veces sale repetido)
+            uniq = []
+            for v in valores:
+                if v not in uniq:
+                    uniq.append(v)
 
-            return {
-                "casa": casa,
-                "url": url,
-                "compra": compra,  # None si 0/ inválido
-                "venta":  venta,   # None si 0/ inválido
-            }
+            compra = uniq[0] if len(uniq) > 0 else None
+            venta = uniq[1] if len(uniq) > 1 else None
+
+            return {"casa": casa, "url": url, "compra": compra, "venta": venta}
 
     except Exception as e:
-        return {
-            "casa": casa,
-            "url": url,
-            "compra": None,
-            "venta": None,
-            "error": f"No se pudo scrapear: {e}",
-        }
+        return {"casa": casa, "url": url, "compra": None, "venta": None, "error": f"No se pudo scrapear: {e}"}
+
     finally:
         if browser:
             await browser.close()
