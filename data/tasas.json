@@ -44,7 +44,7 @@
   {
     "casa": "Okane",
     "url": "https://okanecambiodigital.com/",
-    "compra": 3.351,
+    "compra": 3.35,
     "venta": 3.36,
     "source": "scraper"
   },
@@ -66,7 +66,7 @@
     "casa": "Instakash",
     "url": "https://instakash.net/",
     "compra": 3.345,
-    "venta": 3.362,
+    "venta": 3.363,
     "source": "scraper"
   },
   {
@@ -93,14 +93,14 @@
   {
     "casa": "ChaskiDolar",
     "url": "https://chaskidolar.com/",
-    "compra": 3.365,
-    "venta": 3.349,
+    "compra": 3.366,
+    "venta": 3.35,
     "source": "scraper"
   },
   {
     "casa": "Intercambialo",
     "url": "https://intercambialo.pe/",
-    "compra": 3.339,
+    "compra": 3.338,
     "venta": 3.369,
     "source": "scraper"
   },
@@ -115,14 +115,14 @@
     "casa": "KallpaCambios",
     "url": "https://kallpacambios.com/",
     "compra": 3.34,
-    "venta": 3.371,
+    "venta": 3.369,
     "source": "scraper"
   },
   {
     "casa": "Billex",
     "url": "https://www.billex.pe/",
-    "compra": 3.295,
-    "venta": 3.409,
+    "compra": 3.323,
+    "venta": 3.382,
     "source": "scraper"
   },
   {
@@ -144,7 +144,7 @@
   {
     "casa": "Acomo",
     "url": "https://acomo.com.pe/",
-    "compra": 3.342,
+    "compra": 3.341,
     "venta": 3.36,
     "source": "scraper"
   },
@@ -247,11 +247,9 @@
   {
     "casa": "MercadoCambiario",
     "url": "https://mercadocambiario.pe/",
-    "compra": 3.347,
-    "venta": 3.357,
-    "source": "backup",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div.buy span.amount\") to be visible\n"
+    "compra": 3.356,
+    "venta": 3.358,
+    "source": "scraper"
   },
   {
     "casa": "VipCapital",
@@ -301,7 +299,7 @@
     "casa": "Securex",
     "url": "https://securex.pe/",
     "compra": 3.342,
-    "venta": 3.361,
+    "venta": 3.358,
     "source": "scraper"
   },
   {
@@ -337,8 +335,8 @@
   {
     "casa": "DollarHouse",
     "url": "https://app.dollarhouse.pe/",
-    "compra": 3.353,
-    "venta": 3.358,
+    "compra": 3.352,
+    "venta": 3.357,
     "source": "scraper"
   },
   {
