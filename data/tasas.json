@@ -16,8 +16,8 @@
   {
     "casa": "Kambista",
     "url": "https://kambista.com/",
-    "compra": 3.339,
-    "venta": 3.369,
+    "compra": 3.338,
+    "venta": 3.37,
     "source": "scraper"
   },
   {
@@ -58,8 +58,8 @@
   {
     "casa": "Dichikash",
     "url": "https://dichikash.com/",
-    "compra": 3.351,
-    "venta": 3.359,
+    "compra": 3.35,
+    "venta": 3.358,
     "source": "scraper"
   },
   {
@@ -216,8 +216,8 @@
   {
     "casa": "X-Cambio",
     "url": "https://x-cambio.com/",
-    "compra": 3.337,
-    "venta": 3.372,
+    "compra": 3.336,
+    "venta": 3.373,
     "source": "scraper"
   },
   {
