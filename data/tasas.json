@@ -16,8 +16,8 @@
   {
     "casa": "Kambista",
     "url": "https://kambista.com/",
-    "compra": 3.339,
-    "venta": 3.367,
+    "compra": 3.34,
+    "venta": 3.368,
     "source": "scraper"
   },
   {
@@ -30,8 +30,8 @@
   {
     "casa": "InkaMoney",
     "url": "https://inkamoney.com/",
-    "compra": 3.361,
-    "venta": 3.351,
+    "compra": 3.364,
+    "venta": 3.353,
     "source": "scraper"
   },
   {
@@ -44,8 +44,8 @@
   {
     "casa": "Okane",
     "url": "https://okanecambiodigital.com/",
-    "compra": 3.35,
-    "venta": 3.359,
+    "compra": 3.351,
+    "venta": 3.36,
     "source": "scraper"
   },
   {
@@ -58,17 +58,15 @@
   {
     "casa": "Dichikash",
     "url": "https://dichikash.com/",
-    "compra": 3.349,
-    "venta": 3.357,
-    "source": "backup",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"input#numero2\")\n"
+    "compra": 3.35,
+    "venta": 3.358,
+    "source": "scraper"
   },
   {
     "casa": "Instakash",
     "url": "https://instakash.net/",
-    "compra": 3.344,
-    "venta": 3.361,
+    "compra": 3.345,
+    "venta": 3.362,
     "source": "scraper"
   },
   {
@@ -83,9 +81,7 @@
     "url": "https://www.smartdollar.pe/",
     "compra": 3.354,
     "venta": 3.372,
-    "source": "backup",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Locator.text_content: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\".cantant\").first\n"
+    "source": "scraper"
   },
   {
     "casa": "CambioX",
@@ -97,8 +93,8 @@
   {
     "casa": "ChaskiDolar",
     "url": "https://chaskidolar.com/",
-    "compra": 3.364,
-    "venta": 3.348,
+    "compra": 3.365,
+    "venta": 3.349,
     "source": "scraper"
   },
   {
@@ -111,11 +107,9 @@
   {
     "casa": "WesternUnion",
     "url": "https://www.westernunionperu.pe/cambiodemoneda",
-    "compra": 3.339,
-    "venta": 3.365,
-    "source": "backup",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.westernunionperu.pe/cambiodemoneda\nCall log:\n  - navigating to \"https://www.westernunionperu.pe/cambiodemoneda\", waiting until \"load\"\n"
+    "compra": 3.34,
+    "venta": 3.367,
+    "source": "scraper"
   },
   {
     "casa": "KallpaCambios",
@@ -150,19 +144,16 @@
   {
     "casa": "Acomo",
     "url": "https://acomo.com.pe/",
-    "compra": 3.346,
-    "venta": 3.361,
-    "source": "backup",
-    "backup_fecha": "2026-01-20"
+    "compra": 3.342,
+    "venta": 3.36,
+    "source": "scraper"
   },
   {
     "casa": "ZonaDólar",
     "url": "https://zonadolar.pe/",
     "compra": 3.399,
     "venta": 3.321,
-    "source": "backup",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\".text-base\") to be visible\n"
+    "source": "scraper"
   },
   {
     "casa": "SRCambio",
@@ -205,9 +196,7 @@
     "url": "https://perudolar.pe/",
     "compra": 3.3,
     "venta": 3.4,
-    "source": "backup",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"#preciosHome\") to be visible\n"
+    "source": "scraper"
   },
   {
     "casa": "MidpointFX",
@@ -219,17 +208,15 @@
   {
     "casa": "CambioSol",
     "url": "https://cambiosol.pe/",
-    "compra": 3.352,
+    "compra": 3.35,
     "venta": 3.366,
-    "source": "backup",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"#buy-rate-display\") to be visible\n    - waiting for\" https://cambiosol.pe/\" navigation to finish...\n    - navigated to \"https://cambiosol.pe/\"\n"
+    "source": "scraper"
   },
   {
     "casa": "X-Cambio",
     "url": "https://x-cambio.com/",
-    "compra": 3.337,
-    "venta": 3.37,
+    "compra": 3.338,
+    "venta": 3.371,
     "source": "scraper"
   },
   {
@@ -237,9 +224,7 @@
     "url": "https://www.rissanpe.com/",
     "compra": 3.35,
     "venta": 3.378,
-    "source": "backup",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"h2.elementor-heading-title\") to be visible\n"
+    "source": "scraper"
   },
   {
     "casa": "CambioMas",
@@ -271,31 +256,29 @@
   {
     "casa": "VipCapital",
     "url": "https://www.vipcapitalbusiness.com/",
-    "compra": 3.345,
+    "compra": 3.34,
     "venta": 3.365,
-    "source": "backup",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"#tc_compra\") to be visible\n    - waiting for\" https://www.vipcapitalbusiness.com/\" navigation to finish...\n    - navigated to \"https://www.vipcapitalbusiness.com/\"\n"
+    "source": "scraper"
   },
   {
     "casa": "IntiCambio",
     "url": "https://inticambio.pe/",
-    "compra": 3.351,
-    "venta": 3.356,
+    "compra": 3.352,
+    "venta": 3.357,
     "source": "scraper"
   },
   {
     "casa": "Dolarex",
     "url": "https://dolarex.pe/",
-    "compra": 3.353,
+    "compra": 3.354,
     "venta": 3.357,
     "source": "scraper"
   },
   {
     "casa": "Cambix",
     "url": "https://cambix.com.pe/",
-    "compra": 3.345,
-    "venta": 3.365,
+    "compra": 3.34,
+    "venta": 3.37,
     "source": "scraper"
   },
   {
@@ -317,8 +300,8 @@
   {
     "casa": "Securex",
     "url": "https://securex.pe/",
-    "compra": 3.341,
-    "venta": 3.363,
+    "compra": 3.342,
+    "venta": 3.361,
     "source": "scraper"
   },
   {
@@ -331,8 +314,8 @@
   {
     "casa": "TuCambista",
     "url": "https://tucambista.pe/",
-    "compra": 3.342,
-    "venta": 3.369,
+    "compra": 3.341,
+    "venta": 3.37,
     "source": "scraper"
   },
   {
@@ -354,7 +337,7 @@
   {
     "casa": "DollarHouse",
     "url": "https://app.dollarhouse.pe/",
-    "compra": 3.352,
+    "compra": 3.353,
     "venta": 3.358,
     "source": "scraper"
   },
