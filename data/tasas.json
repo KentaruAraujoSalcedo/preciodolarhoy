@@ -235,7 +235,7 @@
     "source": "last_known",
     "last_seen": "2026-01-22",
     "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: No se encontraron suficientes tasas"
+    "scraper_error": "No se pudo scrapear: Locator.wait_for: Timeout 25000ms exceeded.\nCall log:\n  - waiting for locator(\".views-field-field-t-c-compra span.cant\").first to be visible\n"
   },
   {
     "casa": "MercadoCambiario",
@@ -312,7 +312,7 @@
     "casa": "TuCambista",
     "url": "https://tucambista.pe/",
     "compra": 3.336,
-    "venta": 3.366,
+    "venta": 3.367,
     "source": "scraper"
   },
   {
