@@ -23,7 +23,7 @@
   {
     "casa": "Tkambio",
     "url": "https://tkambio.com/",
-    "compra": 3.34,
+    "compra": 3.338,
     "venta": 3.363,
     "source": "scraper"
   },
@@ -58,8 +58,8 @@
   {
     "casa": "Dichikash",
     "url": "https://dichikash.com/",
-    "compra": 3.345,
-    "venta": 3.355,
+    "compra": 3.346,
+    "venta": 3.356,
     "source": "scraper"
   },
   {
@@ -93,8 +93,8 @@
   {
     "casa": "ChaskiDolar",
     "url": "https://chaskidolar.com/",
-    "compra": 3.361,
-    "venta": 3.342,
+    "compra": 3.362,
+    "venta": 3.343,
     "source": "scraper"
   },
   {
@@ -258,15 +258,15 @@
   {
     "casa": "IntiCambio",
     "url": "https://inticambio.pe/",
-    "compra": 3.349,
-    "venta": 3.354,
+    "compra": 3.351,
+    "venta": 3.356,
     "source": "scraper"
   },
   {
     "casa": "Dolarex",
     "url": "https://dolarex.pe/",
-    "compra": 3.349,
-    "venta": 3.354,
+    "compra": 3.35,
+    "venta": 3.355,
     "source": "scraper"
   },
   {
@@ -274,7 +274,10 @@
     "url": "https://cambix.com.pe/",
     "compra": 3.34,
     "venta": 3.36,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-23",
+    "backup_fecha": "2026-01-20",
+    "scraper_error": "No se pudo scrapear: Locator.all_text_contents: Execution context was destroyed, most likely because of a navigation"
   },
   {
     "casa": "DLS Money",
@@ -332,7 +335,7 @@
   {
     "casa": "DollarHouse",
     "url": "https://app.dollarhouse.pe/",
-    "compra": 3.349,
+    "compra": 3.35,
     "venta": 3.357,
     "source": "scraper"
   },
