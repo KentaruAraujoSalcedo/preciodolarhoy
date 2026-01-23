@@ -1,35 +1,62 @@
-from playwright.async_api import async_playwright
-import asyncio
+# scrapers/moneyhouse.py
 import re
+from playwright.async_api import async_playwright
+from scrapers.utils import normalize_rate
 
 async def scrap_moneyhouse():
     url = "https://moneyhouse.pe/"
     casa = "MoneyHouse"
+    browser = None
 
     try:
         async with async_playwright() as p:
             browser = await p.chromium.launch(headless=True)
             page = await browser.new_page()
 
-            await page.goto(url, timeout=60000)
+            await page.goto(url, timeout=60000, wait_until="domcontentloaded")
 
-            # Extraer todos los spans .cantamt, incluso si están ocultos
-            tasas_raw = await page.eval_on_selector_all(
-                ".cantant",
-                "els => els.map(el => el.textContent.trim())"
+            # (Opcional) cerrar cookies si aparece
+            try:
+                await page.get_by_role("button", name=re.compile("ACEPTAR", re.I)).click(timeout=2000)
+            except Exception:
+                pass
+
+            compra_loc = page.locator(".views-field-field-t-c-compra span.cant").first
+            venta_loc  = page.locator(".views-field-field-t-c-venta  span.cant").first
+
+            # Espera a que existan
+            await compra_loc.wait_for(state="visible", timeout=25000)
+            await venta_loc.wait_for(state="visible", timeout=25000)
+
+            # Espera a que tengan números válidos (no vacío / no 0 / no 0.000)
+            await page.wait_for_function(
+                """() => {
+                    const pick = (sel) => {
+                        const el = document.querySelector(sel);
+                        if (!el) return null;
+                        const t = (el.textContent || "").trim();
+                        const m = t.match(/\\d+[\\.,]\\d+/);
+                        return m ? m[0] : null;
+                    };
+
+                    const c = pick(".views-field-field-t-c-compra span.cant");
+                    const v = pick(".views-field-field-t-c-venta span.cant");
+
+                    if (!c || !v) return false;
+
+                    const cf = parseFloat(c.replace(",", "."));
+                    const vf = parseFloat(v.replace(",", "."));
+
+                    return cf > 0 && vf > 0 && c !== "0" && v !== "0" && c !== "0.000" && v !== "0.000";
+                }""",
+                timeout=25000
             )
 
+            compra_text = (await compra_loc.text_content() or "").strip()
+            venta_text  = (await venta_loc.text_content()  or "").strip()
 
-            if not tasas_raw or len(tasas_raw) < 2:
-                raise ValueError("No se encontraron suficientes tasas")
-
-            compra = float(re.sub(r"[^\d.]", "", tasas_raw[0]))
-            venta = float(re.sub(r"[^\d.]", "", tasas_raw[1]))
-
-            if compra == 0.0 or venta == 0.0:
-                raise ValueError("Tasas parecen estar en 0.0")
-
-            await browser.close()
+            compra = normalize_rate(compra_text)
+            venta  = normalize_rate(venta_text)
 
             return {
                 "casa": casa,
@@ -42,10 +69,10 @@ async def scrap_moneyhouse():
         return {
             "casa": casa,
             "url": url,
+            "compra": None,
+            "venta": None,
             "error": f"No se pudo scrapear: {e}"
         }
-
-# Test manual
-if __name__ == "__main__":
-    resultado = asyncio.run(scrap_moneyhouse())
-    print(resultado)
+    finally:
+        if browser:
+            await browser.close()
