@@ -147,9 +147,7 @@
     "url": "https://acomo.com.pe/",
     "compra": 3.343,
     "venta": 3.362,
-    "source": "last_known",
-    "last_seen": "2026-01-23",
-    "backup_fecha": "2026-01-20"
+    "source": "scraper"
   },
   {
     "casa": "ZonaDólar",
@@ -179,8 +177,8 @@
   {
     "casa": "CambioMundial",
     "url": "https://www.cambiomundial.com/",
-    "compra": 3.346,
-    "venta": 3.362,
+    "compra": 2.0,
+    "venta": 2.0,
     "source": "last_known",
     "last_seen": "2026-01-22",
     "backup_fecha": "2026-01-20",
@@ -242,8 +240,8 @@
   {
     "casa": "MoneyHouse",
     "url": "https://moneyhouse.pe/",
-    "compra": 3.35,
-    "venta": 3.356,
+    "compra": 2.0,
+    "venta": 2.0,
     "source": "last_known",
     "last_seen": "2026-01-22",
     "backup_fecha": "2026-01-20",
