@@ -32,8 +32,8 @@
     "InkaMoney": {
       "casa": "InkaMoney",
       "url": "https://inkamoney.com/",
-      "compra": 3.359,
-      "venta": 3.349,
+      "compra": 3.36,
+      "venta": 3.35,
       "last_seen": "2026-01-23"
     },
     "CambioSeguro": {
@@ -47,7 +47,7 @@
       "casa": "Okane",
       "url": "https://okanecambiodigital.com/",
       "compra": 3.347,
-      "venta": 3.358,
+      "venta": 3.357,
       "last_seen": "2026-01-23"
     },
     "JetPerú": {
@@ -60,15 +60,15 @@
     "Dichikash": {
       "casa": "Dichikash",
       "url": "https://dichikash.com/",
-      "compra": 3.346,
-      "venta": 3.356,
+      "compra": 3.345,
+      "venta": 3.355,
       "last_seen": "2026-01-23"
     },
     "Instakash": {
       "casa": "Instakash",
       "url": "https://instakash.net/",
-      "compra": 3.34,
-      "venta": 3.366,
+      "compra": 3.342,
+      "venta": 3.361,
       "last_seen": "2026-01-23"
     },
     "MegaMoney": {
@@ -131,7 +131,7 @@
       "casa": "Acomo",
       "url": "https://acomo.com.pe/",
       "compra": 3.345,
-      "venta": 3.36,
+      "venta": 3.359,
       "last_seen": "2026-01-23"
     },
     "ZonaDólar": {
@@ -166,7 +166,7 @@
       "casa": "CambioSol",
       "url": "https://cambiosol.pe/",
       "compra": 3.35,
-      "venta": 3.361,
+      "venta": 3.37,
       "last_seen": "2026-01-23"
     },
     "X-Cambio": {
@@ -286,6 +286,13 @@
       "url": "https://srcambio.pe/",
       "compra": 3.423,
       "venta": 3.431,
+      "last_seen": "2026-01-23"
+    },
+    "Kambio": {
+      "casa": "Kambio",
+      "url": "https://www.kambio.online/",
+      "compra": 3.351,
+      "venta": 3.356,
       "last_seen": "2026-01-23"
     }
   }
