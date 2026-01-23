@@ -1,38 +1,56 @@
 # scrapers/cambiomas.py
-from playwright.async_api import async_playwright
 import re
+from playwright.async_api import async_playwright
 from scrapers.utils import normalize_rate
 
+
+def _extract_numbers(text: str):
+    """Devuelve lista de strings numéricas tipo 3.345 / 3,36 encontradas en el texto."""
+    if not text:
+        return []
+    return re.findall(r"\d+[.,]\d+", text)
+
+
 async def scrap_cambiomas():
-    url = "https://cambiomas.com.pe/"
     casa = "CambioMas"
+    url = "https://cambiosmass.com/"
     browser = None
+
     try:
         async with async_playwright() as p:
             browser = await p.chromium.launch(headless=True)
             page = await browser.new_page()
-            await page.goto(url, timeout=60000)
 
-            # Espera a que existan los nodos con precios
-            await page.wait_for_selector("#pCompra", timeout=15000)
-            await page.wait_for_selector("#pVenta",  timeout=15000)
+            await page.goto(url, timeout=60000, wait_until="domcontentloaded")
 
-            # Extrae textos crudos (tolerante a None)
-            compra_raw = await page.locator("#pCompra").text_content()
-            venta_raw  = await page.locator("#pVenta").text_content()
+            # Espera el bloque donde están Compra/Venta
+            await page.wait_for_selector("div.page_sectionCotiza__e2_eF", timeout=25000)
 
-            # Limpia y normaliza (soporta "S/ 3,567", "3.567", etc.)
-            compra_txt = re.sub(r"[^\d.,]", "", (compra_raw or "")).replace(",", ".")
-            venta_txt  = re.sub(r"[^\d.,]", "", (venta_raw  or "")).replace(",", ".")
+            # Dentro de ese bloque, suelen haber 2 <b> con los números (compra y venta)
+            bs = page.locator("div.page_sectionCotiza__e2_eF b")
+            await bs.first.wait_for(state="visible", timeout=25000)
 
-            compra = normalize_rate(compra_txt)  # -> None si 0 / inválido
-            venta  = normalize_rate(venta_txt)   # -> None si 0 / inválido
+            values = []
+            for i in range(await bs.count()):
+                t = (await bs.nth(i).inner_text() or "").strip()
+                values.extend(_extract_numbers(t))
+
+            # A veces los números están en un <p> completo; fallback por si acaso
+            if len(values) < 2:
+                block_text = await page.locator("div.page_sectionCotiza__e2_eF").inner_text()
+                values = _extract_numbers(block_text)
+
+            if len(values) < 2:
+                raise Exception(f"No se encontraron 2 tasas. Encontré: {values}")
+
+            compra = normalize_rate(values[0].replace(",", "."))
+            venta  = normalize_rate(values[1].replace(",", "."))
 
             return {
                 "casa": casa,
                 "url": url,
                 "compra": compra,
-                "venta":  venta,
+                "venta": venta,
             }
 
     except Exception as e:
@@ -46,8 +64,3 @@ async def scrap_cambiomas():
     finally:
         if browser:
             await browser.close()
-
-# Test manual (opcional)
-# if __name__ == "__main__":
-#     import asyncio
-#     print(asyncio.run(scrap_cambiomas()))
