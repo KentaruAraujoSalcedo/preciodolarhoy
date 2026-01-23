@@ -32,8 +32,8 @@
     "InkaMoney": {
       "casa": "InkaMoney",
       "url": "https://inkamoney.com/",
-      "compra": 3.361,
-      "venta": 3.349,
+      "compra": 3.359,
+      "venta": 3.348,
       "last_seen": "2026-01-23"
     },
     "CambioSeguro": {
@@ -53,14 +53,14 @@
     "JetPerú": {
       "casa": "JetPerú",
       "url": "https://jetperu.com.pe/cambiar-dinero/",
-      "compra": 3.35,
-      "venta": 3.354,
+      "compra": 3.351,
+      "venta": 3.355,
       "last_seen": "2026-01-23"
     },
     "Dichikash": {
       "casa": "Dichikash",
       "url": "https://dichikash.com/",
-      "compra": 3.348,
+      "compra": 3.346,
       "venta": 3.356,
       "last_seen": "2026-01-23"
     },
@@ -95,8 +95,8 @@
     "ChaskiDolar": {
       "casa": "ChaskiDolar",
       "url": "https://chaskidolar.com/",
-      "compra": 3.363,
-      "venta": 3.343,
+      "compra": 3.361,
+      "venta": 3.342,
       "last_seen": "2026-01-23"
     },
     "Intercambialo": {
@@ -124,7 +124,7 @@
       "casa": "Billex",
       "url": "https://www.billex.pe/",
       "compra": 3.295,
-      "venta": 3.407,
+      "venta": 3.408,
       "last_seen": "2026-01-23"
     },
     "Acomo": {
@@ -193,8 +193,8 @@
     "IntiCambio": {
       "casa": "IntiCambio",
       "url": "https://inticambio.pe/",
-      "compra": 3.35,
-      "venta": 3.356,
+      "compra": 3.349,
+      "venta": 3.354,
       "last_seen": "2026-01-23"
     },
     "Cambix": {
@@ -208,7 +208,7 @@
       "casa": "Securex",
       "url": "https://securex.pe/",
       "compra": 3.343,
-      "venta": 3.362,
+      "venta": 3.359,
       "last_seen": "2026-01-23"
     },
     "ChapaCambio": {
@@ -222,7 +222,7 @@
       "casa": "TuCambista",
       "url": "https://tucambista.pe/",
       "compra": 3.337,
-      "venta": 3.367,
+      "venta": 3.364,
       "last_seen": "2026-01-23"
     },
     "HirPower": {
@@ -235,7 +235,7 @@
     "DollarHouse": {
       "casa": "DollarHouse",
       "url": "https://app.dollarhouse.pe/",
-      "compra": 3.347,
+      "compra": 3.348,
       "venta": 3.357,
       "last_seen": "2026-01-23"
     },
