@@ -2,8 +2,8 @@
   {
     "casa": "Yanki",
     "url": "https://yanki.pe",
-    "compra": 3.348,
-    "venta": 3.365,
+    "compra": 3.343,
+    "venta": 3.367,
     "source": "scraper"
   },
   {
@@ -16,15 +16,15 @@
   {
     "casa": "Kambista",
     "url": "https://kambista.com/",
-    "compra": 3.338,
+    "compra": 3.335,
     "venta": 3.37,
     "source": "scraper"
   },
   {
     "casa": "Tkambio",
     "url": "https://tkambio.com/",
-    "compra": 3.344,
-    "venta": 3.367,
+    "compra": 3.342,
+    "venta": 3.372,
     "source": "scraper"
   },
   {
@@ -37,8 +37,8 @@
   {
     "casa": "CambioSeguro",
     "url": "https://cambioseguro.com/",
-    "compra": 3.345,
-    "venta": 3.376,
+    "compra": 3.347,
+    "venta": 3.37,
     "source": "scraper"
   },
   {
@@ -59,7 +59,7 @@
     "casa": "Dichikash",
     "url": "https://dichikash.com/",
     "compra": 3.35,
-    "venta": 3.358,
+    "venta": 3.36,
     "source": "scraper"
   },
   {
@@ -93,8 +93,8 @@
   {
     "casa": "ChaskiDolar",
     "url": "https://chaskidolar.com/",
-    "compra": 3.364,
-    "venta": 3.344,
+    "compra": 3.365,
+    "venta": 3.346,
     "source": "scraper"
   },
   {
@@ -177,11 +177,9 @@
   {
     "casa": "CambioMundial",
     "url": "https://www.cambiomundial.com/",
-    "compra": 3.352,
-    "venta": 3.358,
-    "source": "backup",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"#lblvalorcompra\") to be visible\n"
+    "compra": 3.346,
+    "venta": 3.362,
+    "source": "scraper"
   },
   {
     "casa": "TraderPeruFX",
@@ -216,7 +214,7 @@
   {
     "casa": "X-Cambio",
     "url": "https://x-cambio.com/",
-    "compra": 3.336,
+    "compra": 3.3345,
     "venta": 3.373,
     "source": "scraper"
   },
@@ -239,11 +237,9 @@
   {
     "casa": "MoneyHouse",
     "url": "https://moneyhouse.pe/",
-    "compra": 3.351,
-    "venta": 3.357,
-    "source": "backup",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: No se encontraron suficientes tasas"
+    "compra": 3.35,
+    "venta": 3.356,
+    "source": "scraper"
   },
   {
     "casa": "MercadoCambiario",
@@ -265,8 +261,8 @@
   {
     "casa": "IntiCambio",
     "url": "https://inticambio.pe/",
-    "compra": 3.349,
-    "venta": 3.355,
+    "compra": 3.351,
+    "venta": 3.356,
     "source": "scraper"
   },
   {
@@ -304,7 +300,7 @@
   {
     "casa": "Securex",
     "url": "https://securex.pe/",
-    "compra": 3.339,
+    "compra": 3.342,
     "venta": 3.364,
     "source": "scraper"
   },
