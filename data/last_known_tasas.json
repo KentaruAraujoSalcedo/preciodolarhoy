@@ -221,7 +221,7 @@
     "TuCambista": {
       "casa": "TuCambista",
       "url": "https://tucambista.pe/",
-      "compra": 3.339,
+      "compra": 3.338,
       "venta": 3.37,
       "last_seen": "2026-01-23"
     },
@@ -235,8 +235,8 @@
     "DollarHouse": {
       "casa": "DollarHouse",
       "url": "https://app.dollarhouse.pe/",
-      "compra": 3.35,
-      "venta": 3.357,
+      "compra": 3.345,
+      "venta": 3.36,
       "last_seen": "2026-01-23"
     },
     "SUNAT": {
@@ -244,6 +244,13 @@
       "url": "https://www.sunat.gob.pe/cl-at-ittipcam/tcS01Alias",
       "compra": 3.352,
       "venta": 3.36,
+      "last_seen": "2026-01-23"
+    },
+    "Dolarex": {
+      "casa": "Dolarex",
+      "url": "https://dolarex.pe/",
+      "compra": 3.347,
+      "venta": 3.365,
       "last_seen": "2026-01-23"
     }
   }
