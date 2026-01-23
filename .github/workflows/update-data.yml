@@ -37,6 +37,15 @@ jobs:
         run: |
           python run_scrapers.py
 
+      - name: Upload debug artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: debug-cambiafx
+          path: |
+            data/cambiafx_error.png
+            data/cambiafx_error.html
+
       - name: Commit updated data
         run: |
           git config user.name "github-actions[bot]"
