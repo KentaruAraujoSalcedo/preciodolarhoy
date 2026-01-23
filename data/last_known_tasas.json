@@ -130,7 +130,7 @@
     "Acomo": {
       "casa": "Acomo",
       "url": "https://acomo.com.pe/",
-      "compra": 3.344,
+      "compra": 3.343,
       "venta": 3.359,
       "last_seen": "2026-01-23"
     },
@@ -250,7 +250,7 @@
       "casa": "Dolarex",
       "url": "https://dolarex.pe/",
       "compra": 3.347,
-      "venta": 3.354,
+      "venta": 3.355,
       "last_seen": "2026-01-23"
     },
     "Safex": {
@@ -319,7 +319,7 @@
     "CambioDigitalPeru": {
       "casa": "CambioDigitalPeru",
       "url": "https://cambiodigitalperu.com",
-      "compra": 3.347,
+      "compra": 3.348,
       "venta": 3.357,
       "last_seen": "2026-01-23"
     }

@@ -142,11 +142,9 @@
   {
     "casa": "Acomo",
     "url": "https://acomo.com.pe/",
-    "compra": 3.344,
+    "compra": 3.343,
     "venta": 3.359,
-    "source": "last_known",
-    "last_seen": "2026-01-23",
-    "backup_fecha": "2026-01-20"
+    "source": "scraper"
   },
   {
     "casa": "ZonaDólar",
@@ -266,7 +264,7 @@
     "casa": "Dolarex",
     "url": "https://dolarex.pe/",
     "compra": 3.347,
-    "venta": 3.354,
+    "venta": 3.355,
     "source": "scraper"
   },
   {
@@ -321,7 +319,7 @@
   {
     "casa": "CambioDigitalPeru",
     "url": "https://cambiodigitalperu.com",
-    "compra": 3.347,
+    "compra": 3.348,
     "venta": 3.357,
     "source": "scraper"
   },
