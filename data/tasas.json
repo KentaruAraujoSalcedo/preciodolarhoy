@@ -281,7 +281,7 @@
     "venta": 3.0,
     "source": "backup",
     "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\".compra .valor\") to be visible\n"
+    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\".compra .valor\") to be visible\n    - locator resolved to hidden <span class=\"valor\" _ngcontent-fak-c1=\"\"></span>\n"
   },
   {
     "casa": "Cambix",
