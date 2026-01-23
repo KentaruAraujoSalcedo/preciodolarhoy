@@ -60,10 +60,7 @@
     "url": "https://dichikash.com/",
     "compra": 3.348,
     "venta": 3.359,
-    "source": "last_known",
-    "last_seen": "2026-01-23",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"input#numero2\")\n"
+    "source": "scraper"
   },
   {
     "casa": "Instakash",
@@ -84,10 +81,7 @@
     "url": "https://www.smartdollar.pe/",
     "compra": 3.355,
     "venta": 3.368,
-    "source": "last_known",
-    "last_seen": "2026-01-23",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Locator.text_content: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\".cantant\").first\n"
+    "source": "scraper"
   },
   {
     "casa": "CambioX",
@@ -108,20 +102,14 @@
     "url": "https://intercambialo.pe/",
     "compra": 3.338,
     "venta": 3.369,
-    "source": "last_known",
-    "last_seen": "2026-01-23",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://intercambialo.pe/\", waiting until \"load\"\n"
+    "source": "scraper"
   },
   {
     "casa": "WesternUnion",
     "url": "https://www.westernunionperu.pe/cambiodemoneda",
     "compra": 3.34,
     "venta": 3.367,
-    "source": "last_known",
-    "last_seen": "2026-01-23",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.goto: net::ERR_CONNECTION_REFUSED at https://www.westernunionperu.pe/cambiodemoneda\nCall log:\n  - navigating to \"https://www.westernunionperu.pe/cambiodemoneda\", waiting until \"load\"\n"
+    "source": "scraper"
   },
   {
     "casa": "KallpaCambios",
@@ -162,19 +150,14 @@
     "url": "https://acomo.com.pe/",
     "compra": 3.343,
     "venta": 3.362,
-    "source": "last_known",
-    "last_seen": "2026-01-23",
-    "backup_fecha": "2026-01-20"
+    "source": "scraper"
   },
   {
     "casa": "ZonaDólar",
     "url": "https://zonadolar.pe/",
     "compra": 3.399,
     "venta": 3.321,
-    "source": "last_known",
-    "last_seen": "2026-01-23",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\".text-base\") to be visible\n"
+    "source": "scraper"
   },
   {
     "casa": "SRCambio",
@@ -218,10 +201,7 @@
     "url": "https://perudolar.pe/",
     "compra": 3.3,
     "venta": 3.4,
-    "source": "last_known",
-    "last_seen": "2026-01-23",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"#preciosHome\") to be visible\n"
+    "source": "scraper"
   },
   {
     "casa": "MidpointFX",
@@ -235,10 +215,7 @@
     "url": "https://cambiosol.pe/",
     "compra": 3.34,
     "venta": 3.366,
-    "source": "last_known",
-    "last_seen": "2026-01-23",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"#buy-rate-display\") to be visible\n"
+    "source": "scraper"
   },
   {
     "casa": "X-Cambio",
@@ -252,10 +229,7 @@
     "url": "https://www.rissanpe.com/",
     "compra": 3.35,
     "venta": 3.378,
-    "source": "last_known",
-    "last_seen": "2026-01-23",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"h2.elementor-heading-title\") to be visible\n"
+    "source": "scraper"
   },
   {
     "casa": "CambioMas",
@@ -291,8 +265,7 @@
     "compra": 3.0,
     "venta": 3.0,
     "source": "backup",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"#tc_compra\") to be visible\n    - waiting for\" https://www.vipcapitalbusiness.com/\" navigation to finish...\n    - navigated to \"https://www.vipcapitalbusiness.com/\"\n"
+    "backup_fecha": "2026-01-20"
   },
   {
     "casa": "IntiCambio",
@@ -308,7 +281,7 @@
     "venta": 3.0,
     "source": "backup",
     "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\".compra .valor\") to be visible\n"
+    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\".compra .valor\") to be visible\n    - locator resolved to hidden <span class=\"valor\" _ngcontent-gmo-c1=\"\"></span>\n"
   },
   {
     "casa": "Cambix",
