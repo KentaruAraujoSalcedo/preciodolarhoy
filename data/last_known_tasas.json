@@ -18,8 +18,8 @@
     "Kambista": {
       "casa": "Kambista",
       "url": "https://kambista.com/",
-      "compra": 3.338,
-      "venta": 3.366,
+      "compra": 3.336,
+      "venta": 3.367,
       "last_seen": "2026-01-23"
     },
     "Tkambio": {
@@ -32,8 +32,8 @@
     "InkaMoney": {
       "casa": "InkaMoney",
       "url": "https://inkamoney.com/",
-      "compra": 3.362,
-      "venta": 3.352,
+      "compra": 3.361,
+      "venta": 3.349,
       "last_seen": "2026-01-23"
     },
     "CambioSeguro": {
@@ -46,7 +46,7 @@
     "Okane": {
       "casa": "Okane",
       "url": "https://okanecambiodigital.com/",
-      "compra": 3.35,
+      "compra": 3.349,
       "venta": 3.359,
       "last_seen": "2026-01-23"
     },
@@ -60,7 +60,7 @@
     "Dichikash": {
       "casa": "Dichikash",
       "url": "https://dichikash.com/",
-      "compra": 3.349,
+      "compra": 3.351,
       "venta": 3.359,
       "last_seen": "2026-01-23"
     },
@@ -130,8 +130,8 @@
     "Acomo": {
       "casa": "Acomo",
       "url": "https://acomo.com.pe/",
-      "compra": 3.343,
-      "venta": 3.359,
+      "compra": 3.337,
+      "venta": 3.36,
       "last_seen": "2026-01-23"
     },
     "ZonaDólar": {
@@ -172,8 +172,8 @@
     "X-Cambio": {
       "casa": "X-Cambio",
       "url": "https://x-cambio.com/",
-      "compra": 3.336,
-      "venta": 3.369,
+      "compra": 3.334,
+      "venta": 3.37,
       "last_seen": "2026-01-23"
     },
     "RissanPE": {
@@ -249,8 +249,8 @@
     "Dolarex": {
       "casa": "Dolarex",
       "url": "https://dolarex.pe/",
-      "compra": 3.347,
-      "venta": 3.355,
+      "compra": 3.35,
+      "venta": 3.357,
       "last_seen": "2026-01-23"
     },
     "Safex": {
