@@ -30,22 +30,22 @@
   {
     "casa": "InkaMoney",
     "url": "https://inkamoney.com/",
-    "compra": 3.36,
-    "venta": 3.35,
+    "compra": 3.362,
+    "venta": 3.353,
     "source": "scraper"
   },
   {
     "casa": "CambioSeguro",
     "url": "https://cambioseguro.com/",
-    "compra": 3.344,
-    "venta": 3.367,
+    "compra": 3.339,
+    "venta": 3.366,
     "source": "scraper"
   },
   {
     "casa": "Okane",
     "url": "https://okanecambiodigital.com/",
-    "compra": 3.347,
-    "venta": 3.357,
+    "compra": 3.348,
+    "venta": 3.359,
     "source": "scraper"
   },
   {
@@ -58,8 +58,8 @@
   {
     "casa": "Dichikash",
     "url": "https://dichikash.com/",
-    "compra": 3.346,
-    "venta": 3.356,
+    "compra": 3.348,
+    "venta": 3.358,
     "source": "scraper"
   },
   {
@@ -93,14 +93,14 @@
   {
     "casa": "ChaskiDolar",
     "url": "https://chaskidolar.com/",
-    "compra": 3.362,
-    "venta": 3.343,
+    "compra": 3.363,
+    "venta": 3.344,
     "source": "scraper"
   },
   {
     "casa": "Intercambialo",
     "url": "https://intercambialo.pe/",
-    "compra": 3.34,
+    "compra": 3.337,
     "venta": 3.366,
     "source": "scraper"
   },
@@ -265,7 +265,7 @@
   {
     "casa": "Dolarex",
     "url": "https://dolarex.pe/",
-    "compra": 3.35,
+    "compra": 3.348,
     "venta": 3.355,
     "source": "scraper"
   },
@@ -274,10 +274,7 @@
     "url": "https://cambix.com.pe/",
     "compra": 3.34,
     "venta": 3.36,
-    "source": "last_known",
-    "last_seen": "2026-01-23",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Locator.all_text_contents: Execution context was destroyed, most likely because of a navigation"
+    "source": "scraper"
   },
   {
     "casa": "DLS Money",
@@ -305,14 +302,14 @@
   {
     "casa": "ChapaCambio",
     "url": "https://chapacambio.com/",
-    "compra": 3.34,
+    "compra": 3.339,
     "venta": 3.365,
     "source": "scraper"
   },
   {
     "casa": "TuCambista",
     "url": "https://tucambista.pe/",
-    "compra": 3.338,
+    "compra": 3.337,
     "venta": 3.365,
     "source": "scraper"
   },
