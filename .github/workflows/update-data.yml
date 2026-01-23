@@ -41,6 +41,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/tasas.json data/historico.json
+          git add data/tasas.json data/historico.json data/last_known_tasas.json
           git commit -m "Update data" || exit 0
           git push

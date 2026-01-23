@@ -99,12 +99,14 @@ def is_valid_rate(item: dict) -> bool:
     except Exception:
         return False
 
-
-def apply_backup_to_results(results, backup_map, fecha_backup=None):
+def apply_fallbacks(results, last_map, backup_map, fecha_backup=None):
     """
-    Mezcla resultados con backup:
-    - 1 SOLO item por casa.
-    - Prioridad: scraper válido > backup válido > missing
+    Mezcla resultados con:
+      - scraper válido
+      - last known (auto)
+      - backup manual
+      - missing
+    1 SOLO item por casa.
     """
     merged_by_casa = {}
 
@@ -117,15 +119,32 @@ def apply_backup_to_results(results, backup_map, fecha_backup=None):
             continue
 
         b = backup_map.get(casa)
+        lk = last_map.get(casa) if isinstance(last_map, dict) else None
 
-        # Caso 1: scraper válido
+        # 1) Scraper válido
         if is_valid_rate(r):
             r["source"] = "scraper"
             merged_by_casa[casa] = r
             continue
 
-        # Caso 2: scraper falló pero hay backup válido
-        if b and b.get("compra") is not None and b.get("venta") is not None:
+        # 2) Last known válido
+        if isinstance(lk, dict) and lk.get("compra") is not None and lk.get("venta") is not None:
+            merged_item = {
+                "casa": casa,
+                "url": r.get("url") or lk.get("url") or (b.get("url") if isinstance(b, dict) else None),
+                "compra": lk.get("compra"),
+                "venta": lk.get("venta"),
+                "source": "last_known",
+                "last_seen": lk.get("last_seen"),
+                "backup_fecha": fecha_backup
+            }
+            if r.get("error"):
+                merged_item["scraper_error"] = r["error"]
+            merged_by_casa[casa] = merged_item
+            continue
+
+        # 3) Backup manual válido
+        if isinstance(b, dict) and b.get("compra") is not None and b.get("venta") is not None:
             merged_item = {
                 "casa": casa,
                 "url": r.get("url") or b.get("url"),
@@ -139,10 +158,10 @@ def apply_backup_to_results(results, backup_map, fecha_backup=None):
             merged_by_casa[casa] = merged_item
             continue
 
-        # Caso 3: no hay scraper válido y tampoco backup válido => missing
+        # 4) Missing
         merged_item = {
             "casa": casa,
-            "url": r.get("url") or (b.get("url") if isinstance(b, dict) else None),
+            "url": r.get("url") or (lk.get("url") if isinstance(lk, dict) else None) or (b.get("url") if isinstance(b, dict) else None),
             "source": "missing",
             "backup_fecha": fecha_backup,
         }
@@ -151,6 +170,58 @@ def apply_backup_to_results(results, backup_map, fecha_backup=None):
         merged_by_casa[casa] = merged_item
 
     return list(merged_by_casa.values())
+
+# 2.5) Last known: cargar/guardar último valor válido (auto)
+def load_last_known(path="data/last_known_tasas.json"):
+    """
+    Devuelve (last_map, updated_at)
+    last_map["Rextie"] = {"casa":..., "url":..., "compra":..., "venta":..., "last_seen":"YYYY-MM-DD"}
+    """
+    p = Path(path)
+    if not p.exists():
+        return {}, None
+
+    data = json.loads(p.read_text(encoding="utf-8"))
+    updated_at = data.get("updated_at")
+    casas = data.get("casas", {})
+    if not isinstance(casas, dict):
+        casas = {}
+    return casas, updated_at
+
+
+def save_last_known(last_map, path="data/last_known_tasas.json"):
+    """
+    Guarda last_map en disco.
+    """
+    payload = {
+        "updated_at": str(date.today()),
+        "casas": last_map
+    }
+    os.makedirs(Path(path).parent, exist_ok=True)
+    Path(path).write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def update_last_known_from_scraper_results(raw_results, last_map):
+    """
+    Recorre resultados crudos de scrapers y si una casa tiene compra/venta válidos,
+    actualiza last_map[casa] con esos valores (y last_seen=hoy).
+    """
+    hoy = str(date.today())
+    for r in raw_results:
+        if not isinstance(r, dict):
+            continue
+        casa = r.get("casa")
+        if not casa:
+            continue
+        if is_valid_rate(r):
+            last_map[casa] = {
+                "casa": casa,
+                "url": r.get("url"),
+                "compra": r.get("compra"),
+                "venta": r.get("venta"),
+                "last_seen": hoy
+            }
+    return last_map
 
 # 3) MAIN: ejecuta scrapers, aplica backup, guarda tasas, histórico
 async def main():
@@ -212,15 +283,22 @@ async def main():
         resultados.append(await _safe_call(name, coro))
 
     # ---- Limpiar resultados (quitar None / cosas raras) ----
-    resultados = [r for r in resultados if isinstance(r, dict)]
+    resultados_raw = [r for r in resultados if isinstance(r, dict)]
 
-    # ---- Aplicar backup manual (si existe) ----
+    # ---- Cargar last known ----
+    last_map, last_updated_at = load_last_known("data/last_known_tasas.json")
+
+    # ---- Actualizar last known con los scrapers que salieron bien HOY ----
+    last_map = update_last_known_from_scraper_results(resultados_raw, last_map)
+    save_last_known(last_map, "data/last_known_tasas.json")
+    print("💾 Last-known actualizado (data/last_known_tasas.json)")
+
+    # ---- Cargar backup manual ----
     backup_map, fecha_backup = load_backup_map("data/backup_tasas.json")
-    if backup_map:
-        resultados = apply_backup_to_results(resultados, backup_map, fecha_backup)
-        print(f"🛟 Backup aplicado (fecha_backup={fecha_backup})")
-    else:
-        print("ℹ️ No hay backup_tasas.json, se guarda solo lo del scraper")
+
+    # ---- Aplicar fallbacks: scraper > last_known > backup > missing ----
+    resultados = apply_fallbacks(resultados_raw, last_map, backup_map, fecha_backup)
+    print(f"🧩 Fallbacks aplicados (backup_fecha={fecha_backup}, last_known_updated_at={last_updated_at})")
 
     # ---- Guardar tasas finales (scraper + backup) ----
     os.makedirs("data", exist_ok=True)
@@ -229,7 +307,7 @@ async def main():
     print("✅ Tasas guardadas en data/tasas.json")
 
     # 4) HISTÓRICO SUNAT (solo toma SUNAT y lo guarda por fecha)
-    sunat_data = next((r for r in resultados if r.get("casa") == "SUNAT"), None)
+    sunat_data = next((r for r in resultados_raw if r.get("casa") == "SUNAT"), None)
     if sunat_data and sunat_data.get("compra") and sunat_data.get("venta"):
         sunat_compra = sunat_data["compra"]
         sunat_venta = sunat_data["venta"]
