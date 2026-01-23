@@ -16,8 +16,8 @@
   {
     "casa": "Kambista",
     "url": "https://kambista.com/",
-    "compra": 3.339,
-    "venta": 3.364,
+    "compra": 3.338,
+    "venta": 3.366,
     "source": "scraper"
   },
   {
@@ -58,15 +58,15 @@
   {
     "casa": "Dichikash",
     "url": "https://dichikash.com/",
-    "compra": 3.349,
-    "venta": 3.357,
+    "compra": 3.348,
+    "venta": 3.356,
     "source": "scraper"
   },
   {
     "casa": "Instakash",
     "url": "https://instakash.net/",
-    "compra": 3.343,
-    "venta": 3.361,
+    "compra": 3.34,
+    "venta": 3.366,
     "source": "scraper"
   },
   {
@@ -114,32 +114,30 @@
   {
     "casa": "KallpaCambios",
     "url": "https://kallpacambios.com/",
-    "compra": 3.336,
+    "compra": 3.339,
     "venta": 3.368,
     "source": "scraper"
   },
   {
     "casa": "Billex",
     "url": "https://www.billex.pe/",
-    "compra": 3.296,
-    "venta": 3.408,
+    "compra": 3.295,
+    "venta": 3.407,
     "source": "scraper"
   },
   {
     "casa": "Safex",
     "url": "https://www.safex.pe/",
-    "compra": 3.342,
-    "venta": 3.364,
+    "compra": 3.341,
+    "venta": 3.365,
     "source": "scraper"
   },
   {
     "casa": "CambiaFX",
     "url": "https://cambiafx.pe/",
-    "compra": 3.0,
-    "venta": 3.0,
-    "source": "backup",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Locator.wait_for: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator(\"button[aria-label*=\\\"compra de dólares\\\" i]\").first to be visible\n"
+    "compra": 3.344,
+    "venta": 3.36,
+    "source": "scraper"
   },
   {
     "casa": "Acomo",
@@ -216,8 +214,8 @@
   {
     "casa": "X-Cambio",
     "url": "https://x-cambio.com/",
-    "compra": 3.337,
-    "venta": 3.367,
+    "compra": 3.336,
+    "venta": 3.369,
     "source": "scraper"
   },
   {
@@ -250,7 +248,7 @@
     "casa": "MercadoCambiario",
     "url": "https://mercadocambiario.pe/",
     "compra": 3.35,
-    "venta": 3.354,
+    "venta": 3.356,
     "source": "scraper"
   },
   {
@@ -300,8 +298,8 @@
   {
     "casa": "Securex",
     "url": "https://securex.pe/",
-    "compra": 3.348,
-    "venta": 3.36,
+    "compra": 3.343,
+    "venta": 3.362,
     "source": "scraper"
   },
   {
@@ -314,12 +312,9 @@
   {
     "casa": "TuCambista",
     "url": "https://tucambista.pe/",
-    "compra": 3.34,
-    "venta": 3.369,
-    "source": "last_known",
-    "last_seen": "2026-01-23",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: No se encontraron suficientes tasas válidas"
+    "compra": 3.337,
+    "venta": 3.367,
+    "source": "scraper"
   },
   {
     "casa": "HirPower",
