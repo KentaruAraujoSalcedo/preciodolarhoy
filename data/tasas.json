@@ -179,7 +179,10 @@
     "url": "https://www.cambiomundial.com/",
     "compra": 3.346,
     "venta": 3.362,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-22",
+    "backup_fecha": "2026-01-20",
+    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"#lblvalorcompra\") to be visible\n"
   },
   {
     "casa": "TraderPeruFX",
@@ -239,7 +242,10 @@
     "url": "https://moneyhouse.pe/",
     "compra": 3.35,
     "venta": 3.356,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-22",
+    "backup_fecha": "2026-01-20",
+    "scraper_error": "No se pudo scrapear: No se encontraron suficientes tasas"
   },
   {
     "casa": "MercadoCambiario",
@@ -353,8 +359,8 @@
   {
     "casa": "SUNAT",
     "url": "https://www.sunat.gob.pe/cl-at-ittipcam/tcS01Alias",
-    "compra": 3.353,
-    "venta": 3.359,
+    "compra": 3.352,
+    "venta": 3.36,
     "source": "scraper"
   }
 ]
