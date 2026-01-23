@@ -30,8 +30,8 @@
   {
     "casa": "InkaMoney",
     "url": "https://inkamoney.com/",
-    "compra": 3.361,
-    "venta": 3.349,
+    "compra": 3.365,
+    "venta": 3.35,
     "source": "scraper"
   },
   {
@@ -44,8 +44,8 @@
   {
     "casa": "Okane",
     "url": "https://okanecambiodigital.com/",
-    "compra": 3.349,
-    "venta": 3.359,
+    "compra": 3.33,
+    "venta": 3.38,
     "source": "scraper"
   },
   {
@@ -65,7 +65,7 @@
   {
     "casa": "Instakash",
     "url": "https://instakash.net/",
-    "compra": 3.344,
+    "compra": 3.342,
     "venta": 3.362,
     "source": "scraper"
   },
@@ -93,8 +93,8 @@
   {
     "casa": "ChaskiDolar",
     "url": "https://chaskidolar.com/",
-    "compra": 3.362,
-    "venta": 3.343,
+    "compra": 3.363,
+    "venta": 3.342,
     "source": "scraper"
   },
   {
@@ -116,34 +116,37 @@
     "url": "https://kallpacambios.com/",
     "compra": 3.339,
     "venta": 3.368,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-23",
+    "backup_fecha": "2026-01-20",
+    "scraper_error": "No se pudo scrapear: Page.wait_for_function: Timeout 25000ms exceeded."
   },
   {
     "casa": "Billex",
     "url": "https://www.billex.pe/",
-    "compra": 3.295,
-    "venta": 3.408,
+    "compra": 3.336,
+    "venta": 3.367,
     "source": "scraper"
   },
   {
     "casa": "Safex",
     "url": "https://www.safex.pe/",
     "compra": 3.341,
-    "venta": 3.365,
+    "venta": 3.368,
     "source": "scraper"
   },
   {
     "casa": "CambiaFX",
     "url": "https://cambiafx.pe/",
-    "compra": 3.346,
-    "venta": 3.363,
+    "compra": 3.339,
+    "venta": 3.365,
     "source": "scraper"
   },
   {
     "casa": "Acomo",
     "url": "https://acomo.com.pe/",
-    "compra": 3.337,
-    "venta": 3.36,
+    "compra": 3.34,
+    "venta": 3.361,
     "source": "scraper"
   },
   {
@@ -163,8 +166,8 @@
   {
     "casa": "Kambio",
     "url": "https://www.kambio.online/",
-    "compra": 3.352,
-    "venta": 3.357,
+    "compra": 3.35,
+    "venta": 3.36,
     "source": "scraper"
   },
   {
@@ -174,8 +177,7 @@
     "venta": 2.0,
     "source": "last_known",
     "last_seen": "2026-01-22",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"#lblvalorcompra\") to be visible\n"
+    "backup_fecha": "2026-01-20"
   },
   {
     "casa": "TraderPeruFX",
@@ -251,13 +253,15 @@
     "url": "https://www.vipcapitalbusiness.com/",
     "compra": 3.34,
     "venta": 3.365,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-23",
+    "backup_fecha": "2026-01-20"
   },
   {
     "casa": "IntiCambio",
     "url": "https://inticambio.pe/",
-    "compra": 3.35,
-    "venta": 3.355,
+    "compra": 3.351,
+    "venta": 3.356,
     "source": "scraper"
   },
   {
@@ -265,13 +269,16 @@
     "url": "https://dolarex.pe/",
     "compra": 3.35,
     "venta": 3.357,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-23",
+    "backup_fecha": "2026-01-20",
+    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\".compra .valor\") to be visible\n"
   },
   {
     "casa": "Cambix",
     "url": "https://cambix.com.pe/",
-    "compra": 3.34,
-    "venta": 3.36,
+    "compra": 3.33,
+    "venta": 3.37,
     "source": "scraper"
   },
   {
@@ -285,28 +292,28 @@
     "casa": "DinersFX",
     "url": "https://dinersfx.pe/",
     "compra": 3.328,
-    "venta": 3.443,
+    "venta": 3.403,
     "source": "scraper"
   },
   {
     "casa": "Securex",
     "url": "https://securex.pe/",
     "compra": 3.344,
-    "venta": 3.357,
+    "venta": 3.36,
     "source": "scraper"
   },
   {
     "casa": "ChapaCambio",
     "url": "https://chapacambio.com/",
     "compra": 3.339,
-    "venta": 3.365,
+    "venta": 3.366,
     "source": "scraper"
   },
   {
     "casa": "TuCambista",
     "url": "https://tucambista.pe/",
-    "compra": 3.337,
-    "venta": 3.365,
+    "compra": 3.336,
+    "venta": 3.366,
     "source": "scraper"
   },
   {
@@ -320,7 +327,7 @@
     "casa": "CambioDigitalPeru",
     "url": "https://cambiodigitalperu.com",
     "compra": 3.348,
-    "venta": 3.357,
+    "venta": 3.358,
     "source": "scraper"
   },
   {
@@ -333,9 +340,7 @@
   {
     "casa": "Global66",
     "url": "https://www.global66.com/pe/envios-de-dinero/",
-    "compra": 3.0,
-    "venta": 3.0,
-    "source": "backup",
+    "source": "missing",
     "backup_fecha": "2026-01-20",
     "scraper_error": "No se pudo scrapear: Page.wait_for_function: Timeout 20000ms exceeded."
   },
