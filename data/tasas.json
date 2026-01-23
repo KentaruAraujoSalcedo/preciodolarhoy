@@ -44,8 +44,8 @@
   {
     "casa": "Okane",
     "url": "https://okanecambiodigital.com/",
-    "compra": 3.33,
-    "venta": 3.37,
+    "compra": 0.0,
+    "venta": 0.0,
     "source": "scraper"
   },
   {
@@ -81,7 +81,10 @@
     "url": "https://www.smartdollar.pe/",
     "compra": 3.355,
     "venta": 3.368,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-23",
+    "backup_fecha": "2026-01-20",
+    "scraper_error": "No se pudo scrapear: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.smartdollar.pe/\", waiting until \"load\"\n"
   },
   {
     "casa": "CambioX",
@@ -281,7 +284,7 @@
     "venta": 3.0,
     "source": "backup",
     "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\".compra .valor\") to be visible\n    - locator resolved to hidden <span class=\"valor\" _ngcontent-fak-c1=\"\"></span>\n"
+    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\".compra .valor\") to be visible\n"
   },
   {
     "casa": "Cambix",
