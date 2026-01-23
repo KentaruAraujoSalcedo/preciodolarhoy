@@ -9,8 +9,8 @@
   {
     "casa": "Rextie",
     "url": "https://www.rextie.com/",
-    "compra": 3.336,
-    "venta": 3.368,
+    "compra": 3.334,
+    "venta": 3.3705,
     "source": "scraper"
   },
   {
@@ -44,8 +44,8 @@
   {
     "casa": "Okane",
     "url": "https://okanecambiodigital.com/",
-    "compra": 3.348,
-    "venta": 3.358,
+    "compra": 3.35,
+    "venta": 3.359,
     "source": "scraper"
   },
   {
@@ -58,8 +58,8 @@
   {
     "casa": "Dichikash",
     "url": "https://dichikash.com/",
-    "compra": 3.35,
-    "venta": 3.36,
+    "compra": 3.349,
+    "venta": 3.359,
     "source": "scraper"
   },
   {
@@ -144,7 +144,9 @@
     "url": "https://acomo.com.pe/",
     "compra": 3.344,
     "venta": 3.359,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-23",
+    "backup_fecha": "2026-01-20"
   },
   {
     "casa": "ZonaDólar",
@@ -163,8 +165,8 @@
   {
     "casa": "Kambio",
     "url": "https://www.kambio.online/",
-    "compra": 3.353,
-    "venta": 3.358,
+    "compra": 3.352,
+    "venta": 3.357,
     "source": "scraper"
   },
   {
@@ -263,8 +265,8 @@
   {
     "casa": "Dolarex",
     "url": "https://dolarex.pe/",
-    "compra": 3.348,
-    "venta": 3.356,
+    "compra": 3.347,
+    "venta": 3.354,
     "source": "scraper"
   },
   {
@@ -285,7 +287,7 @@
     "casa": "DinersFX",
     "url": "https://dinersfx.pe/",
     "compra": 3.328,
-    "venta": 3.403,
+    "venta": 3.443,
     "source": "scraper"
   },
   {
@@ -319,11 +321,9 @@
   {
     "casa": "CambioDigitalPeru",
     "url": "https://cambiodigitalperu.com",
-    "compra": 3.0,
-    "venta": 3.0,
-    "source": "backup",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"#dolarcompra\") to be visible\n"
+    "compra": 3.347,
+    "venta": 3.357,
+    "source": "scraper"
   },
   {
     "casa": "DollarHouse",
