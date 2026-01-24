@@ -3,12 +3,10 @@ import re
 from playwright.async_api import async_playwright
 from scrapers.utils import normalize_rate
 
-_NUM_RE = re.compile(r"\d+[.,]\d+")
-
-def _extract_number(txt: str):
-    if not txt:
+def _pick_number(s: str):
+    if not s:
         return None
-    m = _NUM_RE.search(txt)
+    m = re.search(r"\d+[.,]\d+", s)
     return m.group(0) if m else None
 
 async def scrap_moneyhouse():
@@ -23,7 +21,7 @@ async def scrap_moneyhouse():
                 args=[
                     "--disable-blink-features=AutomationControlled",
                     "--no-sandbox",
-                    "--disable-setuid-sandbox",
+                    "--disable-dev-shm-usage",
                 ],
             )
 
@@ -31,7 +29,7 @@ async def scrap_moneyhouse():
                 locale="es-PE",
                 timezone_id="America/Lima",
                 user_agent=(
-                    "Mozilla/5.0 (X11; Linux x86_64) "
+                    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
                     "AppleWebKit/537.36 (KHTML, like Gecko) "
                     "Chrome/120.0.0.0 Safari/537.36"
                 ),
@@ -39,56 +37,80 @@ async def scrap_moneyhouse():
             )
 
             page = await context.new_page()
+
+            # En GitHub Actions: networkidle puede colgarse.
             await page.goto(url, timeout=60000, wait_until="domcontentloaded")
 
-            # si hay banner de cookies
+            # mini respiro + intento de networkidle sin fallar
             try:
-                await page.get_by_role("button", name=re.compile("ACEPTAR", re.I)).click(timeout=3000)
+                await page.wait_for_load_state("networkidle", timeout=8000)
             except Exception:
                 pass
 
-            compra_wrap = page.locator(".views-field-field-t-c-compra").first
-            venta_wrap  = page.locator(".views-field-field-t-c-venta").first
+            # Cerrar cookies si aparece (a veces tapa contenido)
+            try:
+                await page.get_by_role("button", name=re.compile(r"aceptar", re.I)).click(timeout=3000)
+            except Exception:
+                pass
 
-            await compra_wrap.wait_for(state="attached", timeout=40000)
-            await venta_wrap.wait_for(state="attached", timeout=40000)
+            # Espera un contenedor más “general” (menos frágil)
+            await page.wait_for_selector(".views-row, .view-content, .principalcontenido", timeout=40000)
 
-            # Espera hasta que el TEXTO del contenedor tenga un número válido
-            await page.wait_for_function(
+            # Extraer por JS de forma ultra tolerante:
+            # - prueba varios selectores
+            # - si está vacío, intenta leer ::before (por si el valor está como pseudo-elemento)
+            data = await page.evaluate(
                 """() => {
-                    const getNum = (sel) => {
-                        const el = document.querySelector(sel);
-                        if (!el) return null;
-                        const t = (el.textContent || "").trim();
-                        const m = t.match(/\\d+[\\.,]\\d+/);
-                        return m ? m[0] : null;
+                    const selectors = [
+                      ".views-field-field-t-c-compra span.cant",
+                      ".views-field-field-t-c-compra span.cantant",
+                      ".views-field-field-t-c-venta span.cant",
+                      ".views-field-field-t-c-venta span.cantant",
+                    ];
+
+                    const readText = (sel) => {
+                      const el = document.querySelector(sel);
+                      if (!el) return null;
+
+                      const txt = (el.textContent || "").trim();
+                      if (txt) return txt;
+
+                      // fallback: pseudo-elemento ::before
+                      try {
+                        const b = getComputedStyle(el, "::before").content;
+                        if (b && b !== "none") return b.replaceAll('"', '').trim();
+                      } catch (e) {}
+
+                      return null;
                     };
 
-                    const c = getNum(".views-field-field-t-c-compra");
-                    const v = getNum(".views-field-field-t-c-venta");
-                    if (!c || !v) return false;
+                    const compraTxt =
+                      readText(".views-field-field-t-c-compra span.cant") ||
+                      readText(".views-field-field-t-c-compra span.cantant") ||
+                      null;
 
-                    const cf = parseFloat(c.replace(",", "."));
-                    const vf = parseFloat(v.replace(",", "."));
-                    return cf > 0 && vf > 0 && c !== "0.000" && v !== "0.000";
-                }""",
-                timeout=40000
+                    const ventaTxt =
+                      readText(".views-field-field-t-c-venta span.cant") ||
+                      readText(".views-field-field-t-c-venta span.cantant") ||
+                      null;
+
+                    return { compraTxt, ventaTxt };
+                }"""
             )
 
-            compra_text = (await compra_wrap.text_content() or "").strip()
-            venta_text  = (await venta_wrap.text_content() or "").strip()
-
-            compra_num = _extract_number(compra_text)
-            venta_num  = _extract_number(venta_text)
+            compra_num = _pick_number(data.get("compraTxt") or "")
+            venta_num  = _pick_number(data.get("ventaTxt") or "")
 
             compra = normalize_rate(compra_num) if compra_num else None
-            venta  = normalize_rate(venta_num) if venta_num else None
+            venta  = normalize_rate(venta_num)  if venta_num else None
+
+            if compra is None or venta is None:
+                raise Exception(f"No se encontraron tasas válidas (compraTxt={data.get('compraTxt')}, ventaTxt={data.get('ventaTxt')})")
 
             return {"casa": casa, "url": url, "compra": compra, "venta": venta}
 
     except Exception as e:
         return {"casa": casa, "url": url, "compra": None, "venta": None, "error": f"No se pudo scrapear: {e}"}
-
     finally:
         if browser:
             await browser.close()
