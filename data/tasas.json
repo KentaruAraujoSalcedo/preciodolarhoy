@@ -17,7 +17,7 @@
     "casa": "Kambista",
     "url": "https://kambista.com/",
     "compra": 3.338,
-    "venta": 3.367,
+    "venta": 3.366,
     "source": "scraper"
   },
   {
@@ -44,8 +44,8 @@
   {
     "casa": "Okane",
     "url": "https://okanecambiodigital.com/",
-    "compra": 3.35,
-    "venta": 3.359,
+    "compra": 3.348,
+    "venta": 3.358,
     "source": "scraper"
   },
   {
@@ -58,14 +58,14 @@
   {
     "casa": "Dichikash",
     "url": "https://dichikash.com/",
-    "compra": 3.352,
-    "venta": 3.362,
+    "compra": 3.35,
+    "venta": 3.36,
     "source": "scraper"
   },
   {
     "casa": "Instakash",
     "url": "https://instakash.net/",
-    "compra": 3.348,
+    "compra": 3.35,
     "venta": 3.362,
     "source": "scraper"
   },
@@ -250,15 +250,15 @@
   {
     "casa": "IntiCambio",
     "url": "https://inticambio.pe/",
-    "compra": 3.35,
-    "venta": 3.355,
+    "compra": 3.349,
+    "venta": 3.354,
     "source": "scraper"
   },
   {
     "casa": "Dolarex",
     "url": "https://dolarex.pe/",
-    "compra": 3.351,
-    "venta": 3.359,
+    "compra": 3.35,
+    "venta": 3.357,
     "source": "scraper"
   },
   {
