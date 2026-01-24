@@ -25,14 +25,14 @@
     "Tkambio": {
       "casa": "Tkambio",
       "url": "https://tkambio.com/",
-      "compra": 3.344,
+      "compra": 3.346,
       "venta": 3.369,
       "last_seen": "2026-01-24"
     },
     "InkaMoney": {
       "casa": "InkaMoney",
       "url": "https://inkamoney.com/",
-      "compra": 3.363,
+      "compra": 3.361,
       "venta": 3.35,
       "last_seen": "2026-01-24"
     },
@@ -47,7 +47,7 @@
       "casa": "Okane",
       "url": "https://okanecambiodigital.com/",
       "compra": 3.348,
-      "venta": 3.357,
+      "venta": 3.356,
       "last_seen": "2026-01-24"
     },
     "JetPerú": {
@@ -60,8 +60,8 @@
     "Dichikash": {
       "casa": "Dichikash",
       "url": "https://dichikash.com/",
-      "compra": 3.35,
-      "venta": 3.36,
+      "compra": 3.348,
+      "venta": 3.356,
       "last_seen": "2026-01-24"
     },
     "Instakash": {
@@ -95,8 +95,8 @@
     "ChaskiDolar": {
       "casa": "ChaskiDolar",
       "url": "https://chaskidolar.com/",
-      "compra": 3.36,
-      "venta": 3.343,
+      "compra": 3.361,
+      "venta": 3.344,
       "last_seen": "2026-01-24"
     },
     "Intercambialo": {
@@ -179,8 +179,8 @@
     "IntiCambio": {
       "casa": "IntiCambio",
       "url": "https://inticambio.pe/",
-      "compra": 3.35,
-      "venta": 3.355,
+      "compra": 3.351,
+      "venta": 3.356,
       "last_seen": "2026-01-24"
     },
     "Cambix": {
@@ -305,8 +305,8 @@
     "CambioDigitalPeru": {
       "casa": "CambioDigitalPeru",
       "url": "https://cambiodigitalperu.com",
-      "compra": 3.349,
-      "venta": 3.358,
+      "compra": 3.348,
+      "venta": 3.356,
       "last_seen": "2026-01-24"
     }
   }
