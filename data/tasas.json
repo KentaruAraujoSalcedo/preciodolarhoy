@@ -2,8 +2,8 @@
   {
     "casa": "Yanki",
     "url": "https://yanki.pe",
-    "compra": 3.347,
-    "venta": 3.363,
+    "compra": 3.34,
+    "venta": 3.365,
     "source": "scraper"
   },
   {
@@ -16,15 +16,15 @@
   {
     "casa": "Kambista",
     "url": "https://kambista.com/",
-    "compra": 3.335,
-    "venta": 3.369,
+    "compra": 3.334,
+    "venta": 3.371,
     "source": "scraper"
   },
   {
     "casa": "Tkambio",
     "url": "https://tkambio.com/",
     "compra": 3.338,
-    "venta": 3.363,
+    "venta": 3.368,
     "source": "scraper"
   },
   {
@@ -58,8 +58,8 @@
   {
     "casa": "Dichikash",
     "url": "https://dichikash.com/",
-    "compra": 3.35,
-    "venta": 3.36,
+    "compra": 3.352,
+    "venta": 3.362,
     "source": "scraper"
   },
   {
@@ -116,10 +116,7 @@
     "url": "https://kallpacambios.com/",
     "compra": 3.339,
     "venta": 3.368,
-    "source": "last_known",
-    "last_seen": "2026-01-23",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.wait_for_function: Timeout 25000ms exceeded."
+    "source": "scraper"
   },
   {
     "casa": "Billex",
@@ -175,17 +172,16 @@
   {
     "casa": "CambioMundial",
     "url": "https://www.cambiomundial.com/",
-    "compra": 2.0,
-    "venta": 2.0,
-    "source": "last_known",
-    "last_seen": "2026-01-22",
+    "compra": 3.0,
+    "venta": 3.0,
+    "source": "backup",
     "backup_fecha": "2026-01-20"
   },
   {
     "casa": "TraderPeruFX",
     "url": "https://traderperufx.com/",
-    "compra": 3.351,
-    "venta": 3.357,
+    "compra": 3.35,
+    "venta": 3.36,
     "source": "scraper"
   },
   {
@@ -212,8 +208,8 @@
   {
     "casa": "X-Cambio",
     "url": "https://x-cambio.com/",
-    "compra": 3.333,
-    "venta": 3.372,
+    "compra": 3.332,
+    "venta": 3.3735,
     "source": "scraper"
   },
   {
@@ -233,10 +229,9 @@
   {
     "casa": "MoneyHouse",
     "url": "https://moneyhouse.pe/",
-    "compra": 2.0,
-    "venta": 2.0,
-    "source": "last_known",
-    "last_seen": "2026-01-22",
+    "compra": 3.0,
+    "venta": 3.0,
+    "source": "backup",
     "backup_fecha": "2026-01-20",
     "scraper_error": "No se pudo scrapear: Locator.wait_for: Timeout 25000ms exceeded.\nCall log:\n  - waiting for locator(\".views-field-field-t-c-compra span.cant\").first to be visible\n"
   },
@@ -294,7 +289,7 @@
     "casa": "DinersFX",
     "url": "https://dinersfx.pe/",
     "compra": 3.328,
-    "venta": 3.443,
+    "venta": 3.403,
     "source": "scraper"
   },
   {
@@ -315,7 +310,7 @@
     "casa": "TuCambista",
     "url": "https://tucambista.pe/",
     "compra": 3.336,
-    "venta": 3.367,
+    "venta": 3.369,
     "source": "scraper"
   },
   {
@@ -349,8 +344,8 @@
   {
     "casa": "SUNAT",
     "url": "https://www.sunat.gob.pe/cl-at-ittipcam/tcS01Alias",
-    "compra": 3.352,
-    "venta": 3.36,
+    "compra": 3.349,
+    "venta": 3.359,
     "source": "scraper"
   }
 ]
