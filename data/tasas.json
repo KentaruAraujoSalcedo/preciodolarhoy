@@ -58,8 +58,8 @@
   {
     "casa": "Dichikash",
     "url": "https://dichikash.com/",
-    "compra": 3.352,
-    "venta": 3.362,
+    "compra": 3.351,
+    "venta": 3.363,
     "source": "scraper"
   },
   {
@@ -146,9 +146,7 @@
     "url": "https://acomo.com.pe/",
     "compra": 3.34,
     "venta": 3.361,
-    "source": "last_known",
-    "last_seen": "2026-01-24",
-    "backup_fecha": "2026-01-20"
+    "source": "scraper"
   },
   {
     "casa": "ZonaDólar",
@@ -169,10 +167,7 @@
     "url": "https://www.kambio.online/",
     "compra": 3.35,
     "venta": 3.36,
-    "source": "last_known",
-    "last_seen": "2026-01-24",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.goto: net::ERR_TIMED_OUT at https://www.kambio.online/\nCall log:\n  - navigating to \"https://www.kambio.online/\", waiting until \"domcontentloaded\"\n"
+    "source": "scraper"
   },
   {
     "casa": "CambioMundial",
@@ -295,7 +290,7 @@
     "casa": "DinersFX",
     "url": "https://dinersfx.pe/",
     "compra": 3.328,
-    "venta": 3.443,
+    "venta": 3.403,
     "source": "scraper"
   },
   {
