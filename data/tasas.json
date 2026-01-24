@@ -102,7 +102,10 @@
     "url": "https://intercambialo.pe/",
     "compra": 3.337,
     "venta": 3.366,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-24",
+    "backup_fecha": "2026-01-20",
+    "scraper_error": "No se pudo scrapear: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://intercambialo.pe/\", waiting until \"load\"\n"
   },
   {
     "casa": "WesternUnion",
@@ -146,7 +149,9 @@
     "url": "https://acomo.com.pe/",
     "compra": 3.34,
     "venta": 3.361,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-24",
+    "backup_fecha": "2026-01-20"
   },
   {
     "casa": "ZonaDólar",
@@ -315,7 +320,10 @@
     "url": "https://hirpower.com/",
     "compra": 3.34,
     "venta": 3.37,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-24",
+    "backup_fecha": "2026-01-20",
+    "scraper_error": "No se pudo scrapear: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://hirpower.com/\nCall log:\n  - navigating to \"https://hirpower.com/\", waiting until \"load\"\n"
   },
   {
     "casa": "CambioDigitalPeru",
