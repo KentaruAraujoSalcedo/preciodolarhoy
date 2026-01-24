@@ -146,7 +146,9 @@
     "url": "https://acomo.com.pe/",
     "compra": 3.34,
     "venta": 3.361,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-24",
+    "backup_fecha": "2026-01-20"
   },
   {
     "casa": "ZonaDólar",
@@ -167,7 +169,10 @@
     "url": "https://www.kambio.online/",
     "compra": 3.35,
     "venta": 3.36,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-24",
+    "backup_fecha": "2026-01-20",
+    "scraper_error": "No se pudo scrapear: Page.goto: net::ERR_TIMED_OUT at https://www.kambio.online/\nCall log:\n  - navigating to \"https://www.kambio.online/\", waiting until \"domcontentloaded\"\n"
   },
   {
     "casa": "CambioMundial",
@@ -175,7 +180,8 @@
     "compra": 3.0,
     "venta": 3.0,
     "source": "backup",
-    "backup_fecha": "2026-01-20"
+    "backup_fecha": "2026-01-20",
+    "scraper_error": "No se pudo scrapear: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.cambiomundial.com/\", waiting until \"networkidle\"\n"
   },
   {
     "casa": "TraderPeruFX",
@@ -233,7 +239,7 @@
     "venta": 3.0,
     "source": "backup",
     "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Locator.wait_for: Timeout 25000ms exceeded.\nCall log:\n  - waiting for locator(\".views-field-field-t-c-compra span.cant\").first to be visible\n"
+    "scraper_error": "No se pudo scrapear: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://moneyhouse.pe/\", waiting until \"networkidle\"\n"
   },
   {
     "casa": "MercadoCambiario",
@@ -289,14 +295,14 @@
     "casa": "DinersFX",
     "url": "https://dinersfx.pe/",
     "compra": 3.328,
-    "venta": 3.403,
+    "venta": 3.443,
     "source": "scraper"
   },
   {
     "casa": "Securex",
     "url": "https://securex.pe/",
-    "compra": 3.344,
-    "venta": 3.36,
+    "compra": 3.347,
+    "venta": 3.357,
     "source": "scraper"
   },
   {

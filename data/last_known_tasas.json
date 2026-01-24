@@ -193,8 +193,8 @@
     "Securex": {
       "casa": "Securex",
       "url": "https://securex.pe/",
-      "compra": 3.344,
-      "venta": 3.36,
+      "compra": 3.347,
+      "venta": 3.357,
       "last_seen": "2026-01-24"
     },
     "ChapaCambio": {
@@ -299,7 +299,7 @@
       "casa": "DinersFX",
       "url": "https://dinersfx.pe/",
       "compra": 3.328,
-      "venta": 3.403,
+      "venta": 3.443,
       "last_seen": "2026-01-24"
     },
     "CambioDigitalPeru": {
