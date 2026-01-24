@@ -10,25 +10,42 @@ async def scrap_moneyhouse():
 
     try:
         async with async_playwright() as p:
-            browser = await p.chromium.launch(headless=True)
-            page = await browser.new_page()
+            browser = await p.chromium.launch(
+                headless=True,
+                args=["--disable-blink-features=AutomationControlled"]
+            )
 
-            await page.goto(url, timeout=60000, wait_until="domcontentloaded")
+            context = await browser.new_context(
+                locale="es-PE",
+                timezone_id="America/Lima",
+                user_agent=(
+                    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                    "AppleWebKit/537.36 (KHTML, like Gecko) "
+                    "Chrome/120.0.0.0 Safari/537.36"
+                ),
+                viewport={"width": 1280, "height": 720},
+            )
+
+            page = await context.new_page()
+            await page.goto(url, timeout=60000, wait_until="networkidle")
 
             # (Opcional) cerrar cookies si aparece
             try:
-                await page.get_by_role("button", name=re.compile("ACEPTAR", re.I)).click(timeout=2000)
+                await page.get_by_role("button", name=re.compile("ACEPTAR", re.I)).click(timeout=3000)
             except Exception:
                 pass
 
-            compra_loc = page.locator(".views-field-field-t-c-compra span.cant").first
-            venta_loc  = page.locator(".views-field-field-t-c-venta  span.cant").first
+            compra_sel = ".views-field-field-t-c-compra span.cant"
+            venta_sel  = ".views-field-field-t-c-venta  span.cant"
 
-            # Espera a que existan
-            await compra_loc.wait_for(state="visible", timeout=25000)
-            await venta_loc.wait_for(state="visible", timeout=25000)
+            compra_loc = page.locator(compra_sel).first
+            venta_loc  = page.locator(venta_sel).first
 
-            # Espera a que tengan números válidos (no vacío / no 0 / no 0.000)
+            # OJO: en GitHub puede no estar "visible", pero sí existe en el DOM
+            await compra_loc.wait_for(state="attached", timeout=40000)
+            await venta_loc.wait_for(state="attached", timeout=40000)
+
+            # Espera valores reales (no vacío / no 0 / etc)
             await page.wait_for_function(
                 """() => {
                     const pick = (sel) => {
@@ -49,7 +66,7 @@ async def scrap_moneyhouse():
 
                     return cf > 0 && vf > 0 && c !== "0" && v !== "0" && c !== "0.000" && v !== "0.000";
                 }""",
-                timeout=25000
+                timeout=40000
             )
 
             compra_text = (await compra_loc.text_content() or "").strip()
@@ -58,21 +75,11 @@ async def scrap_moneyhouse():
             compra = normalize_rate(compra_text)
             venta  = normalize_rate(venta_text)
 
-            return {
-                "casa": casa,
-                "url": url,
-                "compra": compra,
-                "venta": venta
-            }
+            return {"casa": casa, "url": url, "compra": compra, "venta": venta}
 
     except Exception as e:
-        return {
-            "casa": casa,
-            "url": url,
-            "compra": None,
-            "venta": None,
-            "error": f"No se pudo scrapear: {e}"
-        }
+        return {"casa": casa, "url": url, "compra": None, "venta": None, "error": f"No se pudo scrapear: {e}"}
+
     finally:
         if browser:
             await browser.close()
