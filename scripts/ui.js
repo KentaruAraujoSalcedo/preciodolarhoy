@@ -236,11 +236,11 @@ export function recalcularCeldas() {
 
     if (Number.isFinite(compra) && Number.isFinite(venta)) {
       if (modo === 'recibir') {
-        if (monedaTengo === 'PEN') celD.textContent = moneyFmt(monto / venta, 'USD');
-        if (monedaTengo === 'USD') celS.textContent = moneyFmt(monto * compra, 'PEN');
-      } else { // necesito
         if (monedaTengo === 'PEN') celD.textContent = moneyFmt(monto / compra, 'USD');
         if (monedaTengo === 'USD') celS.textContent = moneyFmt(monto * venta, 'PEN');
+      } else { // necesito
+        if (monedaTengo === 'PEN') celD.textContent = moneyFmt(monto / venta, 'USD');
+        if (monedaTengo === 'USD') celS.textContent = moneyFmt(monto * compra, 'PEN');
       }
     }
   });
@@ -287,12 +287,20 @@ export function renderResultadoConversor() {
     texto = 'Por favor ingresa un monto válido.';
   } else if (monedaTengo === monedaQuiero) {
     texto = 'Selecciona monedas diferentes.';
-  } else if (modo === 'recibir') {
-    if (monedaTengo === 'USD') texto = `Recibirás S/${(monto * sunat.compra).toFixed(2)} soles.`;
-    else texto = `Recibirás $${(monto / sunat.venta).toFixed(2)} dólares.`;
-  } else { // necesito
-    if (monedaTengo === 'USD') texto = `Necesitas S/${(monto * sunat.venta).toFixed(2)} soles para recibir $${monto}.`;
-    else texto = `Necesitas $${(monto / sunat.compra).toFixed(2)} dólares para recibir S/${monto}.`;
+  } 
+  // ======================
+  // MODO: RECIBIR
+  // ======================
+  else if (modo === 'recibir') {
+    if (monedaTengo === 'USD') texto = `Recibirás S/${(monto * sunat.venta).toFixed(2)} soles.`;
+    else texto = `Recibirás $${(monto / sunat.compra).toFixed(2)} dólares.`;
+  }
+  // ======================
+  // MODO: NECESITO
+  // ======================
+  else {
+    if (monedaTengo === 'USD') texto = `Necesitas S/${(monto * sunat.compra).toFixed(2)} soles para recibir $${monto}.`;
+    else texto = `Necesitas $${(monto / sunat.venta).toFixed(2)} dólares para recibir S/${monto}.`;
   }
 
   out.textContent = texto;
