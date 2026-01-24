@@ -146,7 +146,9 @@
     "url": "https://acomo.com.pe/",
     "compra": 3.34,
     "venta": 3.361,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-24",
+    "backup_fecha": "2026-01-20"
   },
   {
     "casa": "ZonaDólar",
@@ -234,7 +236,7 @@
     "venta": 3.0,
     "source": "backup",
     "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://moneyhouse.pe/\", waiting until \"networkidle\"\n"
+    "scraper_error": "No se pudo scrapear: Locator.wait_for: Timeout 40000ms exceeded.\nCall log:\n  - waiting for locator(\".views-field-field-t-c-compra span.cant\").first\n"
   },
   {
     "casa": "MercadoCambiario",
