@@ -27,7 +27,17 @@ async def scrap_moneyhouse():
             )
 
             page = await context.new_page()
-            await page.goto(url, timeout=60000, wait_until="networkidle")
+
+            # ✅ En GitHub Actions, networkidle suele colgarse (conexiones abiertas).
+            await page.goto(url, timeout=60000, wait_until="domcontentloaded")
+
+            # opcional: intentar networkidle pero sin fallar si no llega
+            try:
+                await page.wait_for_load_state("networkidle", timeout=8000)
+            except Exception:
+                pass
+
+            await page.wait_for_timeout(1000)
 
             # (Opcional) cerrar cookies si aparece
             try:
@@ -41,7 +51,7 @@ async def scrap_moneyhouse():
             compra_loc = page.locator(compra_sel).first
             venta_loc  = page.locator(venta_sel).first
 
-            # OJO: en GitHub puede no estar "visible", pero sí existe en el DOM
+            # En GitHub puede no estar "visible", pero sí existe en el DOM
             await compra_loc.wait_for(state="attached", timeout=40000)
             await venta_loc.wait_for(state="attached", timeout=40000)
 
