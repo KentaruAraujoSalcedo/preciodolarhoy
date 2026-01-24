@@ -46,7 +46,7 @@
     "Okane": {
       "casa": "Okane",
       "url": "https://okanecambiodigital.com/",
-      "compra": 3.348,
+      "compra": 3.35,
       "venta": 3.359,
       "last_seen": "2026-01-24"
     },
@@ -67,8 +67,8 @@
     "Instakash": {
       "casa": "Instakash",
       "url": "https://instakash.net/",
-      "compra": 3.347,
-      "venta": 3.36,
+      "compra": 3.348,
+      "venta": 3.362,
       "last_seen": "2026-01-24"
     },
     "MegaMoney": {
@@ -95,8 +95,8 @@
     "ChaskiDolar": {
       "casa": "ChaskiDolar",
       "url": "https://chaskidolar.com/",
-      "compra": 3.362,
-      "venta": 3.344,
+      "compra": 3.36,
+      "venta": 3.343,
       "last_seen": "2026-01-24"
     },
     "Intercambialo": {
@@ -166,7 +166,7 @@
       "casa": "X-Cambio",
       "url": "https://x-cambio.com/",
       "compra": 3.336,
-      "venta": 3.37,
+      "venta": 3.369,
       "last_seen": "2026-01-24"
     },
     "RissanPE": {
@@ -179,8 +179,8 @@
     "IntiCambio": {
       "casa": "IntiCambio",
       "url": "https://inticambio.pe/",
-      "compra": 3.351,
-      "venta": 3.356,
+      "compra": 3.35,
+      "venta": 3.355,
       "last_seen": "2026-01-24"
     },
     "Cambix": {
@@ -256,7 +256,7 @@
     "MercadoCambiario": {
       "casa": "MercadoCambiario",
       "url": "https://mercadocambiario.pe/",
-      "compra": 3.357,
+      "compra": 3.356,
       "venta": 3.359,
       "last_seen": "2026-01-24"
     },
@@ -277,8 +277,8 @@
     "Kambio": {
       "casa": "Kambio",
       "url": "https://www.kambio.online/",
-      "compra": 3.353,
-      "venta": 3.358,
+      "compra": 3.352,
+      "venta": 3.357,
       "last_seen": "2026-01-24"
     },
     "TraderPeruFX": {
@@ -305,7 +305,7 @@
     "CambioDigitalPeru": {
       "casa": "CambioDigitalPeru",
       "url": "https://cambiodigitalperu.com",
-      "compra": 3.348,
+      "compra": 3.349,
       "venta": 3.358,
       "last_seen": "2026-01-24"
     }
