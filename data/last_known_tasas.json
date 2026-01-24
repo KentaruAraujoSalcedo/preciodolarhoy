@@ -141,13 +141,6 @@
       "venta": 3.321,
       "last_seen": "2026-01-23"
     },
-    "CambioMundial": {
-      "casa": "CambioMundial",
-      "url": "https://www.cambiomundial.com/",
-      "compra": 2.0,
-      "venta": 2.0,
-      "last_seen": "2026-01-22"
-    },
     "PeruDolar": {
       "casa": "PeruDolar",
       "url": "https://perudolar.pe/",
@@ -182,13 +175,6 @@
       "compra": 3.34,
       "venta": 3.37,
       "last_seen": "2026-01-23"
-    },
-    "MoneyHouse": {
-      "casa": "MoneyHouse",
-      "url": "https://moneyhouse.pe/",
-      "compra": 2.0,
-      "venta": 2.0,
-      "last_seen": "2026-01-22"
     },
     "IntiCambio": {
       "casa": "IntiCambio",
