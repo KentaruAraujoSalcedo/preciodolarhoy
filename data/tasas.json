@@ -278,10 +278,7 @@
     "url": "https://cambix.com.pe/",
     "compra": 3.33,
     "venta": 3.37,
-    "source": "last_known",
-    "last_seen": "2026-01-24",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Locator.all_text_contents: Execution context was destroyed, most likely because of a navigation"
+    "source": "scraper"
   },
   {
     "casa": "DLS Money",
