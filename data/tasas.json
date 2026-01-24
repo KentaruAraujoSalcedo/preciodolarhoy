@@ -172,9 +172,7 @@
   {
     "casa": "CambioMundial",
     "url": "https://www.cambiomundial.com/",
-    "compra": 3.0,
-    "venta": 3.0,
-    "source": "backup",
+    "source": "missing",
     "backup_fecha": "2026-01-20",
     "scraper_error": "No se pudo scrapear: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.cambiomundial.com/\", waiting until \"networkidle\"\n"
   },
@@ -230,9 +228,7 @@
   {
     "casa": "MoneyHouse",
     "url": "https://moneyhouse.pe/",
-    "compra": 3.0,
-    "venta": 3.0,
-    "source": "backup",
+    "source": "missing",
     "backup_fecha": "2026-01-20",
     "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 40000ms exceeded.\nCall log:\n  - waiting for locator(\".views-row, .view-content, .principalcontenido\") to be visible\n"
   },
