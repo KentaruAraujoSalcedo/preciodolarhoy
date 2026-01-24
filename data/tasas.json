@@ -16,15 +16,15 @@
   {
     "casa": "Kambista",
     "url": "https://kambista.com/",
-    "compra": 3.34,
-    "venta": 3.367,
+    "compra": 3.335,
+    "venta": 3.37,
     "source": "scraper"
   },
   {
     "casa": "Tkambio",
     "url": "https://tkambio.com/",
-    "compra": 3.345,
-    "venta": 3.37,
+    "compra": 3.339,
+    "venta": 3.369,
     "source": "scraper"
   },
   {
@@ -44,8 +44,8 @@
   {
     "casa": "Okane",
     "url": "https://okanecambiodigital.com/",
-    "compra": 3.347,
-    "venta": 3.359,
+    "compra": 3.32,
+    "venta": 3.385,
     "source": "scraper"
   },
   {
@@ -58,8 +58,8 @@
   {
     "casa": "Dichikash",
     "url": "https://dichikash.com/",
-    "compra": 3.347,
-    "venta": 3.359,
+    "compra": 3.344,
+    "venta": 3.361,
     "source": "scraper"
   },
   {
@@ -93,8 +93,8 @@
   {
     "casa": "ChaskiDolar",
     "url": "https://chaskidolar.com/",
-    "compra": 3.362,
-    "venta": 3.342,
+    "compra": 3.361,
+    "venta": 3.341,
     "source": "scraper"
   },
   {
@@ -102,7 +102,10 @@
     "url": "https://intercambialo.pe/",
     "compra": 3.337,
     "venta": 3.37,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-24",
+    "backup_fecha": "2026-01-20",
+    "scraper_error": "No se pudo scrapear: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://intercambialo.pe/\", waiting until \"load\"\n"
   },
   {
     "casa": "WesternUnion",
@@ -149,7 +152,9 @@
     "url": "https://acomo.com.pe/",
     "compra": 3.34,
     "venta": 3.361,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-24",
+    "backup_fecha": "2026-01-20"
   },
   {
     "casa": "ZonaDólar",
@@ -210,8 +215,8 @@
   {
     "casa": "X-Cambio",
     "url": "https://x-cambio.com/",
-    "compra": 3.338,
-    "venta": 3.37,
+    "compra": 3.333,
+    "venta": 3.373,
     "source": "scraper"
   },
   {
@@ -257,8 +262,8 @@
   {
     "casa": "IntiCambio",
     "url": "https://inticambio.pe/",
-    "compra": 3.351,
-    "venta": 3.356,
+    "compra": 3.35,
+    "venta": 3.355,
     "source": "scraper"
   },
   {
@@ -266,7 +271,10 @@
     "url": "https://dolarex.pe/",
     "compra": 3.35,
     "venta": 3.355,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-24",
+    "backup_fecha": "2026-01-20",
+    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\".compra .valor\") to be visible\n"
   },
   {
     "casa": "Cambix",
