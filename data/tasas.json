@@ -234,7 +234,7 @@
     "venta": 3.0,
     "source": "backup",
     "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Locator.wait_for: Timeout 40000ms exceeded.\nCall log:\n  - waiting for locator(\".views-field-field-t-c-compra\").first\n"
+    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 40000ms exceeded.\nCall log:\n  - waiting for locator(\".views-row, .view-content, .principalcontenido\") to be visible\n"
   },
   {
     "casa": "MercadoCambiario",
@@ -340,7 +340,7 @@
     "url": "https://www.global66.com/pe/envios-de-dinero/",
     "source": "missing",
     "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.global66.com/pe/envios-de-dinero/\", waiting until \"load\"\n"
+    "scraper_error": "No se pudo scrapear: Page.wait_for_function: Timeout 20000ms exceeded."
   },
   {
     "casa": "SUNAT",
