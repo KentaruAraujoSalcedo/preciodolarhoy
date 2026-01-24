@@ -2,8 +2,8 @@
   {
     "casa": "Yanki",
     "url": "https://yanki.pe",
-    "compra": 3.345,
-    "venta": 3.362,
+    "compra": 3.347,
+    "venta": 3.365,
     "source": "scraper"
   },
   {
@@ -23,8 +23,8 @@
   {
     "casa": "Tkambio",
     "url": "https://tkambio.com/",
-    "compra": 3.338,
-    "venta": 3.364,
+    "compra": 3.344,
+    "venta": 3.369,
     "source": "scraper"
   },
   {
@@ -45,7 +45,7 @@
     "casa": "Okane",
     "url": "https://okanecambiodigital.com/",
     "compra": 3.348,
-    "venta": 3.358,
+    "venta": 3.357,
     "source": "scraper"
   },
   {
@@ -60,13 +60,16 @@
     "url": "https://dichikash.com/",
     "compra": 3.35,
     "venta": 3.36,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-24",
+    "backup_fecha": "2026-01-20",
+    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"input#numero2\")\n"
   },
   {
     "casa": "Instakash",
     "url": "https://instakash.net/",
-    "compra": 3.35,
-    "venta": 3.362,
+    "compra": 3.348,
+    "venta": 3.361,
     "source": "scraper"
   },
   {
@@ -81,7 +84,10 @@
     "url": "https://www.smartdollar.pe/",
     "compra": 3.355,
     "venta": 3.368,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-24",
+    "backup_fecha": "2026-01-20",
+    "scraper_error": "No se pudo scrapear: Locator.text_content: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\".cantant\").first\n"
   },
   {
     "casa": "CambioX",
@@ -102,7 +108,10 @@
     "url": "https://intercambialo.pe/",
     "compra": 3.337,
     "venta": 3.366,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-24",
+    "backup_fecha": "2026-01-20",
+    "scraper_error": "No se pudo scrapear: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://intercambialo.pe/\", waiting until \"load\"\n"
   },
   {
     "casa": "WesternUnion",
@@ -154,7 +163,10 @@
     "url": "https://zonadolar.pe/",
     "compra": 3.399,
     "venta": 3.321,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-24",
+    "backup_fecha": "2026-01-20",
+    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\".text-base\") to be visible\n    - waiting for\" https://zonadolar.pe/\" navigation to finish...\n    - navigated to \"https://zonadolar.pe/\"\n"
   },
   {
     "casa": "SRCambio",
@@ -166,8 +178,8 @@
   {
     "casa": "Kambio",
     "url": "https://www.kambio.online/",
-    "compra": 3.352,
-    "venta": 3.357,
+    "compra": 3.349,
+    "venta": 3.354,
     "source": "scraper"
   },
   {
@@ -189,7 +201,10 @@
     "url": "https://perudolar.pe/",
     "compra": 3.3,
     "venta": 3.4,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-24",
+    "backup_fecha": "2026-01-20",
+    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"#preciosHome\") to be visible\n"
   },
   {
     "casa": "MidpointFX",
@@ -203,7 +218,10 @@
     "url": "https://cambiosol.pe/",
     "compra": 3.35,
     "venta": 3.37,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-24",
+    "backup_fecha": "2026-01-20",
+    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"#buy-rate-display\") to be visible\n    2 × waiting for\" https://cambiosol.pe/\" navigation to finish...\n      - navigated to \"https://cambiosol.pe/\"\n"
   },
   {
     "casa": "X-Cambio",
@@ -217,7 +235,10 @@
     "url": "https://www.rissanpe.com/",
     "compra": 3.34,
     "venta": 3.37,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-24",
+    "backup_fecha": "2026-01-20",
+    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"h2.elementor-heading-title\") to be visible\n"
   },
   {
     "casa": "CambioMas",
@@ -236,8 +257,8 @@
   {
     "casa": "MercadoCambiario",
     "url": "https://mercadocambiario.pe/",
-    "compra": 3.356,
-    "venta": 3.359,
+    "compra": 3.351,
+    "venta": 3.353,
     "source": "scraper"
   },
   {
@@ -245,13 +266,16 @@
     "url": "https://www.vipcapitalbusiness.com/",
     "compra": 3.34,
     "venta": 3.36,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-24",
+    "backup_fecha": "2026-01-20",
+    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"#tc_compra\") to be visible\n    - waiting for\" https://www.vipcapitalbusiness.com/\" navigation to finish...\n    - navigated to \"https://www.vipcapitalbusiness.com/\"\n"
   },
   {
     "casa": "IntiCambio",
     "url": "https://inticambio.pe/",
-    "compra": 3.349,
-    "venta": 3.354,
+    "compra": 3.35,
+    "venta": 3.355,
     "source": "scraper"
   },
   {
@@ -285,8 +309,8 @@
   {
     "casa": "Securex",
     "url": "https://securex.pe/",
-    "compra": 3.339,
-    "venta": 3.366,
+    "compra": 3.341,
+    "venta": 3.363,
     "source": "scraper"
   },
   {
@@ -315,7 +339,10 @@
     "url": "https://cambiodigitalperu.com",
     "compra": 3.349,
     "venta": 3.358,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-24",
+    "backup_fecha": "2026-01-20",
+    "scraper_error": "No se pudo scrapear: Locator.wait_for: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator(\"#tipoCambioCompra\") to be visible\n"
   },
   {
     "casa": "DollarHouse",
