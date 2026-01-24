@@ -3,6 +3,14 @@ import re
 from playwright.async_api import async_playwright
 from scrapers.utils import normalize_rate
 
+_NUM_RE = re.compile(r"\d+[.,]\d+")
+
+def _extract_number(txt: str):
+    if not txt:
+        return None
+    m = _NUM_RE.search(txt)
+    return m.group(0) if m else None
+
 async def scrap_moneyhouse():
     url = "https://moneyhouse.pe/"
     casa = "MoneyHouse"
@@ -12,14 +20,18 @@ async def scrap_moneyhouse():
         async with async_playwright() as p:
             browser = await p.chromium.launch(
                 headless=True,
-                args=["--disable-blink-features=AutomationControlled"]
+                args=[
+                    "--disable-blink-features=AutomationControlled",
+                    "--no-sandbox",
+                    "--disable-setuid-sandbox",
+                ],
             )
 
             context = await browser.new_context(
                 locale="es-PE",
                 timezone_id="America/Lima",
                 user_agent=(
-                    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                    "Mozilla/5.0 (X11; Linux x86_64) "
                     "AppleWebKit/537.36 (KHTML, like Gecko) "
                     "Chrome/120.0.0.0 Safari/537.36"
                 ),
@@ -27,38 +39,24 @@ async def scrap_moneyhouse():
             )
 
             page = await context.new_page()
-
-            # ✅ En GitHub Actions, networkidle suele colgarse (conexiones abiertas).
             await page.goto(url, timeout=60000, wait_until="domcontentloaded")
 
-            # opcional: intentar networkidle pero sin fallar si no llega
-            try:
-                await page.wait_for_load_state("networkidle", timeout=8000)
-            except Exception:
-                pass
-
-            await page.wait_for_timeout(1000)
-
-            # (Opcional) cerrar cookies si aparece
+            # si hay banner de cookies
             try:
                 await page.get_by_role("button", name=re.compile("ACEPTAR", re.I)).click(timeout=3000)
             except Exception:
                 pass
 
-            compra_sel = ".views-field-field-t-c-compra span.cant"
-            venta_sel  = ".views-field-field-t-c-venta  span.cant"
+            compra_wrap = page.locator(".views-field-field-t-c-compra").first
+            venta_wrap  = page.locator(".views-field-field-t-c-venta").first
 
-            compra_loc = page.locator(compra_sel).first
-            venta_loc  = page.locator(venta_sel).first
+            await compra_wrap.wait_for(state="attached", timeout=40000)
+            await venta_wrap.wait_for(state="attached", timeout=40000)
 
-            # En GitHub puede no estar "visible", pero sí existe en el DOM
-            await compra_loc.wait_for(state="attached", timeout=40000)
-            await venta_loc.wait_for(state="attached", timeout=40000)
-
-            # Espera valores reales (no vacío / no 0 / etc)
+            # Espera hasta que el TEXTO del contenedor tenga un número válido
             await page.wait_for_function(
                 """() => {
-                    const pick = (sel) => {
+                    const getNum = (sel) => {
                         const el = document.querySelector(sel);
                         if (!el) return null;
                         const t = (el.textContent || "").trim();
@@ -66,24 +64,25 @@ async def scrap_moneyhouse():
                         return m ? m[0] : null;
                     };
 
-                    const c = pick(".views-field-field-t-c-compra span.cant");
-                    const v = pick(".views-field-field-t-c-venta span.cant");
-
+                    const c = getNum(".views-field-field-t-c-compra");
+                    const v = getNum(".views-field-field-t-c-venta");
                     if (!c || !v) return false;
 
                     const cf = parseFloat(c.replace(",", "."));
                     const vf = parseFloat(v.replace(",", "."));
-
-                    return cf > 0 && vf > 0 && c !== "0" && v !== "0" && c !== "0.000" && v !== "0.000";
+                    return cf > 0 && vf > 0 && c !== "0.000" && v !== "0.000";
                 }""",
                 timeout=40000
             )
 
-            compra_text = (await compra_loc.text_content() or "").strip()
-            venta_text  = (await venta_loc.text_content()  or "").strip()
+            compra_text = (await compra_wrap.text_content() or "").strip()
+            venta_text  = (await venta_wrap.text_content() or "").strip()
 
-            compra = normalize_rate(compra_text)
-            venta  = normalize_rate(venta_text)
+            compra_num = _extract_number(compra_text)
+            venta_num  = _extract_number(venta_text)
+
+            compra = normalize_rate(compra_num) if compra_num else None
+            venta  = normalize_rate(venta_num) if venta_num else None
 
             return {"casa": casa, "url": url, "compra": compra, "venta": venta}
 
