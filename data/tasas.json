@@ -102,10 +102,7 @@
     "url": "https://intercambialo.pe/",
     "compra": 3.337,
     "venta": 3.37,
-    "source": "last_known",
-    "last_seen": "2026-01-24",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://intercambialo.pe/\", waiting until \"load\"\n"
+    "source": "scraper"
   },
   {
     "casa": "WesternUnion",
@@ -227,7 +224,7 @@
   {
     "casa": "CambioMas",
     "url": "https://cambiosmass.com/",
-    "compra": 3.35,
+    "compra": 3.345,
     "venta": 3.36,
     "source": "scraper"
   },
