@@ -325,7 +325,10 @@
     "url": "https://cambiodigitalperu.com",
     "compra": 3.345,
     "venta": 3.36,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-25",
+    "backup_fecha": "2026-01-20",
+    "scraper_error": "No se pudo scrapear: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://cambiodigitalperu.com/\", waiting until \"domcontentloaded\"\n"
   },
   {
     "casa": "DollarHouse",
