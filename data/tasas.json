@@ -18,10 +18,7 @@
     "url": "https://kambista.com/",
     "compra": 3.335,
     "venta": 3.37,
-    "source": "last_known",
-    "last_seen": "2026-01-25",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://kambista.com/\", waiting until \"load\"\n"
+    "source": "scraper"
   },
   {
     "casa": "Tkambio",
