@@ -84,7 +84,10 @@
     "url": "https://www.smartdollar.pe/",
     "compra": 3.355,
     "venta": 3.368,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-25",
+    "backup_fecha": "2026-01-20",
+    "scraper_error": "No se pudo scrapear: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.smartdollar.pe/\", waiting until \"load\"\n"
   },
   {
     "casa": "CambioX",
@@ -152,7 +155,9 @@
     "url": "https://acomo.com.pe/",
     "compra": 3.34,
     "venta": 3.361,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-25",
+    "backup_fecha": "2026-01-20"
   },
   {
     "casa": "ZonaDólar",
