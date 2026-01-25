@@ -149,7 +149,9 @@
     "url": "https://acomo.com.pe/",
     "compra": 3.34,
     "venta": 3.361,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-25",
+    "backup_fecha": "2026-01-20"
   },
   {
     "casa": "ZonaDólar",
@@ -205,7 +207,10 @@
     "url": "https://cambiosol.pe/",
     "compra": 3.3,
     "venta": 3.38,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-25",
+    "backup_fecha": "2026-01-20",
+    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"#buy-rate-display\") to be visible\n"
   },
   {
     "casa": "X-Cambio",
@@ -289,7 +294,7 @@
     "casa": "DinersFX",
     "url": "https://dinersfx.pe/",
     "compra": 3.328,
-    "venta": 3.403,
+    "venta": 3.443,
     "source": "scraper"
   },
   {
