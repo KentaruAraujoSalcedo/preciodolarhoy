@@ -9,8 +9,8 @@
   {
     "casa": "Rextie",
     "url": "https://www.rextie.com/",
-    "compra": 3.334,
-    "venta": 3.371,
+    "compra": 3.333,
+    "venta": 3.372,
     "source": "scraper"
   },
   {
@@ -295,7 +295,7 @@
     "casa": "DinersFX",
     "url": "https://dinersfx.pe/",
     "compra": 3.328,
-    "venta": 3.443,
+    "venta": 3.403,
     "source": "scraper"
   },
   {
