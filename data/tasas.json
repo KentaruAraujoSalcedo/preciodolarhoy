@@ -112,10 +112,7 @@
     "url": "https://www.westernunionperu.pe/cambiodemoneda",
     "compra": 3.336,
     "venta": 3.367,
-    "source": "last_known",
-    "last_seen": "2026-01-25",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.westernunionperu.pe/cambiodemoneda\", waiting until \"load\"\n"
+    "source": "scraper"
   },
   {
     "casa": "KallpaCambios",
