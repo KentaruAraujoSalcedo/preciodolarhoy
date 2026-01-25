@@ -18,10 +18,7 @@
     "url": "https://kambista.com/",
     "compra": 3.335,
     "venta": 3.37,
-    "source": "last_known",
-    "last_seen": "2026-01-25",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://kambista.com/\", waiting until \"load\"\n"
+    "source": "scraper"
   },
   {
     "casa": "Tkambio",
@@ -152,7 +149,9 @@
     "url": "https://acomo.com.pe/",
     "compra": 3.34,
     "venta": 3.361,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-25",
+    "backup_fecha": "2026-01-20"
   },
   {
     "casa": "ZonaDólar",
@@ -310,10 +309,7 @@
     "url": "https://chapacambio.com/",
     "compra": 3.337,
     "venta": 3.367,
-    "source": "last_known",
-    "last_seen": "2026-01-25",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://chapacambio.com/\", waiting until \"load\"\n"
+    "source": "scraper"
   },
   {
     "casa": "TuCambista",
