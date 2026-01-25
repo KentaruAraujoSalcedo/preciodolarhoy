@@ -284,8 +284,8 @@
     "TraderPeruFX": {
       "casa": "TraderPeruFX",
       "url": "https://traderperufx.com/",
-      "compra": 3.35,
-      "venta": 3.36,
+      "compra": 3.348,
+      "venta": 3.355,
       "last_seen": "2026-01-25"
     },
     "CambioMas": {
@@ -299,7 +299,7 @@
       "casa": "DinersFX",
       "url": "https://dinersfx.pe/",
       "compra": 3.328,
-      "venta": 3.443,
+      "venta": 3.403,
       "last_seen": "2026-01-25"
     },
     "CambioDigitalPeru": {
