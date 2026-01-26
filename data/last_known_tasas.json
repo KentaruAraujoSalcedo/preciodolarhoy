@@ -60,15 +60,15 @@
     "Dichikash": {
       "casa": "Dichikash",
       "url": "https://dichikash.com/",
-      "compra": 3.346,
-      "venta": 3.354,
+      "compra": 3.347,
+      "venta": 3.355,
       "last_seen": "2026-01-26"
     },
     "Instakash": {
       "casa": "Instakash",
       "url": "https://instakash.net/",
       "compra": 3.338,
-      "venta": 3.364,
+      "venta": 3.361,
       "last_seen": "2026-01-26"
     },
     "MegaMoney": {
@@ -117,7 +117,7 @@
       "casa": "KallpaCambios",
       "url": "https://kallpacambios.com/",
       "compra": 3.337,
-      "venta": 3.367,
+      "venta": 3.363,
       "last_seen": "2026-01-26"
     },
     "Billex": {
@@ -222,7 +222,7 @@
       "casa": "DollarHouse",
       "url": "https://app.dollarhouse.pe/",
       "compra": 3.349,
-      "venta": 3.356,
+      "venta": 3.355,
       "last_seen": "2026-01-26"
     },
     "SUNAT": {
