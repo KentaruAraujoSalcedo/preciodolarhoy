@@ -163,8 +163,8 @@
   {
     "casa": "SRCambio",
     "url": "https://srcambio.pe/",
-    "compra": 3.347,
-    "venta": 3.363,
+    "compra": 3.423,
+    "venta": 3.431,
     "source": "scraper"
   },
   {
@@ -309,10 +309,7 @@
     "url": "https://chapacambio.com/",
     "compra": 3.337,
     "venta": 3.367,
-    "source": "last_known",
-    "last_seen": "2026-01-26",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://chapacambio.com/\", waiting until \"load\"\n"
+    "source": "scraper"
   },
   {
     "casa": "TuCambista",
