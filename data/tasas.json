@@ -37,8 +37,8 @@
   {
     "casa": "CambioSeguro",
     "url": "https://cambioseguro.com/",
-    "compra": 3.34,
-    "venta": 3.362,
+    "compra": 3.335,
+    "venta": 3.366,
     "source": "scraper"
   },
   {
@@ -93,8 +93,8 @@
   {
     "casa": "ChaskiDolar",
     "url": "https://chaskidolar.com/",
-    "compra": 3.361,
-    "venta": 3.341,
+    "compra": 3.36,
+    "venta": 3.338,
     "source": "scraper"
   },
   {
@@ -124,8 +124,8 @@
   {
     "casa": "Billex",
     "url": "https://www.billex.pe/",
-    "compra": 3.336,
-    "venta": 3.367,
+    "compra": 3.334,
+    "venta": 3.368,
     "source": "scraper"
   },
   {
@@ -148,7 +148,7 @@
     "casa": "Acomo",
     "url": "https://acomo.com.pe/",
     "compra": 3.34,
-    "venta": 3.361,
+    "venta": 3.362,
     "source": "scraper"
   },
   {
@@ -260,19 +260,16 @@
   {
     "casa": "IntiCambio",
     "url": "https://inticambio.pe/",
-    "compra": 3.35,
-    "venta": 3.355,
+    "compra": 3.347,
+    "venta": 3.354,
     "source": "scraper"
   },
   {
     "casa": "Dolarex",
     "url": "https://dolarex.pe/",
-    "compra": 3.35,
-    "venta": 3.355,
-    "source": "last_known",
-    "last_seen": "2026-01-24",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\".compra .valor\") to be visible\n"
+    "compra": 3.345,
+    "venta": 3.36,
+    "source": "scraper"
   },
   {
     "casa": "Cambix",
@@ -291,8 +288,8 @@
   {
     "casa": "DinersFX",
     "url": "https://dinersfx.pe/",
-    "compra": 3.328,
-    "venta": 3.403,
+    "compra": 3.325,
+    "venta": 3.404,
     "source": "scraper"
   },
   {
@@ -333,7 +330,7 @@
   {
     "casa": "DollarHouse",
     "url": "https://app.dollarhouse.pe/",
-    "compra": 3.35,
+    "compra": 3.347,
     "venta": 3.357,
     "source": "scraper"
   },
