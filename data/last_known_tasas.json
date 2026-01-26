@@ -270,8 +270,8 @@
     "SRCambio": {
       "casa": "SRCambio",
       "url": "https://srcambio.pe/",
-      "compra": 3.423,
-      "venta": 3.431,
+      "compra": 3.347,
+      "venta": 3.363,
       "last_seen": "2026-01-26"
     },
     "Kambio": {
@@ -299,7 +299,7 @@
       "casa": "DinersFX",
       "url": "https://dinersfx.pe/",
       "compra": 3.328,
-      "venta": 3.403,
+      "venta": 3.443,
       "last_seen": "2026-01-26"
     },
     "CambioDigitalPeru": {
