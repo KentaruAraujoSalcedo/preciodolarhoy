@@ -65,8 +65,8 @@
   {
     "casa": "Instakash",
     "url": "https://instakash.net/",
-    "compra": 3.341,
-    "venta": 3.361,
+    "compra": 3.342,
+    "venta": 3.36,
     "source": "scraper"
   },
   {
@@ -93,8 +93,8 @@
   {
     "casa": "ChaskiDolar",
     "url": "https://chaskidolar.com/",
-    "compra": 3.362,
-    "venta": 3.345,
+    "compra": 3.361,
+    "venta": 3.344,
     "source": "scraper"
   },
   {
@@ -114,8 +114,8 @@
   {
     "casa": "KallpaCambios",
     "url": "https://kallpacambios.com/",
-    "compra": 3.337,
-    "venta": 3.363,
+    "compra": 3.338,
+    "venta": 3.361,
     "source": "scraper"
   },
   {
@@ -142,11 +142,9 @@
   {
     "casa": "Acomo",
     "url": "https://acomo.com.pe/",
-    "compra": 3.344,
+    "compra": 3.343,
     "venta": 3.359,
-    "source": "last_known",
-    "last_seen": "2026-01-26",
-    "backup_fecha": "2026-01-20"
+    "source": "scraper"
   },
   {
     "casa": "ZonaDólar",
@@ -165,8 +163,8 @@
   {
     "casa": "Kambio",
     "url": "https://www.kambio.online/",
-    "compra": 3.348,
-    "venta": 3.353,
+    "compra": 3.347,
+    "venta": 3.352,
     "source": "scraper"
   },
   {
@@ -252,8 +250,8 @@
   {
     "casa": "IntiCambio",
     "url": "https://inticambio.pe/",
-    "compra": 3.35,
-    "venta": 3.355,
+    "compra": 3.349,
+    "venta": 3.354,
     "source": "scraper"
   },
   {
@@ -281,7 +279,7 @@
     "casa": "DinersFX",
     "url": "https://dinersfx.pe/",
     "compra": 3.326,
-    "venta": 3.441,
+    "venta": 3.401,
     "source": "scraper"
   },
   {
@@ -323,7 +321,7 @@
     "casa": "DollarHouse",
     "url": "https://app.dollarhouse.pe/",
     "compra": 3.348,
-    "venta": 3.355,
+    "venta": 3.354,
     "source": "scraper"
   },
   {
