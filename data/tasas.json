@@ -23,8 +23,8 @@
   {
     "casa": "Tkambio",
     "url": "https://tkambio.com/",
-    "compra": 3.338,
-    "venta": 3.363,
+    "compra": 3.34,
+    "venta": 3.365,
     "source": "scraper"
   },
   {
@@ -58,8 +58,8 @@
   {
     "casa": "Dichikash",
     "url": "https://dichikash.com/",
-    "compra": 3.347,
-    "venta": 3.355,
+    "compra": 3.348,
+    "venta": 3.354,
     "source": "scraper"
   },
   {
@@ -79,8 +79,8 @@
   {
     "casa": "SmartDollar",
     "url": "https://www.smartdollar.pe/",
-    "compra": 3.348,
-    "venta": 3.36,
+    "compra": 3.344,
+    "venta": 3.362,
     "source": "scraper"
   },
   {
@@ -102,10 +102,7 @@
     "url": "https://intercambialo.pe/",
     "compra": 3.335,
     "venta": 3.363,
-    "source": "last_known",
-    "last_seen": "2026-01-26",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://intercambialo.pe/\", waiting until \"load\"\n"
+    "source": "scraper"
   },
   {
     "casa": "WesternUnion",
@@ -119,10 +116,7 @@
     "url": "https://kallpacambios.com/",
     "compra": 3.338,
     "venta": 3.361,
-    "source": "last_known",
-    "last_seen": "2026-01-26",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.wait_for_function: Timeout 25000ms exceeded."
+    "source": "scraper"
   },
   {
     "casa": "Billex",
@@ -148,11 +142,9 @@
   {
     "casa": "Acomo",
     "url": "https://acomo.com.pe/",
-    "compra": 3.343,
-    "venta": 3.359,
-    "source": "last_known",
-    "last_seen": "2026-01-26",
-    "backup_fecha": "2026-01-20"
+    "compra": 3.339,
+    "venta": 3.358,
+    "source": "scraper"
   },
   {
     "casa": "ZonaDólar",
