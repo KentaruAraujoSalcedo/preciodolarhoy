@@ -16,8 +16,8 @@
   {
     "casa": "Kambista",
     "url": "https://kambista.com/",
-    "compra": 3.335,
-    "venta": 3.367,
+    "compra": 3.334,
+    "venta": 3.368,
     "source": "scraper"
   },
   {
@@ -58,8 +58,8 @@
   {
     "casa": "Dichikash",
     "url": "https://dichikash.com/",
-    "compra": 3.348,
-    "venta": 3.356,
+    "compra": 3.349,
+    "venta": 3.357,
     "source": "scraper"
   },
   {
@@ -149,7 +149,9 @@
     "url": "https://acomo.com.pe/",
     "compra": 3.339,
     "venta": 3.36,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-26",
+    "backup_fecha": "2026-01-20"
   },
   {
     "casa": "ZonaDólar",
@@ -161,8 +163,8 @@
   {
     "casa": "SRCambio",
     "url": "https://srcambio.pe/",
-    "compra": 3.423,
-    "venta": 3.431,
+    "compra": 3.345,
+    "venta": 3.36,
     "source": "scraper"
   },
   {
@@ -211,7 +213,7 @@
     "casa": "X-Cambio",
     "url": "https://x-cambio.com/",
     "compra": 3.3335,
-    "venta": 3.37,
+    "venta": 3.371,
     "source": "scraper"
   },
   {
@@ -289,7 +291,7 @@
     "casa": "DinersFX",
     "url": "https://dinersfx.pe/",
     "compra": 3.326,
-    "venta": 3.401,
+    "venta": 3.441,
     "source": "scraper"
   },
   {
