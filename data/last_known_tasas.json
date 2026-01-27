@@ -32,8 +32,8 @@
     "InkaMoney": {
       "casa": "InkaMoney",
       "url": "https://inkamoney.com/",
-      "compra": 3.354,
-      "venta": 3.344,
+      "compra": 3.359,
+      "venta": 3.345,
       "last_seen": "2026-01-27"
     },
     "CambioSeguro": {
@@ -46,8 +46,8 @@
     "Okane": {
       "casa": "Okane",
       "url": "https://okanecambiodigital.com/",
-      "compra": 3.343,
-      "venta": 3.354,
+      "compra": 3.344,
+      "venta": 3.355,
       "last_seen": "2026-01-27"
     },
     "JetPerú": {
@@ -194,7 +194,7 @@
       "casa": "Securex",
       "url": "https://securex.pe/",
       "compra": 3.34,
-      "venta": 3.355,
+      "venta": 3.3525,
       "last_seen": "2026-01-27"
     },
     "ChapaCambio": {
@@ -221,7 +221,7 @@
     "DollarHouse": {
       "casa": "DollarHouse",
       "url": "https://app.dollarhouse.pe/",
-      "compra": 3.344,
+      "compra": 3.345,
       "venta": 3.351,
       "last_seen": "2026-01-27"
     },
@@ -277,8 +277,8 @@
     "Kambio": {
       "casa": "Kambio",
       "url": "https://www.kambio.online/",
-      "compra": 3.344,
-      "venta": 3.349,
+      "compra": 3.347,
+      "venta": 3.352,
       "last_seen": "2026-01-27"
     },
     "TraderPeruFX": {
