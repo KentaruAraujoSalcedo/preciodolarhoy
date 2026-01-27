@@ -248,6 +248,21 @@ main{
 .tabla-casas tbody tr:hover{ background:#EEF5FF; }
 td.mejor-compra{ background:#E9FFE9; font-weight:800; }
 td.mejor-venta { background:#FFE9E9; font-weight:800; }
+
+/* MEJOR = verde */
+td.mejor-compra,
+td.mejor-venta {
+  background: #E9FFE9;
+  font-weight: 800;
+}
+
+/* PEOR = rojo */
+td.peor-compra,
+td.peor-venta {
+  background: #FFE9E9;
+  font-weight: 800;
+}
+
 .tabla-casas a{ color:var(--brand-blue); text-decoration:none; font-weight:800; }
 .tabla-casas a:hover{ text-decoration:underline; }
 .tabla-casas th:first-child, .tabla-casas td:first-child{ text-align:left; }

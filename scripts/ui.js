@@ -1,27 +1,40 @@
 // ==============================
 // File: scripts/ui.js
 // ==============================
+
+// Funcion Helper:
+function getHaveWant() {
+  const { modo, monedaTengo, monedaQuiero } = state;
+
+  // En recibir: (tengo -> quiero)
+  // En necesito: (quiero -> tengo)  ← se invierte
+  const have = (modo === 'recibir') ? monedaTengo : monedaQuiero;
+  const want = (modo === 'recibir') ? monedaQuiero : monedaTengo;
+
+  return { have, want };
+}
+
 import { state, setState, isReadySunat } from './state.js';
 
 const $ = (sel) => document.querySelector(sel);
 const $$ = (sel) => document.querySelectorAll(sel);
 
 export function initStaticUI() {
-// Fecha
-const fechaEl = $('#fecha');
-if (fechaEl) {
-  fechaEl.textContent = new Date().toLocaleDateString('es-PE', {
-    year: 'numeric', month: 'long', day: 'numeric'
-  });
-}
+  // Fecha
+  const fechaEl = $('#fecha');
+  if (fechaEl) {
+    fechaEl.textContent = new Date().toLocaleDateString('es-PE', {
+      year: 'numeric', month: 'long', day: 'numeric'
+    });
+  }
 
-// Hora
-const horaEl = $('#hora');
-if (horaEl) {
-  horaEl.textContent = new Date().toLocaleTimeString('es-PE', {
-    hour: '2-digit', minute: '2-digit'
-  });
-}
+  // Hora
+  const horaEl = $('#hora');
+  if (horaEl) {
+    horaEl.textContent = new Date().toLocaleTimeString('es-PE', {
+      hour: '2-digit', minute: '2-digit'
+    });
+  }
 
 
   // Moneda quiero siempre opuesta a tengo
@@ -31,7 +44,7 @@ if (horaEl) {
     selQuiero.disabled = true; // controlado por JS
     ensureOppositeSelect(selTengo, selQuiero);
   }
-    // ⬇️ nuevo
+  // ⬇️ nuevo
   syncAdornmentAndChips();
 }
 
@@ -151,31 +164,65 @@ export function renderTabla() {
 
   const filas = ordenarValidasSegunModo();
 
-  // 1) válidas
+  // ============================
+// DEFINIR QUÉ SE PINTA (CORRECTO)
+// ============================
+const { modo } = state;
+const { have, want } = getHaveWant();
+
+let bestCompra = null;
+let worstCompra = null;
+let bestVenta = null;
+let worstVenta = null;
+
+const paintCompra =
+  (modo === 'recibir'  && have === 'USD' && want === 'PEN') ||
+  (modo === 'necesito' && want === 'PEN' && have === 'USD');
+
+const paintVenta =
+  (modo === 'recibir'  && have === 'PEN' && want === 'USD') ||
+  (modo === 'necesito' && want === 'USD' && have === 'PEN');
+
+  // USD → PEN => me compran USD => COMPRA importa
+  if (paintCompra && filas.length) {
+    bestCompra = Math.max(...filas.map(c => c.compra));
+    worstCompra = Math.min(...filas.map(c => c.compra));
+  }
+
+  // PEN → USD => compro USD => VENTA importa
+  if (paintVenta && filas.length) {
+    bestVenta = Math.min(...filas.map(c => c.venta));
+    worstVenta = Math.max(...filas.map(c => c.venta));
+  }
+
+  // ============================
+  // RENDER DE FILAS
+  // ============================
   for (const c of filas) {
     const tr = document.createElement('tr');
     tr.className = 'fila-casa';
     tr.dataset.compra = c.compra;
     tr.dataset.venta = c.venta;
-    tr.innerHTML = `
-      <td><a href="${c.url}" target="_blank" rel="noopener noreferrer">${c.casa}</a></td>
-      <td class="compra ${c.compra === state.mejorCompra ? 'mejor-compra' : ''}">${rateFmt(c.compra)}</td>
-      <td class="venta ${c.venta === state.mejorVenta ? 'mejor-venta' : ''}">${rateFmt(c.venta)}</td>
-      <td class="dolares-obtenidos">-</td>
-      <td class="soles-recibidos">-</td>`;
-    tbody.appendChild(tr);
-  }
 
-  // 2) inválidas
-  for (const c of state.invalidas) {
-    const tr = document.createElement('tr');
-    tr.className = 'fila-casa fila-invalida';
     tr.innerHTML = `
-      <td><a href="${c.url}" target="_blank" rel="noopener noreferrer">${c.casa}</a></td>
-      <td class="compra">–</td>
-      <td class="venta">–</td>
+      <td><a href="${c.url}" target="_blank">${c.casa}</a></td>
+
+      <td class="compra
+        ${paintCompra && c.compra === bestCompra ? 'mejor-compra' : ''}
+        ${paintCompra && c.compra === worstCompra ? 'peor-compra' : ''}">
+        ${rateFmt(c.compra)}
+      </td>
+
+      <td class="venta
+        ${paintVenta && c.venta === bestVenta ? 'mejor-venta' : ''}
+        ${paintVenta && c.venta === worstVenta ? 'peor-venta' : ''}">
+        ${rateFmt(c.venta)}
+      </td>
+
       <td class="dolares-obtenidos">-</td>
-      <td class="soles-recibidos">-</td>`;
+      <td class="soles-recibidos">-</td>
+    `;
+
     tbody.appendChild(tr);
   }
 
@@ -184,22 +231,30 @@ export function renderTabla() {
 }
 
 function ordenarValidasSegunModo() {
-  const { validas, modo, monedaTengo, monedaQuiero } = state;
+  const { validas, modo } = state;
   const arr = [...validas];
 
+  const { have, want } = getHaveWant();
+
   if (modo === 'recibir') {
-    if (monedaTengo === 'USD' && monedaQuiero === 'PEN') {
-      arr.sort((a, b) => b.compra - a.compra); // más soles por USD ⇒ mayor COMPRA
-    } else if (monedaTengo === 'PEN' && monedaQuiero === 'USD') {
-      arr.sort((a, b) => a.venta - b.venta); // más USD por soles ⇒ menor VENTA
+    if (have === 'USD' && want === 'PEN') {
+      // soles recibidos = USD * COMPRA -> mejor COMPRA más alta
+      arr.sort((a, b) => b.compra - a.compra);
+    } else if (have === 'PEN' && want === 'USD') {
+      // USD recibidos = PEN / VENTA -> mejor VENTA más baja
+      arr.sort((a, b) => a.venta - b.venta);
     }
-  } else { // necesito
-    if (monedaTengo === 'USD' && monedaQuiero === 'PEN') {
-      arr.sort((a, b) => a.venta - b.venta); // menos soles para lograr USD ⇒ menor VENTA
-    } else if (monedaTengo === 'PEN' && monedaQuiero === 'USD') {
-      arr.sort((a, b) => b.compra - a.compra); // menos soles ⇒ mayor COMPRA
+  } else {
+    // necesito: monto está en WANT
+    if (want === 'USD' && have === 'PEN') {
+      // PEN necesarios = USD * VENTA -> mejor VENTA más baja
+      arr.sort((a, b) => a.venta - b.venta);
+    } else if (want === 'PEN' && have === 'USD') {
+      // USD necesarios = PEN / COMPRA -> mejor COMPRA más alta
+      arr.sort((a, b) => b.compra - a.compra);
     }
   }
+
   return arr;
 }
 
@@ -222,25 +277,40 @@ function actualizarEncabezadosTabla() {
 }
 
 export function recalcularCeldas() {
-  const { monto, modo, monedaTengo } = state;
+  const { monto, modo } = state;
   if (!monto || monto <= 0) return;
+
+  const { have, want } = getHaveWant();
 
   document.querySelectorAll('.fila-casa').forEach(fila => {
     const compra = parseFloat(fila.dataset.compra);
     const venta  = parseFloat(fila.dataset.venta);
-    const celD   = fila.querySelector('.dolares-obtenidos');
-    const celS   = fila.querySelector('.soles-recibidos');
+
+    const celD = fila.querySelector('.dolares-obtenidos');
+    const celS = fila.querySelector('.soles-recibidos');
 
     celD.textContent = '-';
     celS.textContent = '-';
 
-    if (Number.isFinite(compra) && Number.isFinite(venta)) {
-      if (modo === 'recibir') {
-        if (monedaTengo === 'PEN') celD.textContent = moneyFmt(monto / compra, 'USD');
-        if (monedaTengo === 'USD') celS.textContent = moneyFmt(monto * venta, 'PEN');
-      } else { // necesito
-        if (monedaTengo === 'PEN') celD.textContent = moneyFmt(monto / venta, 'USD');
-        if (monedaTengo === 'USD') celS.textContent = moneyFmt(monto * compra, 'PEN');
+    if (!Number.isFinite(compra) || !Number.isFinite(venta)) return;
+
+    if (modo === 'recibir') {
+      // tengo -> quiero
+      if (have === 'PEN' && want === 'USD') {
+        // compro USD => uso VENTA
+        celD.textContent = moneyFmt(monto / venta, 'USD');
+      } else if (have === 'USD' && want === 'PEN') {
+        // vendo USD => uso COMPRA
+        celS.textContent = moneyFmt(monto * compra, 'PEN');
+      }
+    } else {
+      // necesito: "monto" está en WANT (lo que quieres recibir)
+      if (want === 'USD' && have === 'PEN') {
+        // quiero USD, tengo PEN => PEN necesarios = USD * VENTA
+        celS.textContent = moneyFmt(monto * venta, 'PEN');
+      } else if (want === 'PEN' && have === 'USD') {
+        // quiero PEN, tengo USD => USD necesarios = PEN / COMPRA
+        celD.textContent = moneyFmt(monto / compra, 'USD');
       }
     }
   });
@@ -260,17 +330,17 @@ export function renderSunat() {
   }
 
   // Si existe mini-SUNAT en el conversor, actualízalo también
-const mc = document.getElementById('mini-c');
-const mv = document.getElementById('mini-v');
-if (mc && mv) {
-  if (isReadySunat()) {
-    mc.textContent = state.sunat.compra.toFixed(3);
-    mv.textContent = state.sunat.venta.toFixed(3);
-  } else {
-    mc.textContent = '–';
-    mv.textContent = '–';
+  const mc = document.getElementById('mini-c');
+  const mv = document.getElementById('mini-v');
+  if (mc && mv) {
+    if (isReadySunat()) {
+      mc.textContent = state.sunat.compra.toFixed(3);
+      mv.textContent = state.sunat.venta.toFixed(3);
+    } else {
+      mc.textContent = '–';
+      mv.textContent = '–';
+    }
   }
-}
 
 }
 
@@ -287,7 +357,7 @@ export function renderResultadoConversor() {
     texto = 'Por favor ingresa un monto válido.';
   } else if (monedaTengo === monedaQuiero) {
     texto = 'Selecciona monedas diferentes.';
-  } 
+  }
   // ======================
   // MODO: RECIBIR
   // ======================
