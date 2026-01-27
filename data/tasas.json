@@ -149,9 +149,7 @@
     "url": "https://acomo.com.pe/",
     "compra": 3.342,
     "venta": 3.36,
-    "source": "last_known",
-    "last_seen": "2026-01-27",
-    "backup_fecha": "2026-01-20"
+    "source": "scraper"
   },
   {
     "casa": "ZonaDólar",
@@ -278,10 +276,7 @@
     "url": "https://cambix.com.pe/",
     "compra": 3.33,
     "venta": 3.37,
-    "source": "last_known",
-    "last_seen": "2026-01-27",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://cambix.com.pe/\nCall log:\n  - navigating to \"https://cambix.com.pe/\", waiting until \"load\"\n"
+    "source": "scraper"
   },
   {
     "casa": "DLS Money",
@@ -294,7 +289,7 @@
     "casa": "DinersFX",
     "url": "https://dinersfx.pe/",
     "compra": 3.326,
-    "venta": 3.441,
+    "venta": 3.401,
     "source": "scraper"
   },
   {
