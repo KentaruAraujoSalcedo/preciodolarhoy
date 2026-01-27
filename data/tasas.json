@@ -23,15 +23,15 @@
   {
     "casa": "Tkambio",
     "url": "https://tkambio.com/",
-    "compra": 3.334,
-    "venta": 3.36,
+    "compra": 3.335,
+    "venta": 3.362,
     "source": "scraper"
   },
   {
     "casa": "InkaMoney",
     "url": "https://inkamoney.com/",
     "compra": 3.361,
-    "venta": 3.348,
+    "venta": 3.34,
     "source": "scraper"
   },
   {
@@ -65,8 +65,8 @@
   {
     "casa": "Instakash",
     "url": "https://instakash.net/",
-    "compra": 3.341,
-    "venta": 3.358,
+    "compra": 3.34,
+    "venta": 3.36,
     "source": "scraper"
   },
   {
@@ -93,7 +93,7 @@
   {
     "casa": "ChaskiDolar",
     "url": "https://chaskidolar.com/",
-    "compra": 3.358,
+    "compra": 3.359,
     "venta": 3.341,
     "source": "scraper"
   },
@@ -135,12 +135,9 @@
   {
     "casa": "CambiaFX",
     "url": "https://cambiafx.pe/",
-    "compra": 3.34,
+    "compra": 3.341,
     "venta": 3.358,
-    "source": "last_known",
-    "last_seen": "2026-01-27",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"https://cambiafx.pe/\", waiting until \"networkidle\"\n"
+    "source": "scraper"
   },
   {
     "casa": "Acomo",
@@ -166,8 +163,8 @@
   {
     "casa": "Kambio",
     "url": "https://www.kambio.online/",
-    "compra": 3.345,
-    "venta": 3.35,
+    "compra": 3.347,
+    "venta": 3.352,
     "source": "scraper"
   },
   {
@@ -316,7 +313,7 @@
   {
     "casa": "CambioDigitalPeru",
     "url": "https://cambiodigitalperu.com",
-    "compra": 3.345,
+    "compra": 3.341,
     "venta": 3.354,
     "source": "scraper"
   },
@@ -324,7 +321,7 @@
     "casa": "DollarHouse",
     "url": "https://app.dollarhouse.pe/",
     "compra": 3.346,
-    "venta": 3.352,
+    "venta": 3.351,
     "source": "scraper"
   },
   {

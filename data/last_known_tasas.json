@@ -25,15 +25,15 @@
     "Tkambio": {
       "casa": "Tkambio",
       "url": "https://tkambio.com/",
-      "compra": 3.334,
-      "venta": 3.36,
+      "compra": 3.335,
+      "venta": 3.362,
       "last_seen": "2026-01-27"
     },
     "InkaMoney": {
       "casa": "InkaMoney",
       "url": "https://inkamoney.com/",
       "compra": 3.361,
-      "venta": 3.348,
+      "venta": 3.34,
       "last_seen": "2026-01-27"
     },
     "CambioSeguro": {
@@ -67,8 +67,8 @@
     "Instakash": {
       "casa": "Instakash",
       "url": "https://instakash.net/",
-      "compra": 3.341,
-      "venta": 3.358,
+      "compra": 3.34,
+      "venta": 3.36,
       "last_seen": "2026-01-27"
     },
     "MegaMoney": {
@@ -95,7 +95,7 @@
     "ChaskiDolar": {
       "casa": "ChaskiDolar",
       "url": "https://chaskidolar.com/",
-      "compra": 3.358,
+      "compra": 3.359,
       "venta": 3.341,
       "last_seen": "2026-01-27"
     },
@@ -222,7 +222,7 @@
       "casa": "DollarHouse",
       "url": "https://app.dollarhouse.pe/",
       "compra": 3.346,
-      "venta": 3.352,
+      "venta": 3.351,
       "last_seen": "2026-01-27"
     },
     "SUNAT": {
@@ -263,7 +263,7 @@
     "CambiaFX": {
       "casa": "CambiaFX",
       "url": "https://cambiafx.pe/",
-      "compra": 3.34,
+      "compra": 3.341,
       "venta": 3.358,
       "last_seen": "2026-01-27"
     },
@@ -277,8 +277,8 @@
     "Kambio": {
       "casa": "Kambio",
       "url": "https://www.kambio.online/",
-      "compra": 3.345,
-      "venta": 3.35,
+      "compra": 3.347,
+      "venta": 3.352,
       "last_seen": "2026-01-27"
     },
     "TraderPeruFX": {
@@ -305,7 +305,7 @@
     "CambioDigitalPeru": {
       "casa": "CambioDigitalPeru",
       "url": "https://cambiodigitalperu.com",
-      "compra": 3.345,
+      "compra": 3.341,
       "venta": 3.354,
       "last_seen": "2026-01-27"
     }
