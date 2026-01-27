@@ -200,8 +200,8 @@
     "ChapaCambio": {
       "casa": "ChapaCambio",
       "url": "https://chapacambio.com/",
-      "compra": 3.338,
-      "venta": 3.363,
+      "compra": 3.333,
+      "venta": 3.37,
       "last_seen": "2026-01-27"
     },
     "TuCambista": {
@@ -215,7 +215,7 @@
       "casa": "HirPower",
       "url": "https://hirpower.com/",
       "compra": 3.34,
-      "venta": 3.36,
+      "venta": 3.37,
       "last_seen": "2026-01-27"
     },
     "DollarHouse": {
@@ -299,7 +299,7 @@
       "casa": "DinersFX",
       "url": "https://dinersfx.pe/",
       "compra": 3.326,
-      "venta": 3.401,
+      "venta": 3.441,
       "last_seen": "2026-01-27"
     },
     "CambioDigitalPeru": {
