@@ -88,10 +88,7 @@
     "url": "https://cambiox.pe/",
     "compra": 3.335,
     "venta": 3.365,
-    "source": "last_known",
-    "last_seen": "2026-01-27",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.goto: net::ERR_CONNECTION_CLOSED at https://cambiox.pe/\nCall log:\n  - navigating to \"https://cambiox.pe/\", waiting until \"load\"\n"
+    "source": "scraper"
   },
   {
     "casa": "ChaskiDolar",
@@ -152,7 +149,9 @@
     "url": "https://acomo.com.pe/",
     "compra": 3.342,
     "venta": 3.36,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-27",
+    "backup_fecha": "2026-01-20"
   },
   {
     "casa": "ZonaDólar",
