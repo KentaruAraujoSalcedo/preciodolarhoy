@@ -25,8 +25,8 @@
     "Tkambio": {
       "casa": "Tkambio",
       "url": "https://tkambio.com/",
-      "compra": 3.337,
-      "venta": 3.362,
+      "compra": 3.335,
+      "venta": 3.36,
       "last_seen": "2026-01-27"
     },
     "InkaMoney": {
@@ -53,8 +53,8 @@
     "JetPerú": {
       "casa": "JetPerú",
       "url": "https://jetperu.com.pe/cambiar-dinero/",
-      "compra": 3.345,
-      "venta": 3.35,
+      "compra": 3.347,
+      "venta": 3.351,
       "last_seen": "2026-01-27"
     },
     "Dichikash": {
@@ -67,8 +67,8 @@
     "Instakash": {
       "casa": "Instakash",
       "url": "https://instakash.net/",
-      "compra": 3.339,
-      "venta": 3.357,
+      "compra": 3.341,
+      "venta": 3.359,
       "last_seen": "2026-01-27"
     },
     "MegaMoney": {
@@ -117,7 +117,7 @@
       "casa": "KallpaCambios",
       "url": "https://kallpacambios.com/",
       "compra": 3.335,
-      "venta": 3.367,
+      "venta": 3.364,
       "last_seen": "2026-01-27"
     },
     "Billex": {
@@ -179,8 +179,8 @@
     "IntiCambio": {
       "casa": "IntiCambio",
       "url": "https://inticambio.pe/",
-      "compra": 3.346,
-      "venta": 3.351,
+      "compra": 3.347,
+      "venta": 3.352,
       "last_seen": "2026-01-27"
     },
     "Cambix": {
@@ -221,8 +221,8 @@
     "DollarHouse": {
       "casa": "DollarHouse",
       "url": "https://app.dollarhouse.pe/",
-      "compra": 3.345,
-      "venta": 3.351,
+      "compra": 3.346,
+      "venta": 3.353,
       "last_seen": "2026-01-27"
     },
     "SUNAT": {
@@ -305,7 +305,7 @@
     "CambioDigitalPeru": {
       "casa": "CambioDigitalPeru",
       "url": "https://cambiodigitalperu.com",
-      "compra": 3.342,
+      "compra": 3.344,
       "venta": 3.352,
       "last_seen": "2026-01-27"
     }
