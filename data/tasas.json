@@ -2,15 +2,15 @@
   {
     "casa": "Yanki",
     "url": "https://yanki.pe",
-    "compra": 3.341,
-    "venta": 3.358,
+    "compra": 3.34,
+    "venta": 3.357,
     "source": "scraper"
   },
   {
     "casa": "Rextie",
     "url": "https://www.rextie.com/",
-    "compra": 3.334,
-    "venta": 3.364,
+    "compra": 3.332,
+    "venta": 3.362,
     "source": "scraper"
   },
   {
@@ -30,29 +30,29 @@
   {
     "casa": "InkaMoney",
     "url": "https://inkamoney.com/",
-    "compra": 3.355,
-    "venta": 3.338,
+    "compra": 3.354,
+    "venta": 3.342,
     "source": "scraper"
   },
   {
     "casa": "CambioSeguro",
     "url": "https://cambioseguro.com/",
-    "compra": 3.337,
-    "venta": 3.361,
+    "compra": 3.335,
+    "venta": 3.358,
     "source": "scraper"
   },
   {
     "casa": "Okane",
     "url": "https://okanecambiodigital.com/",
-    "compra": 3.343,
-    "venta": 3.353,
+    "compra": 3.34,
+    "venta": 3.352,
     "source": "scraper"
   },
   {
     "casa": "JetPerú",
     "url": "https://jetperu.com.pe/cambiar-dinero/",
-    "compra": 3.348,
-    "venta": 3.352,
+    "compra": 3.345,
+    "venta": 3.35,
     "source": "scraper"
   },
   {
@@ -65,8 +65,8 @@
   {
     "casa": "Instakash",
     "url": "https://instakash.net/",
-    "compra": 3.34,
-    "venta": 3.357,
+    "compra": 3.334,
+    "venta": 3.36,
     "source": "scraper"
   },
   {
@@ -86,21 +86,21 @@
   {
     "casa": "CambioX",
     "url": "https://cambiox.pe/",
-    "compra": 3.335,
-    "venta": 3.365,
+    "compra": 3.332,
+    "venta": 3.362,
     "source": "scraper"
   },
   {
     "casa": "ChaskiDolar",
     "url": "https://chaskidolar.com/",
-    "compra": 3.356,
-    "venta": 3.341,
+    "compra": 3.358,
+    "venta": 3.34,
     "source": "scraper"
   },
   {
     "casa": "Intercambialo",
     "url": "https://intercambialo.pe/",
-    "compra": 3.337,
+    "compra": 3.335,
     "venta": 3.361,
     "source": "scraper"
   },
@@ -115,14 +115,14 @@
     "casa": "KallpaCambios",
     "url": "https://kallpacambios.com/",
     "compra": 3.337,
-    "venta": 3.359,
+    "venta": 3.367,
     "source": "scraper"
   },
   {
     "casa": "Billex",
     "url": "https://www.billex.pe/",
-    "compra": 3.331,
-    "venta": 3.364,
+    "compra": 3.287,
+    "venta": 3.4,
     "source": "scraper"
   },
   {
@@ -135,7 +135,7 @@
   {
     "casa": "CambiaFX",
     "url": "https://cambiafx.pe/",
-    "compra": 3.342,
+    "compra": 3.34,
     "venta": 3.358,
     "source": "scraper"
   },
@@ -144,7 +144,9 @@
     "url": "https://acomo.com.pe/",
     "compra": 3.343,
     "venta": 3.357,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-27",
+    "backup_fecha": "2026-01-20"
   },
   {
     "casa": "ZonaDólar",
@@ -156,15 +158,15 @@
   {
     "casa": "SRCambio",
     "url": "https://srcambio.pe/",
-    "compra": 3.423,
-    "venta": 3.431,
+    "compra": 3.34,
+    "venta": 3.358,
     "source": "scraper"
   },
   {
     "casa": "Kambio",
     "url": "https://www.kambio.online/",
-    "compra": 3.345,
-    "venta": 3.35,
+    "compra": 3.344,
+    "venta": 3.349,
     "source": "scraper"
   },
   {
@@ -219,7 +221,7 @@
   {
     "casa": "CambioMas",
     "url": "https://cambiosmass.com/",
-    "compra": 3.343,
+    "compra": 3.345,
     "venta": 3.355,
     "source": "scraper"
   },
@@ -243,29 +245,29 @@
   {
     "casa": "VipCapital",
     "url": "https://www.vipcapitalbusiness.com/",
-    "compra": 3.34,
-    "venta": 3.36,
+    "compra": 3.335,
+    "venta": 3.355,
     "source": "scraper"
   },
   {
     "casa": "IntiCambio",
     "url": "https://inticambio.pe/",
-    "compra": 3.346,
-    "venta": 3.351,
+    "compra": 3.344,
+    "venta": 3.35,
     "source": "scraper"
   },
   {
     "casa": "Dolarex",
     "url": "https://dolarex.pe/",
     "compra": 3.347,
-    "venta": 3.353,
+    "venta": 3.354,
     "source": "scraper"
   },
   {
     "casa": "Cambix",
     "url": "https://cambix.com.pe/",
-    "compra": 3.34,
-    "venta": 3.36,
+    "compra": 3.33,
+    "venta": 3.37,
     "source": "scraper"
   },
   {
@@ -278,33 +280,30 @@
   {
     "casa": "DinersFX",
     "url": "https://dinersfx.pe/",
-    "compra": 3.325,
-    "venta": 3.399,
+    "compra": 3.319,
+    "venta": 3.435,
     "source": "scraper"
   },
   {
     "casa": "Securex",
     "url": "https://securex.pe/",
-    "compra": 3.34,
-    "venta": 3.355,
+    "compra": 3.341,
+    "venta": 3.356,
     "source": "scraper"
   },
   {
     "casa": "ChapaCambio",
     "url": "https://chapacambio.com/",
-    "compra": 3.336,
-    "venta": 3.361,
+    "compra": 3.333,
+    "venta": 3.359,
     "source": "scraper"
   },
   {
     "casa": "TuCambista",
     "url": "https://tucambista.pe/",
-    "compra": 3.337,
-    "venta": 3.368,
-    "source": "last_known",
-    "last_seen": "2026-01-27",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: No se encontraron suficientes tasas válidas"
+    "compra": 3.333,
+    "venta": 3.361,
+    "source": "scraper"
   },
   {
     "casa": "HirPower",
@@ -316,14 +315,14 @@
   {
     "casa": "CambioDigitalPeru",
     "url": "https://cambiodigitalperu.com",
-    "compra": 3.342,
-    "venta": 3.351,
+    "compra": 3.341,
+    "venta": 3.35,
     "source": "scraper"
   },
   {
     "casa": "DollarHouse",
     "url": "https://app.dollarhouse.pe/",
-    "compra": 3.346,
+    "compra": 3.344,
     "venta": 3.352,
     "source": "scraper"
   },
