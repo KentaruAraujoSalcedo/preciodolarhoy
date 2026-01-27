@@ -116,7 +116,10 @@
     "url": "https://kallpacambios.com/",
     "compra": 3.338,
     "venta": 3.361,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-27",
+    "backup_fecha": "2026-01-20",
+    "scraper_error": "No se pudo scrapear: Page.wait_for_function: Timeout 25000ms exceeded."
   },
   {
     "casa": "Billex",
@@ -146,7 +149,9 @@
     "url": "https://acomo.com.pe/",
     "compra": 3.342,
     "venta": 3.36,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-27",
+    "backup_fecha": "2026-01-20"
   },
   {
     "casa": "ZonaDólar",
@@ -286,7 +291,7 @@
     "casa": "DinersFX",
     "url": "https://dinersfx.pe/",
     "compra": 3.326,
-    "venta": 3.441,
+    "venta": 3.401,
     "source": "scraper"
   },
   {
