@@ -93,8 +93,8 @@
   {
     "casa": "ChaskiDolar",
     "url": "https://chaskidolar.com/",
-    "compra": 3.359,
-    "venta": 3.342,
+    "compra": 3.358,
+    "venta": 3.341,
     "source": "scraper"
   },
   {
@@ -137,17 +137,16 @@
     "url": "https://cambiafx.pe/",
     "compra": 3.34,
     "venta": 3.358,
-    "source": "last_known",
-    "last_seen": "2026-01-27",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"https://cambiafx.pe/\", waiting until \"networkidle\"\n"
+    "source": "scraper"
   },
   {
     "casa": "Acomo",
     "url": "https://acomo.com.pe/",
     "compra": 3.339,
     "venta": 3.356,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-27",
+    "backup_fecha": "2026-01-20"
   },
   {
     "casa": "ZonaDólar",
@@ -166,8 +165,8 @@
   {
     "casa": "Kambio",
     "url": "https://www.kambio.online/",
-    "compra": 3.347,
-    "venta": 3.352,
+    "compra": 3.348,
+    "venta": 3.353,
     "source": "scraper"
   },
   {
@@ -237,11 +236,8 @@
     "casa": "MercadoCambiario",
     "url": "https://mercadocambiario.pe/",
     "compra": 3.346,
-    "venta": 3.347,
-    "source": "last_known",
-    "last_seen": "2026-01-27",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div.buy span.amount\") to be visible\n"
+    "venta": 3.348,
+    "source": "scraper"
   },
   {
     "casa": "VipCapital",
@@ -253,14 +249,14 @@
   {
     "casa": "IntiCambio",
     "url": "https://inticambio.pe/",
-    "compra": 3.347,
-    "venta": 3.352,
+    "compra": 3.345,
+    "venta": 3.35,
     "source": "scraper"
   },
   {
     "casa": "Dolarex",
     "url": "https://dolarex.pe/",
-    "compra": 3.348,
+    "compra": 3.346,
     "venta": 3.354,
     "source": "scraper"
   },
@@ -282,7 +278,7 @@
     "casa": "DinersFX",
     "url": "https://dinersfx.pe/",
     "compra": 3.319,
-    "venta": 3.395,
+    "venta": 3.435,
     "source": "scraper"
   },
   {
@@ -324,7 +320,7 @@
     "casa": "DollarHouse",
     "url": "https://app.dollarhouse.pe/",
     "compra": 3.346,
-    "venta": 3.353,
+    "venta": 3.352,
     "source": "scraper"
   },
   {
