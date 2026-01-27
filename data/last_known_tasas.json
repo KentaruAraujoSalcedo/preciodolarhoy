@@ -4,8 +4,8 @@
     "Yanki": {
       "casa": "Yanki",
       "url": "https://yanki.pe",
-      "compra": 3.34,
-      "venta": 3.357,
+      "compra": 3.338,
+      "venta": 3.355,
       "last_seen": "2026-01-27"
     },
     "Rextie": {
@@ -18,22 +18,22 @@
     "Kambista": {
       "casa": "Kambista",
       "url": "https://kambista.com/",
-      "compra": 3.336,
+      "compra": 3.332,
       "venta": 3.359,
       "last_seen": "2026-01-27"
     },
     "Tkambio": {
       "casa": "Tkambio",
       "url": "https://tkambio.com/",
-      "compra": 3.335,
-      "venta": 3.36,
+      "compra": 3.336,
+      "venta": 3.361,
       "last_seen": "2026-01-27"
     },
     "InkaMoney": {
       "casa": "InkaMoney",
       "url": "https://inkamoney.com/",
-      "compra": 3.354,
-      "venta": 3.342,
+      "compra": 3.353,
+      "venta": 3.34,
       "last_seen": "2026-01-27"
     },
     "CambioSeguro": {
@@ -46,8 +46,8 @@
     "Okane": {
       "casa": "Okane",
       "url": "https://okanecambiodigital.com/",
-      "compra": 3.34,
-      "venta": 3.352,
+      "compra": 3.342,
+      "venta": 3.355,
       "last_seen": "2026-01-27"
     },
     "JetPerú": {
@@ -60,8 +60,8 @@
     "Dichikash": {
       "casa": "Dichikash",
       "url": "https://dichikash.com/",
-      "compra": 3.345,
-      "venta": 3.352,
+      "compra": 3.344,
+      "venta": 3.351,
       "last_seen": "2026-01-27"
     },
     "Instakash": {
@@ -96,14 +96,14 @@
       "casa": "ChaskiDolar",
       "url": "https://chaskidolar.com/",
       "compra": 3.358,
-      "venta": 3.34,
+      "venta": 3.341,
       "last_seen": "2026-01-27"
     },
     "Intercambialo": {
       "casa": "Intercambialo",
       "url": "https://intercambialo.pe/",
-      "compra": 3.335,
-      "venta": 3.361,
+      "compra": 3.33,
+      "venta": 3.36,
       "last_seen": "2026-01-27"
     },
     "WesternUnion": {
@@ -116,7 +116,7 @@
     "KallpaCambios": {
       "casa": "KallpaCambios",
       "url": "https://kallpacambios.com/",
-      "compra": 3.337,
+      "compra": 3.335,
       "venta": 3.367,
       "last_seen": "2026-01-27"
     },
@@ -124,7 +124,7 @@
       "casa": "Billex",
       "url": "https://www.billex.pe/",
       "compra": 3.287,
-      "venta": 3.4,
+      "venta": 3.401,
       "last_seen": "2026-01-27"
     },
     "Acomo": {
@@ -158,14 +158,14 @@
     "CambioSol": {
       "casa": "CambioSol",
       "url": "https://cambiosol.pe/",
-      "compra": 3.345,
+      "compra": 3.342,
       "venta": 3.361,
       "last_seen": "2026-01-27"
     },
     "X-Cambio": {
       "casa": "X-Cambio",
       "url": "https://x-cambio.com/",
-      "compra": 3.334,
+      "compra": 3.33,
       "venta": 3.362,
       "last_seen": "2026-01-27"
     },
@@ -179,7 +179,7 @@
     "IntiCambio": {
       "casa": "IntiCambio",
       "url": "https://inticambio.pe/",
-      "compra": 3.344,
+      "compra": 3.345,
       "venta": 3.35,
       "last_seen": "2026-01-27"
     },
@@ -193,8 +193,8 @@
     "Securex": {
       "casa": "Securex",
       "url": "https://securex.pe/",
-      "compra": 3.341,
-      "venta": 3.356,
+      "compra": 3.34,
+      "venta": 3.355,
       "last_seen": "2026-01-27"
     },
     "ChapaCambio": {
@@ -222,7 +222,7 @@
       "casa": "DollarHouse",
       "url": "https://app.dollarhouse.pe/",
       "compra": 3.344,
-      "venta": 3.352,
+      "venta": 3.353,
       "last_seen": "2026-01-27"
     },
     "SUNAT": {
@@ -236,14 +236,14 @@
       "casa": "Dolarex",
       "url": "https://dolarex.pe/",
       "compra": 3.347,
-      "venta": 3.354,
+      "venta": 3.353,
       "last_seen": "2026-01-27"
     },
     "Safex": {
       "casa": "Safex",
       "url": "https://www.safex.pe/",
-      "compra": 3.338,
-      "venta": 3.359,
+      "compra": 3.34,
+      "venta": 3.36,
       "last_seen": "2026-01-27"
     },
     "VipCapital": {
@@ -270,14 +270,14 @@
     "SRCambio": {
       "casa": "SRCambio",
       "url": "https://srcambio.pe/",
-      "compra": 3.34,
-      "venta": 3.358,
+      "compra": 3.423,
+      "venta": 3.431,
       "last_seen": "2026-01-27"
     },
     "Kambio": {
       "casa": "Kambio",
       "url": "https://www.kambio.online/",
-      "compra": 3.344,
+      "compra": 3.341,
       "venta": 3.349,
       "last_seen": "2026-01-27"
     },
