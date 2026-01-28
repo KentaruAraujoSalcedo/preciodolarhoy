@@ -118,7 +118,7 @@
       "url": "https://kallpacambios.com/",
       "compra": 3.335,
       "venta": 3.364,
-      "last_seen": "2026-01-27"
+      "last_seen": "2026-01-28"
     },
     "Billex": {
       "casa": "Billex",
@@ -132,7 +132,7 @@
       "url": "https://acomo.com.pe/",
       "compra": 3.338,
       "venta": 3.358,
-      "last_seen": "2026-01-27"
+      "last_seen": "2026-01-28"
     },
     "ZonaDólar": {
       "casa": "ZonaDólar",
@@ -207,8 +207,8 @@
     "TuCambista": {
       "casa": "TuCambista",
       "url": "https://tucambista.pe/",
-      "compra": 3.332,
-      "venta": 3.362,
+      "compra": 3.33,
+      "venta": 3.359,
       "last_seen": "2026-01-28"
     },
     "HirPower": {
@@ -299,7 +299,7 @@
       "casa": "DinersFX",
       "url": "https://dinersfx.pe/",
       "compra": 3.319,
-      "venta": 3.435,
+      "venta": 3.395,
       "last_seen": "2026-01-28"
     },
     "CambioDigitalPeru": {
