@@ -149,7 +149,9 @@
     "url": "https://acomo.com.pe/",
     "compra": 3.338,
     "venta": 3.358,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-28",
+    "backup_fecha": "2026-01-20"
   },
   {
     "casa": "ZonaDólar",
