@@ -102,7 +102,10 @@
     "url": "https://intercambialo.pe/",
     "compra": 3.332,
     "venta": 3.36,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-28",
+    "backup_fecha": "2026-01-20",
+    "scraper_error": "No se pudo scrapear: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://intercambialo.pe/\", waiting until \"load\"\n"
   },
   {
     "casa": "WesternUnion",
@@ -149,9 +152,7 @@
     "url": "https://acomo.com.pe/",
     "compra": 3.338,
     "venta": 3.358,
-    "source": "last_known",
-    "last_seen": "2026-01-28",
-    "backup_fecha": "2026-01-20"
+    "source": "scraper"
   },
   {
     "casa": "ZonaDólar",
@@ -291,7 +292,7 @@
     "casa": "DinersFX",
     "url": "https://dinersfx.pe/",
     "compra": 3.319,
-    "venta": 3.435,
+    "venta": 3.395,
     "source": "scraper"
   },
   {
@@ -312,7 +313,7 @@
     "casa": "TuCambista",
     "url": "https://tucambista.pe/",
     "compra": 3.33,
-    "venta": 3.359,
+    "venta": 3.356,
     "source": "scraper"
   },
   {
