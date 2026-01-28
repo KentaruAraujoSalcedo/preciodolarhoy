@@ -44,8 +44,8 @@
   {
     "casa": "Okane",
     "url": "https://okanecambiodigital.com/",
-    "compra": 3.32,
-    "venta": 3.37,
+    "compra": 0.0,
+    "venta": 0.0,
     "source": "scraper"
   },
   {
@@ -269,7 +269,7 @@
     "source": "last_known",
     "last_seen": "2026-01-27",
     "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\".compra .valor\") to be visible\n"
+    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\".compra .valor\") to be visible\n    2 × locator resolved to hidden <span class=\"valor\" _ngcontent-sdo-c1=\"\"></span>\n"
   },
   {
     "casa": "Cambix",
@@ -289,7 +289,7 @@
     "casa": "DinersFX",
     "url": "https://dinersfx.pe/",
     "compra": 3.319,
-    "venta": 3.435,
+    "venta": 3.395,
     "source": "scraper"
   },
   {
