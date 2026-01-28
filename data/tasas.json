@@ -2,8 +2,8 @@
   {
     "casa": "Yanki",
     "url": "https://yanki.pe",
-    "compra": 3.336,
-    "venta": 3.353,
+    "compra": 3.33,
+    "venta": 3.36,
     "source": "scraper"
   },
   {
@@ -16,15 +16,15 @@
   {
     "casa": "Kambista",
     "url": "https://kambista.com/",
-    "compra": 3.33,
-    "venta": 3.363,
+    "compra": 3.329,
+    "venta": 3.364,
     "source": "scraper"
   },
   {
     "casa": "Tkambio",
     "url": "https://tkambio.com/",
     "compra": 3.335,
-    "venta": 3.362,
+    "venta": 3.365,
     "source": "scraper"
   },
   {
@@ -58,8 +58,8 @@
   {
     "casa": "Dichikash",
     "url": "https://dichikash.com/",
-    "compra": 3.346,
-    "venta": 3.361,
+    "compra": 3.344,
+    "venta": 3.366,
     "source": "scraper"
   },
   {
@@ -93,8 +93,8 @@
   {
     "casa": "ChaskiDolar",
     "url": "https://chaskidolar.com/",
-    "compra": 3.36,
-    "venta": 3.342,
+    "compra": 3.359,
+    "venta": 3.34,
     "source": "scraper"
   },
   {
@@ -116,7 +116,10 @@
     "url": "https://kallpacambios.com/",
     "compra": 3.335,
     "venta": 3.364,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-27",
+    "backup_fecha": "2026-01-20",
+    "scraper_error": "No se pudo scrapear: Page.wait_for_function: Timeout 25000ms exceeded."
   },
   {
     "casa": "Billex",
@@ -146,7 +149,9 @@
     "url": "https://acomo.com.pe/",
     "compra": 3.338,
     "venta": 3.358,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-27",
+    "backup_fecha": "2026-01-20"
   },
   {
     "casa": "ZonaDólar",
@@ -208,7 +213,7 @@
     "casa": "X-Cambio",
     "url": "https://x-cambio.com/",
     "compra": 3.3285,
-    "venta": 3.366,
+    "venta": 3.3665,
     "source": "scraper"
   },
   {
@@ -254,8 +259,8 @@
   {
     "casa": "IntiCambio",
     "url": "https://inticambio.pe/",
-    "compra": 3.346,
-    "venta": 3.352,
+    "compra": 3.344,
+    "venta": 3.351,
     "source": "scraper"
   },
   {
@@ -286,14 +291,14 @@
     "casa": "DinersFX",
     "url": "https://dinersfx.pe/",
     "compra": 3.319,
-    "venta": 3.395,
+    "venta": 3.435,
     "source": "scraper"
   },
   {
     "casa": "Securex",
     "url": "https://securex.pe/",
     "compra": 3.33,
-    "venta": 3.354,
+    "venta": 3.357,
     "source": "scraper"
   },
   {
@@ -341,8 +346,8 @@
   {
     "casa": "SUNAT",
     "url": "https://www.sunat.gob.pe/cl-at-ittipcam/tcS01Alias",
-    "compra": 3.346,
-    "venta": 3.356,
+    "compra": 3.345,
+    "venta": 3.352,
     "source": "scraper"
   }
 ]
