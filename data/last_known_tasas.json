@@ -25,8 +25,8 @@
     "Tkambio": {
       "casa": "Tkambio",
       "url": "https://tkambio.com/",
-      "compra": 3.329,
-      "venta": 3.352,
+      "compra": 3.331,
+      "venta": 3.355,
       "last_seen": "2026-01-29"
     },
     "InkaMoney": {
@@ -47,7 +47,7 @@
       "casa": "Okane",
       "url": "https://okanecambiodigital.com/",
       "compra": 3.338,
-      "venta": 3.348,
+      "venta": 3.347,
       "last_seen": "2026-01-29"
     },
     "JetPerú": {
@@ -60,8 +60,8 @@
     "Dichikash": {
       "casa": "Dichikash",
       "url": "https://dichikash.com/",
-      "compra": 3.338,
-      "venta": 3.348,
+      "compra": 3.339,
+      "venta": 3.347,
       "last_seen": "2026-01-29"
     },
     "Instakash": {
@@ -95,8 +95,8 @@
     "ChaskiDolar": {
       "casa": "ChaskiDolar",
       "url": "https://chaskidolar.com/",
-      "compra": 3.352,
-      "venta": 3.336,
+      "compra": 3.35,
+      "venta": 3.334,
       "last_seen": "2026-01-29"
     },
     "Intercambialo": {
@@ -179,8 +179,8 @@
     "IntiCambio": {
       "casa": "IntiCambio",
       "url": "https://inticambio.pe/",
-      "compra": 3.341,
-      "venta": 3.346,
+      "compra": 3.339,
+      "venta": 3.344,
       "last_seen": "2026-01-29"
     },
     "Cambix": {
@@ -221,7 +221,7 @@
     "DollarHouse": {
       "casa": "DollarHouse",
       "url": "https://app.dollarhouse.pe/",
-      "compra": 3.339,
+      "compra": 3.34,
       "venta": 3.346,
       "last_seen": "2026-01-29"
     },
@@ -257,7 +257,7 @@
       "casa": "MercadoCambiario",
       "url": "https://mercadocambiario.pe/",
       "compra": 3.34,
-      "venta": 3.343,
+      "venta": 3.345,
       "last_seen": "2026-01-29"
     },
     "CambiaFX": {
@@ -277,14 +277,14 @@
     "Kambio": {
       "casa": "Kambio",
       "url": "https://www.kambio.online/",
-      "compra": 3.34,
-      "venta": 3.345,
+      "compra": 3.338,
+      "venta": 3.343,
       "last_seen": "2026-01-29"
     },
     "TraderPeruFX": {
       "casa": "TraderPeruFX",
       "url": "https://traderperufx.com/",
-      "compra": 3.34,
+      "compra": 3.33,
       "venta": 3.345,
       "last_seen": "2026-01-29"
     },
@@ -305,8 +305,8 @@
     "CambioDigitalPeru": {
       "casa": "CambioDigitalPeru",
       "url": "https://cambiodigitalperu.com",
-      "compra": 3.34,
-      "venta": 3.348,
+      "compra": 3.339,
+      "venta": 3.345,
       "last_seen": "2026-01-29"
     }
   }
