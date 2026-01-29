@@ -39,8 +39,8 @@
     "CambioSeguro": {
       "casa": "CambioSeguro",
       "url": "https://cambioseguro.com/",
-      "compra": 3.329,
-      "venta": 3.358,
+      "compra": 3.332,
+      "venta": 3.352,
       "last_seen": "2026-01-29"
     },
     "Okane": {
@@ -60,8 +60,8 @@
     "Dichikash": {
       "casa": "Dichikash",
       "url": "https://dichikash.com/",
-      "compra": 3.337,
-      "venta": 3.349,
+      "compra": 3.338,
+      "venta": 3.35,
       "last_seen": "2026-01-29"
     },
     "Instakash": {
@@ -221,7 +221,7 @@
     "DollarHouse": {
       "casa": "DollarHouse",
       "url": "https://app.dollarhouse.pe/",
-      "compra": 3.339,
+      "compra": 3.336,
       "venta": 3.346,
       "last_seen": "2026-01-29"
     },
@@ -263,8 +263,8 @@
     "CambiaFX": {
       "casa": "CambiaFX",
       "url": "https://cambiafx.pe/",
-      "compra": 3.331,
-      "venta": 3.357,
+      "compra": 3.329,
+      "venta": 3.359,
       "last_seen": "2026-01-29"
     },
     "SRCambio": {
