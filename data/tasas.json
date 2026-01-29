@@ -2,8 +2,8 @@
   {
     "casa": "Yanki",
     "url": "https://yanki.pe",
-    "compra": 3.33,
-    "venta": 3.348,
+    "compra": 3.325,
+    "venta": 3.355,
     "source": "scraper"
   },
   {
@@ -16,15 +16,15 @@
   {
     "casa": "Kambista",
     "url": "https://kambista.com/",
-    "compra": 3.329,
-    "venta": 3.361,
+    "compra": 3.326,
+    "venta": 3.362,
     "source": "scraper"
   },
   {
     "casa": "Tkambio",
     "url": "https://tkambio.com/",
     "compra": 3.332,
-    "venta": 3.357,
+    "venta": 3.359,
     "source": "scraper"
   },
   {
@@ -37,8 +37,8 @@
   {
     "casa": "CambioSeguro",
     "url": "https://cambioseguro.com/",
-    "compra": 3.328,
-    "venta": 3.357,
+    "compra": 3.329,
+    "venta": 3.35,
     "source": "scraper"
   },
   {
@@ -58,8 +58,8 @@
   {
     "casa": "Dichikash",
     "url": "https://dichikash.com/",
-    "compra": 3.337,
-    "venta": 3.347,
+    "compra": 3.332,
+    "venta": 3.35,
     "source": "scraper"
   },
   {
@@ -102,7 +102,10 @@
     "url": "https://intercambialo.pe/",
     "compra": 3.331,
     "venta": 3.36,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-28",
+    "backup_fecha": "2026-01-20",
+    "scraper_error": "No se pudo scrapear: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://intercambialo.pe/\", waiting until \"load\"\n"
   },
   {
     "casa": "WesternUnion",
@@ -182,7 +185,7 @@
     "casa": "TraderPeruFX",
     "url": "https://traderperufx.com/",
     "compra": 3.34,
-    "venta": 3.345,
+    "venta": 3.347,
     "source": "scraper"
   },
   {
@@ -209,8 +212,8 @@
   {
     "casa": "X-Cambio",
     "url": "https://x-cambio.com/",
-    "compra": 3.327,
-    "venta": 3.364,
+    "compra": 3.3265,
+    "venta": 3.3645,
     "source": "scraper"
   },
   {
@@ -288,7 +291,7 @@
     "casa": "DinersFX",
     "url": "https://dinersfx.pe/",
     "compra": 3.318,
-    "venta": 3.44,
+    "venta": 3.42,
     "source": "scraper"
   },
   {
@@ -346,8 +349,8 @@
   {
     "casa": "SUNAT",
     "url": "https://www.sunat.gob.pe/cl-at-ittipcam/tcS01Alias",
-    "compra": 3.345,
-    "venta": 3.352,
+    "compra": 3.34,
+    "venta": 3.345,
     "source": "scraper"
   }
 ]
