@@ -11,8 +11,8 @@
     "Rextie": {
       "casa": "Rextie",
       "url": "https://www.rextie.com/",
-      "compra": 3.345,
-      "venta": 3.379,
+      "compra": 3.3435,
+      "venta": 3.3805,
       "last_seen": "2026-01-30"
     },
     "Kambista": {
@@ -33,7 +33,7 @@
       "casa": "InkaMoney",
       "url": "https://inkamoney.com/",
       "compra": 3.374,
-      "venta": 3.358,
+      "venta": 3.354,
       "last_seen": "2026-01-30"
     },
     "CambioSeguro": {
@@ -60,14 +60,14 @@
     "Dichikash": {
       "casa": "Dichikash",
       "url": "https://dichikash.com/",
-      "compra": 3.36,
-      "venta": 3.377,
+      "compra": 3.359,
+      "venta": 3.376,
       "last_seen": "2026-01-30"
     },
     "Instakash": {
       "casa": "Instakash",
       "url": "https://instakash.net/",
-      "compra": 3.354,
+      "compra": 3.353,
       "venta": 3.37,
       "last_seen": "2026-01-30"
     },
@@ -95,8 +95,8 @@
     "ChaskiDolar": {
       "casa": "ChaskiDolar",
       "url": "https://chaskidolar.com/",
-      "compra": 3.366,
-      "venta": 3.35,
+      "compra": 3.367,
+      "venta": 3.351,
       "last_seen": "2026-01-30"
     },
     "Intercambialo": {
@@ -130,7 +130,7 @@
     "Acomo": {
       "casa": "Acomo",
       "url": "https://acomo.com.pe/",
-      "compra": 3.359,
+      "compra": 3.357,
       "venta": 3.379,
       "last_seen": "2026-01-30"
     },
@@ -165,8 +165,8 @@
     "X-Cambio": {
       "casa": "X-Cambio",
       "url": "https://x-cambio.com/",
-      "compra": 3.347,
-      "venta": 3.379,
+      "compra": 3.345,
+      "venta": 3.38,
       "last_seen": "2026-01-30"
     },
     "RissanPE": {
@@ -193,8 +193,8 @@
     "Securex": {
       "casa": "Securex",
       "url": "https://securex.pe/",
-      "compra": 3.35,
-      "venta": 3.377,
+      "compra": 3.347,
+      "venta": 3.379,
       "last_seen": "2026-01-30"
     },
     "ChapaCambio": {
@@ -235,8 +235,8 @@
     "Dolarex": {
       "casa": "Dolarex",
       "url": "https://dolarex.pe/",
-      "compra": 3.36,
-      "venta": 3.365,
+      "compra": 3.358,
+      "venta": 3.364,
       "last_seen": "2026-01-30"
     },
     "Safex": {
@@ -277,8 +277,8 @@
     "Kambio": {
       "casa": "Kambio",
       "url": "https://www.kambio.online/",
-      "compra": 3.359,
-      "venta": 3.364,
+      "compra": 3.358,
+      "venta": 3.363,
       "last_seen": "2026-01-30"
     },
     "TraderPeruFX": {
@@ -299,14 +299,14 @@
       "casa": "DinersFX",
       "url": "https://dinersfx.pe/",
       "compra": 3.344,
-      "venta": 3.439,
+      "venta": 3.419,
       "last_seen": "2026-01-30"
     },
     "CambioDigitalPeru": {
       "casa": "CambioDigitalPeru",
       "url": "https://cambiodigitalperu.com",
-      "compra": 3.359,
-      "venta": 3.366,
+      "compra": 3.358,
+      "venta": 3.364,
       "last_seen": "2026-01-30"
     },
     "MoneyHouse": {
