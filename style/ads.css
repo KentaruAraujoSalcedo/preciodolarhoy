@@ -1,0 +1,53 @@
+/* =========================================================
+   ADS.CSS
+   Solo publicidad lateral (sticky + sizes)
+   ========================================================= */
+
+.ads{
+  width:100%;
+  position:sticky;
+  top:18px;
+  height:calc(100vh - 36px);
+  align-self:flex-start;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:16px;
+}
+
+.ad-slot{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:rgba(255,255,255,.45);
+  border:1px dashed rgba(255,255,255,.65);
+  border-radius:16px;
+  box-shadow: var(--glass-shadow-soft);
+  backdrop-filter: blur(10px) saturate(140%);
+  overflow:hidden;
+}
+
+/* tamaños típicos */
+.ad-300x600{ width:100%; max-width:300px; height:600px; }
+.ad-300x250{ width:100%; max-width:300px; height:250px; }
+
+.ad-slot img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* En desktop: muestra solo 300x600 para mantener “1 vista” */
+@media (min-width:981px){
+  .ads .ad-300x250{ display:none; }
+}
+
+/* En <=1100px ya se ocultan los ads desde base.css
+   (si quieres forzarlo aquí también, puedes descomentar)
+*/
+/*
+@media (max-width:1100px){
+  .ads{ display:none; }
+}
+*/

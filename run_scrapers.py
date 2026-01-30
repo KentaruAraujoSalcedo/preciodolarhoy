@@ -3,7 +3,9 @@ import asyncio
 import json
 import os
 from pathlib import Path
-from datetime import date
+from datetime import date, datetime, timezone
+
+
 
 # ===== IMPORTS DE SCRAPERS =====
 from scrapers.acomo import scrap_acomo
@@ -225,6 +227,8 @@ def update_last_known_from_scraper_results(raw_results, last_map):
 
 # 3) MAIN: ejecuta scrapers, aplica backup, guarda tasas, histórico
 async def main():
+    run_at = datetime.now(timezone.utc).isoformat(timespec="minutes")
+
     # ---- Lista de scrapers (ordenados) ----
     tasks = [
         ("yanki", scrap_yanki()),
@@ -305,6 +309,22 @@ async def main():
     with open("data/tasas.json", "w", encoding="utf-8") as f:
         json.dump(resultados, f, ensure_ascii=False, indent=2)
     print("✅ Tasas guardadas en data/tasas.json")
+
+    meta = {
+        "run_at_utc": run_at,
+        "run_date": str(date.today()),
+        "total": len(resultados),
+        "ok_scraper": sum(1 for r in resultados if isinstance(r, dict) and r.get("source") == "scraper"),
+        "fallback_last_known": sum(1 for r in resultados if isinstance(r, dict) and r.get("source") == "last_known"),
+        "fallback_backup": sum(1 for r in resultados if isinstance(r, dict) and r.get("source") == "backup"),
+        "missing": sum(1 for r in resultados if isinstance(r, dict) and r.get("source") == "missing"),
+    }
+
+    with open("data/meta.json", "w", encoding="utf-8") as f:
+        json.dump(meta, f, ensure_ascii=False, indent=2)
+
+    print("🧾 Meta guardada en data/meta.json")
+
 
     # 4) HISTÓRICO SUNAT (solo toma SUNAT y lo guarda por fecha)
     sunat_data = next((r for r in resultados_raw if r.get("casa") == "SUNAT"), None)

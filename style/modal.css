@@ -1,0 +1,74 @@
+/* =========================================================
+   MODAL.CSS
+   Modal + Chart (alineado con tu HTML)
+   ========================================================= */
+
+.modal{
+  position:fixed;
+  inset:0;
+  display:none;
+  z-index:1000;
+}
+
+/* ✅ Tu JS cambia aria-hidden */
+.modal[aria-hidden="false"]{
+  display:block;
+}
+
+.modal__overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(15,23,42,.55);
+}
+
+/* Panel */
+.modal__panel{
+  position:relative;
+  max-width:900px;
+  margin:6vh auto;
+  background:#fff;
+  border-radius:18px;
+  box-shadow:0 30px 80px rgba(0,0,0,.35);
+  overflow:hidden;
+}
+
+/* Header */
+.modal__head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:12px 16px;
+  border-bottom:1px solid rgba(2,6,23,.10);
+  background:linear-gradient(180deg,#FFFFFF 0%, #F7FAFF 100%);
+}
+
+.modal__title{
+  margin:0;
+  font-size:18px;
+  font-weight:950;
+  color:var(--brand-blue-deep);
+}
+
+.modal__close{
+  background:none;
+  border:none;
+  font-size:20px;
+  cursor:pointer;
+  color:rgba(2,6,23,.7);
+}
+
+.modal__close:hover{ color:rgba(2,6,23,.95); }
+
+.modal__body{
+  padding:14px 16px 16px;
+}
+
+body.modal-open{ overflow:hidden; }
+
+/* Chart */
+#graficoSunat{
+  width:100% !important;
+  height:340px !important;
+  display:block;
+}

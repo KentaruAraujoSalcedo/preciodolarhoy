@@ -1,0 +1,342 @@
+/* =========================================================
+   CALCULATOR.CSS (PRO: compacto + línea de monedas)
+   ========================================================= */
+
+.conversor-wrapper-modern{
+  padding-bottom: 10px;
+  animation: fadeUp .35s ease-out both;
+}
+
+/* =====================
+   MODO (barra segmentada)
+   ===================== */
+.modo-opciones{
+  display:flex;
+  gap:8px;
+  padding:8px;
+  margin:0 16px;
+
+  background: rgba(255,255,255,.58);
+  border: 1px solid rgba(255,255,255,.72);
+  border-radius: 16px;
+  box-shadow: 0 10px 22px rgba(2,6,23,.06);
+  backdrop-filter: blur(10px) saturate(140%);
+  -webkit-backdrop-filter: blur(10px) saturate(140%);
+}
+
+.radio-pill{
+  position:relative;
+  flex:1;
+}
+
+.radio-pill input{
+  position:absolute;
+  inset:0;
+  opacity:0;
+  cursor:pointer;
+}
+
+.radio-pill span{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  height:40px;
+  padding:0 12px;
+  border-radius:12px;
+
+  font-weight:900;
+  font-size:.88rem;
+  color:var(--ink-700);
+
+  background: transparent;
+  border:1px solid transparent;
+
+  transition:
+    background .14s ease,
+    border-color .14s ease,
+    box-shadow .14s ease,
+    transform .08s ease,
+    color .14s ease;
+}
+
+.radio-pill input:checked + span{
+  background: rgba(255,255,255,.92);
+  border-color: rgba(255,255,255,.86);
+  box-shadow: 0 10px 22px rgba(2,6,23,.08);
+  color:var(--ink-900);
+}
+
+.radio-pill input:active + span{
+  transform: translateY(1px);
+}
+
+/* Hover (cuando NO está seleccionado) */
+.modo-opciones .radio-pill input:not(:checked) + span:hover{
+  background: rgba(59,130,246,.10);
+  color:#1E3A8A;
+  box-shadow: 0 8px 18px rgba(59,130,246,.15);
+  transform: translateY(-1px);
+}
+.modo-opciones .radio-pill input:not(:checked) + span:active{
+  transform: translateY(0);
+}
+
+/* =====================
+   QUICK AMOUNTS (chips pro)
+   ===================== */
+.quick-row{
+  display:flex;
+  gap:10px;
+  padding:10px 16px 6px;
+  flex-wrap:wrap;
+}
+
+.quick-row .chip,
+.quick-row .quick-amt{
+  appearance:none;
+  border:1px solid rgba(255,255,255,.78);
+  background: rgba(255,255,255,.55);
+  color: var(--ink-800);
+
+  padding:8px 12px;
+  border-radius:999px;
+
+  font-weight:900;
+  font-size:.84rem;
+  line-height:1;
+
+  box-shadow: 0 10px 20px rgba(2,6,23,.06);
+  backdrop-filter: blur(10px) saturate(140%);
+  -webkit-backdrop-filter: blur(10px) saturate(140%);
+
+  cursor:pointer;
+  transition:
+    transform .08s ease,
+    filter .12s ease,
+    box-shadow .12s ease,
+    background .12s ease,
+    border-color .12s ease;
+}
+
+.quick-row .chip:hover,
+.quick-row .quick-amt:hover{
+  filter: brightness(1.03);
+  box-shadow: 0 12px 26px rgba(2,6,23,.08);
+}
+
+.quick-row .chip:active,
+.quick-row .quick-amt:active{
+  transform: translateY(1px);
+}
+
+/* Estado “seleccionado” (opcional) */
+.quick-row .chip.is-active,
+.quick-row .quick-amt.is-active{
+  background: rgba(255,255,255,.92);
+  border-color: rgba(255,255,255,.86);
+  color: var(--ink-900);
+  box-shadow: 0 14px 30px rgba(2,6,23,.10);
+}
+
+/* Vida chips */
+.quick-row .quick-amt{
+  position:relative;
+}
+.quick-row .quick-amt:hover{
+  background: rgba(22,163,74,.12);
+  border-color: rgba(22,163,74,.35);
+  color:#14532D;
+  box-shadow:
+    0 10px 22px rgba(22,163,74,.18),
+    inset 0 0 0 1px rgba(22,163,74,.25);
+  transform: translateY(-1px);
+}
+.quick-row .quick-amt:active{
+  transform: translateY(0);
+  box-shadow:
+    0 6px 14px rgba(22,163,74,.18),
+    inset 0 2px 4px rgba(0,0,0,.08);
+}
+.quick-row .quick-amt:focus-visible{
+  outline:none;
+  box-shadow:
+    0 0 0 2px rgba(22,163,74,.35),
+    0 10px 22px rgba(22,163,74,.18);
+}
+
+/* =====================
+   FILA PRO (Monto + Monedas)
+   ===================== */
+.fila-triple{
+  display:grid;
+  gap:10px;
+  padding:8px 16px 0;
+  align-items:end;
+}
+
+.fila-triple--pro{
+  grid-template-columns: 1.35fr 1.65fr;
+}
+
+.grupo-campo{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+
+.grupo-campo label{
+  font-size:.78rem;
+  font-weight:900;
+  color:var(--ink-600);
+}
+
+/* Input con prefijo (Monto) */
+.input-with-prefix{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  height:44px;
+  padding:0 12px;
+  border-radius:14px;
+  background:rgba(255,255,255,.70);
+  border:1px solid rgba(255,255,255,.75);
+  box-shadow:0 10px 22px rgba(2,6,23,.07); /* Monto un poquito más protagonista */
+  backdrop-filter: blur(10px) saturate(140%);
+  -webkit-backdrop-filter: blur(10px) saturate(140%);
+}
+
+.input-with-prefix .prefix{
+  font-weight:900;
+  color:var(--ink-600);
+  opacity:.70;
+}
+
+.input-with-prefix input{
+  border:0;
+  outline:0;
+  background:transparent;
+  width:100%;
+  font-weight:900;
+  color:var(--ink-900);
+  font-size:1rem;
+}
+
+.input-with-prefix input::placeholder{
+  color:var(--ink-500);
+  font-weight:800;
+}
+
+.input-with-prefix:has(input:placeholder-shown) .prefix{
+  opacity:.55;
+}
+
+/* Línea PRO de monedas */
+.gc-moneda-pro > label{
+  display:none; /* quita “Monedas” para limpiar */
+}
+
+.gc-moneda-pro .currency-line{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.cur-pill{
+  flex:1;
+  height:44px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:0 10px;
+  border-radius:14px;
+
+  /* Más suave que el monto (jerarquía) */
+  background:rgba(255,255,255,.55);
+  border:1px solid rgba(255,255,255,.65);
+  box-shadow:0 6px 14px rgba(2,6,23,.045);
+
+  backdrop-filter: blur(10px) saturate(140%);
+  -webkit-backdrop-filter: blur(10px) saturate(140%);
+
+  font-weight:900;
+  font-size:.84rem;
+  color:var(--ink-900);
+  white-space:nowrap;
+
+  transition: transform .18s ease, filter .12s ease;
+}
+
+.cur-pill--ghost{
+  opacity:.90;
+  color:var(--ink-700);
+}
+
+/* Swap */
+.swap{
+  height:44px;
+  width:44px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.75);
+  background:rgba(255,255,255,.92);
+  box-shadow:0 10px 22px rgba(2,6,23,.08);
+  font-size:1.05rem;
+  cursor:pointer;
+
+  backdrop-filter: blur(10px) saturate(140%);
+  -webkit-backdrop-filter: blur(10px) saturate(140%);
+
+  transition: transform .18s ease, filter .12s ease;
+}
+
+.swap:hover{ filter:brightness(1.03); }
+.swap:active{ transform:translateY(1px); }
+
+/* Animación swap (con clase .is-swap en .currency-line) */
+.currency-line.is-swap .swap{
+  transform: rotate(180deg);
+}
+.currency-line.is-swap .cur-pill{
+  transform: translateY(-1px);
+}
+
+/* =====================
+   Resultado + nota
+   ===================== */
+.resultado-modern{
+  margin:10px 16px 0;
+  padding:10px 12px;
+  border-radius:14px;
+  background:rgba(22,163,74,.10);
+  border:1px solid rgba(22,163,74,.22);
+  color:#14532D;
+  font-weight:900;
+  font-size:.92rem;
+  line-height:1.35; /* lectura mejor */
+}
+
+.fineprint{
+  margin:6px 16px 0;
+  font-size:.74rem;
+  color:var(--ink-500);
+}
+
+/* =====================
+   Responsive
+   ===================== */
+@media (max-width: 700px){
+  .fila-triple--pro{
+    grid-template-columns: 1fr;
+  }
+  .gc-moneda-pro{
+    margin-top:8px;
+  }
+}
+
+/* =====================
+   Animación entrada
+   ===================== */
+@keyframes fadeUp{
+  from{ opacity:0; transform: translateY(6px); }
+  to{ opacity:1; transform:none; }
+}
