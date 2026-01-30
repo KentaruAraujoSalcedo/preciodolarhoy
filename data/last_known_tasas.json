@@ -18,15 +18,15 @@
     "Kambista": {
       "casa": "Kambista",
       "url": "https://kambista.com/",
-      "compra": 3.347,
-      "venta": 3.379,
+      "compra": 3.345,
+      "venta": 3.38,
       "last_seen": "2026-01-30"
     },
     "Tkambio": {
       "casa": "Tkambio",
       "url": "https://tkambio.com/",
-      "compra": 3.35,
-      "venta": 3.375,
+      "compra": 3.352,
+      "venta": 3.377,
       "last_seen": "2026-01-30"
     },
     "InkaMoney": {
@@ -47,21 +47,21 @@
       "casa": "Okane",
       "url": "https://okanecambiodigital.com/",
       "compra": 3.356,
-      "venta": 3.368,
+      "venta": 3.367,
       "last_seen": "2026-01-30"
     },
     "JetPerú": {
       "casa": "JetPerú",
       "url": "https://jetperu.com.pe/cambiar-dinero/",
-      "compra": 3.361,
-      "venta": 3.365,
+      "compra": 3.36,
+      "venta": 3.364,
       "last_seen": "2026-01-30"
     },
     "Dichikash": {
       "casa": "Dichikash",
       "url": "https://dichikash.com/",
-      "compra": 3.359,
-      "venta": 3.376,
+      "compra": 3.356,
+      "venta": 3.373,
       "last_seen": "2026-01-30"
     },
     "Instakash": {
@@ -95,7 +95,7 @@
     "ChaskiDolar": {
       "casa": "ChaskiDolar",
       "url": "https://chaskidolar.com/",
-      "compra": 3.367,
+      "compra": 3.366,
       "venta": 3.351,
       "last_seen": "2026-01-30"
     },
@@ -193,8 +193,8 @@
     "Securex": {
       "casa": "Securex",
       "url": "https://securex.pe/",
-      "compra": 3.347,
-      "venta": 3.379,
+      "compra": 3.352,
+      "venta": 3.378,
       "last_seen": "2026-01-30"
     },
     "ChapaCambio": {
@@ -221,8 +221,8 @@
     "DollarHouse": {
       "casa": "DollarHouse",
       "url": "https://app.dollarhouse.pe/",
-      "compra": 3.36,
-      "venta": 3.366,
+      "compra": 3.358,
+      "venta": 3.365,
       "last_seen": "2026-01-30"
     },
     "SUNAT": {
@@ -277,8 +277,8 @@
     "Kambio": {
       "casa": "Kambio",
       "url": "https://www.kambio.online/",
-      "compra": 3.358,
-      "venta": 3.363,
+      "compra": 3.36,
+      "venta": 3.365,
       "last_seen": "2026-01-30"
     },
     "TraderPeruFX": {
@@ -299,7 +299,7 @@
       "casa": "DinersFX",
       "url": "https://dinersfx.pe/",
       "compra": 3.344,
-      "venta": 3.419,
+      "venta": 3.439,
       "last_seen": "2026-01-30"
     },
     "CambioDigitalPeru": {
