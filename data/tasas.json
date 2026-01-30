@@ -149,7 +149,9 @@
     "url": "https://acomo.com.pe/",
     "compra": 3.33,
     "venta": 3.35,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-30",
+    "backup_fecha": "2026-01-20"
   },
   {
     "casa": "ZonaDólar",
@@ -289,7 +291,7 @@
     "casa": "DinersFX",
     "url": "https://dinersfx.pe/",
     "compra": 3.318,
-    "venta": 3.395,
+    "venta": 3.415,
     "source": "scraper"
   },
   {
