@@ -16,7 +16,7 @@
   {
     "casa": "Kambista",
     "url": "https://kambista.com/",
-    "compra": 3.348,
+    "compra": 3.347,
     "venta": 3.379,
     "source": "scraper"
   },
@@ -30,7 +30,7 @@
   {
     "casa": "InkaMoney",
     "url": "https://inkamoney.com/",
-    "compra": -61.963,
+    "compra": 3.374,
     "venta": 3.358,
     "source": "scraper"
   },
@@ -66,7 +66,7 @@
     "casa": "Instakash",
     "url": "https://instakash.net/",
     "compra": 3.354,
-    "venta": 3.371,
+    "venta": 3.37,
     "source": "scraper"
   },
   {
@@ -128,14 +128,14 @@
   {
     "casa": "Safex",
     "url": "https://www.safex.pe/",
-    "compra": 3.351,
-    "venta": 3.377,
+    "compra": 3.35,
+    "venta": 3.374,
     "source": "scraper"
   },
   {
     "casa": "CambiaFX",
     "url": "https://cambiafx.pe/",
-    "compra": 3.352,
+    "compra": 3.35,
     "venta": 3.372,
     "source": "scraper"
   },
@@ -201,13 +201,13 @@
     "casa": "CambioSol",
     "url": "https://cambiosol.pe/",
     "compra": 3.35,
-    "venta": 3.37,
+    "venta": 3.365,
     "source": "scraper"
   },
   {
     "casa": "X-Cambio",
     "url": "https://x-cambio.com/",
-    "compra": 3.348,
+    "compra": 3.347,
     "venta": 3.379,
     "source": "scraper"
   },
@@ -252,15 +252,15 @@
   {
     "casa": "IntiCambio",
     "url": "https://inticambio.pe/",
-    "compra": 3.359,
-    "venta": 3.364,
+    "compra": 3.36,
+    "venta": 3.365,
     "source": "scraper"
   },
   {
     "casa": "Dolarex",
     "url": "https://dolarex.pe/",
     "compra": 3.36,
-    "venta": 3.367,
+    "venta": 3.365,
     "source": "scraper"
   },
   {
@@ -288,7 +288,7 @@
     "casa": "Securex",
     "url": "https://securex.pe/",
     "compra": 3.35,
-    "venta": 3.3755,
+    "venta": 3.377,
     "source": "scraper"
   },
   {
@@ -308,7 +308,7 @@
   {
     "casa": "HirPower",
     "url": "https://hirpower.com/",
-    "compra": 3.34,
+    "compra": 3.35,
     "venta": 3.37,
     "source": "scraper"
   },
@@ -323,7 +323,7 @@
     "casa": "DollarHouse",
     "url": "https://app.dollarhouse.pe/",
     "compra": 3.36,
-    "venta": 3.367,
+    "venta": 3.366,
     "source": "scraper"
   },
   {

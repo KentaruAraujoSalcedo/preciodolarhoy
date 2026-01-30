@@ -18,7 +18,7 @@
     "Kambista": {
       "casa": "Kambista",
       "url": "https://kambista.com/",
-      "compra": 3.348,
+      "compra": 3.347,
       "venta": 3.379,
       "last_seen": "2026-01-30"
     },
@@ -32,7 +32,7 @@
     "InkaMoney": {
       "casa": "InkaMoney",
       "url": "https://inkamoney.com/",
-      "compra": -61.963,
+      "compra": 3.374,
       "venta": 3.358,
       "last_seen": "2026-01-30"
     },
@@ -68,7 +68,7 @@
       "casa": "Instakash",
       "url": "https://instakash.net/",
       "compra": 3.354,
-      "venta": 3.371,
+      "venta": 3.37,
       "last_seen": "2026-01-30"
     },
     "MegaMoney": {
@@ -159,13 +159,13 @@
       "casa": "CambioSol",
       "url": "https://cambiosol.pe/",
       "compra": 3.35,
-      "venta": 3.37,
+      "venta": 3.365,
       "last_seen": "2026-01-30"
     },
     "X-Cambio": {
       "casa": "X-Cambio",
       "url": "https://x-cambio.com/",
-      "compra": 3.348,
+      "compra": 3.347,
       "venta": 3.379,
       "last_seen": "2026-01-30"
     },
@@ -179,8 +179,8 @@
     "IntiCambio": {
       "casa": "IntiCambio",
       "url": "https://inticambio.pe/",
-      "compra": 3.359,
-      "venta": 3.364,
+      "compra": 3.36,
+      "venta": 3.365,
       "last_seen": "2026-01-30"
     },
     "Cambix": {
@@ -194,7 +194,7 @@
       "casa": "Securex",
       "url": "https://securex.pe/",
       "compra": 3.35,
-      "venta": 3.3755,
+      "venta": 3.377,
       "last_seen": "2026-01-30"
     },
     "ChapaCambio": {
@@ -214,7 +214,7 @@
     "HirPower": {
       "casa": "HirPower",
       "url": "https://hirpower.com/",
-      "compra": 3.34,
+      "compra": 3.35,
       "venta": 3.37,
       "last_seen": "2026-01-30"
     },
@@ -222,7 +222,7 @@
       "casa": "DollarHouse",
       "url": "https://app.dollarhouse.pe/",
       "compra": 3.36,
-      "venta": 3.367,
+      "venta": 3.366,
       "last_seen": "2026-01-30"
     },
     "SUNAT": {
@@ -236,14 +236,14 @@
       "casa": "Dolarex",
       "url": "https://dolarex.pe/",
       "compra": 3.36,
-      "venta": 3.367,
+      "venta": 3.365,
       "last_seen": "2026-01-30"
     },
     "Safex": {
       "casa": "Safex",
       "url": "https://www.safex.pe/",
-      "compra": 3.351,
-      "venta": 3.377,
+      "compra": 3.35,
+      "venta": 3.374,
       "last_seen": "2026-01-30"
     },
     "VipCapital": {
@@ -263,7 +263,7 @@
     "CambiaFX": {
       "casa": "CambiaFX",
       "url": "https://cambiafx.pe/",
-      "compra": 3.352,
+      "compra": 3.35,
       "venta": 3.372,
       "last_seen": "2026-01-30"
     },
