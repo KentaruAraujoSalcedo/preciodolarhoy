@@ -163,8 +163,8 @@
   {
     "casa": "SRCambio",
     "url": "https://srcambio.pe/",
-    "compra": 3.423,
-    "venta": 3.431,
+    "compra": 3.335,
+    "venta": 3.35,
     "source": "scraper"
   },
   {
@@ -261,17 +261,17 @@
     "url": "https://inticambio.pe/",
     "compra": 3.34,
     "venta": 3.345,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-30",
+    "backup_fecha": "2026-01-20",
+    "scraper_error": "No se pudo scrapear: Page.goto: net::ERR_TIMED_OUT at https://inticambio.pe/\nCall log:\n  - navigating to \"https://inticambio.pe/\", waiting until \"load\"\n"
   },
   {
     "casa": "Dolarex",
     "url": "https://dolarex.pe/",
-    "compra": 3.34,
-    "venta": 3.347,
-    "source": "last_known",
-    "last_seen": "2026-01-29",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\".compra .valor\") to be visible\n"
+    "compra": 3.335,
+    "venta": 3.355,
+    "source": "scraper"
   },
   {
     "casa": "Cambix",
@@ -297,8 +297,8 @@
   {
     "casa": "Securex",
     "url": "https://securex.pe/",
-    "compra": 3.334,
-    "venta": 3.358,
+    "compra": 3.332,
+    "venta": 3.354,
     "source": "scraper"
   },
   {
