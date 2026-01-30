@@ -58,8 +58,8 @@
   {
     "casa": "Dichikash",
     "url": "https://dichikash.com/",
-    "compra": 3.336,
-    "venta": 3.352,
+    "compra": 3.338,
+    "venta": 3.356,
     "source": "scraper"
   },
   {
@@ -158,8 +158,8 @@
   {
     "casa": "SRCambio",
     "url": "https://srcambio.pe/",
-    "compra": 3.423,
-    "venta": 3.431,
+    "compra": 3.335,
+    "venta": 3.35,
     "source": "scraper"
   },
   {
@@ -228,9 +228,9 @@
   {
     "casa": "MoneyHouse",
     "url": "https://moneyhouse.pe/",
-    "source": "missing",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 40000ms exceeded.\nCall log:\n  - waiting for locator(\".views-row, .view-content, .principalcontenido\") to be visible\n"
+    "compra": 3.339,
+    "venta": 3.345,
+    "source": "scraper"
   },
   {
     "casa": "MercadoCambiario",
@@ -286,7 +286,7 @@
     "casa": "DinersFX",
     "url": "https://dinersfx.pe/",
     "compra": 3.318,
-    "venta": 3.395,
+    "venta": 3.415,
     "source": "scraper"
   },
   {
