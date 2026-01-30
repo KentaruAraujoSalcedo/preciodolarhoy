@@ -2,8 +2,8 @@
   {
     "casa": "Yanki",
     "url": "https://yanki.pe",
-    "compra": 3.332,
-    "venta": 3.349,
+    "compra": 3.33,
+    "venta": 3.355,
     "source": "scraper"
   },
   {
@@ -17,14 +17,14 @@
     "casa": "Kambista",
     "url": "https://kambista.com/",
     "compra": 3.326,
-    "venta": 3.358,
+    "venta": 3.361,
     "source": "scraper"
   },
   {
     "casa": "Tkambio",
     "url": "https://tkambio.com/",
-    "compra": 3.33,
-    "venta": 3.355,
+    "compra": 3.329,
+    "venta": 3.356,
     "source": "scraper"
   },
   {
@@ -58,8 +58,8 @@
   {
     "casa": "Dichikash",
     "url": "https://dichikash.com/",
-    "compra": 3.338,
-    "venta": 3.35,
+    "compra": 3.336,
+    "venta": 3.352,
     "source": "scraper"
   },
   {
@@ -116,10 +116,7 @@
     "url": "https://kallpacambios.com/",
     "compra": 3.33,
     "venta": 3.357,
-    "source": "last_known",
-    "last_seen": "2026-01-29",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.wait_for_function: Timeout 25000ms exceeded."
+    "source": "scraper"
   },
   {
     "casa": "Billex",
@@ -147,11 +144,9 @@
   {
     "casa": "Acomo",
     "url": "https://acomo.com.pe/",
-    "compra": 3.327,
+    "compra": 3.33,
     "venta": 3.35,
-    "source": "last_known",
-    "last_seen": "2026-01-29",
-    "backup_fecha": "2026-01-20"
+    "source": "scraper"
   },
   {
     "casa": "ZonaDólar",
@@ -212,8 +207,8 @@
   {
     "casa": "X-Cambio",
     "url": "https://x-cambio.com/",
-    "compra": 3.324,
-    "venta": 3.3605,
+    "compra": 3.326,
+    "venta": 3.3575,
     "source": "scraper"
   },
   {
@@ -297,8 +292,8 @@
   {
     "casa": "Securex",
     "url": "https://securex.pe/",
-    "compra": 3.336,
-    "venta": 3.356,
+    "compra": 3.334,
+    "venta": 3.358,
     "source": "scraper"
   },
   {
