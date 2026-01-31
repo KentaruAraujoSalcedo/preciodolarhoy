@@ -217,6 +217,5 @@ Thumbs.db
 # Logs
 *.log
 
-# Data generada por scrapers
-data/
+
 
