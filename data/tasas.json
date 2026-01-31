@@ -23,8 +23,8 @@
   {
     "casa": "Tkambio",
     "url": "https://tkambio.com/",
-    "compra": 3.348,
-    "venta": 3.376,
+    "compra": 3.346,
+    "venta": 3.372,
     "source": "scraper"
   },
   {
@@ -45,8 +45,8 @@
   {
     "casa": "Okane",
     "url": "https://okanecambiodigital.com/",
-    "compra": 3.353,
-    "venta": 3.363,
+    "compra": 3.354,
+    "venta": 3.366,
     "source": "scraper"
   },
   {
@@ -59,8 +59,8 @@
   {
     "casa": "Dichikash",
     "url": "https://dichikash.com/",
-    "compra": 3.353,
-    "venta": 3.363,
+    "compra": 3.354,
+    "venta": 3.364,
     "source": "scraper"
   },
   {
@@ -94,8 +94,8 @@
   {
     "casa": "ChaskiDolar",
     "url": "https://chaskidolar.com/",
-    "compra": 3.348,
-    "venta": 3.365,
+    "compra": 3.35,
+    "venta": 3.366,
     "source": "scraper",
     "swapped": true
   },
@@ -104,10 +104,7 @@
     "url": "https://intercambialo.pe/",
     "compra": 3.346,
     "venta": 3.38,
-    "source": "last_known",
-    "last_seen": "2026-01-31",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://intercambialo.pe/\", waiting until \"load\"\n"
+    "source": "scraper"
   },
   {
     "casa": "WesternUnion",
@@ -136,8 +133,8 @@
   {
     "casa": "Safex",
     "url": "https://www.safex.pe/",
-    "compra": 3.349,
-    "venta": 3.375,
+    "compra": 3.345,
+    "venta": 3.372,
     "source": "scraper"
   },
   {
@@ -152,9 +149,7 @@
     "url": "https://acomo.com.pe/",
     "compra": 3.355,
     "venta": 3.375,
-    "source": "last_known",
-    "last_seen": "2026-01-31",
-    "backup_fecha": "2026-01-20"
+    "source": "scraper"
   },
   {
     "casa": "ZonaDólar",
@@ -191,7 +186,7 @@
   {
     "casa": "TraderPeruFX",
     "url": "https://traderperufx.com/",
-    "compra": 3.355,
+    "compra": 3.353,
     "venta": 3.37,
     "source": "scraper"
   },
@@ -233,8 +228,8 @@
   {
     "casa": "CambioMas",
     "url": "https://cambiosmass.com/",
-    "compra": 3.35,
-    "venta": 3.365,
+    "compra": 3.353,
+    "venta": 3.37,
     "source": "scraper"
   },
   {
@@ -247,12 +242,9 @@
   {
     "casa": "MercadoCambiario",
     "url": "https://mercadocambiario.pe/",
-    "compra": 3.355,
-    "venta": 3.358,
-    "source": "last_known",
-    "last_seen": "2026-01-31",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div.buy span.amount\") to be visible\n"
+    "compra": 3.358,
+    "venta": 3.359,
+    "source": "scraper"
   },
   {
     "casa": "VipCapital",
@@ -264,8 +256,8 @@
   {
     "casa": "IntiCambio",
     "url": "https://inticambio.pe/",
-    "compra": 3.355,
-    "venta": 3.36,
+    "compra": 3.356,
+    "venta": 3.361,
     "source": "scraper"
   },
   {
@@ -299,8 +291,8 @@
   {
     "casa": "Securex",
     "url": "https://securex.pe/",
-    "compra": 3.352,
-    "venta": 3.3755,
+    "compra": 3.351,
+    "venta": 3.375,
     "source": "scraper"
   },
   {
@@ -328,7 +320,7 @@
     "casa": "CambioDigitalPeru",
     "url": "https://cambiodigitalperu.com",
     "compra": 3.356,
-    "venta": 3.361,
+    "venta": 3.362,
     "source": "scraper"
   },
   {
