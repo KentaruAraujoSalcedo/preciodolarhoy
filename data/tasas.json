@@ -45,8 +45,8 @@
   {
     "casa": "Okane",
     "url": "https://okanecambiodigital.com/",
-    "compra": 3.33,
-    "venta": 3.38,
+    "compra": 0.0,
+    "venta": 0.0,
     "source": "scraper"
   },
   {
@@ -177,7 +177,10 @@
     "url": "https://www.cambiomundial.com/",
     "compra": 3.356,
     "venta": 3.362,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-30",
+    "backup_fecha": "2026-01-20",
+    "scraper_error": "No se pudo scrapear: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.cambiomundial.com/\", waiting until \"networkidle\"\n"
   },
   {
     "casa": "TraderPeruFX",
@@ -289,7 +292,7 @@
     "casa": "DinersFX",
     "url": "https://dinersfx.pe/",
     "compra": 3.344,
-    "venta": 3.439,
+    "venta": 3.419,
     "source": "scraper"
   },
   {
@@ -344,8 +347,8 @@
   {
     "casa": "SUNAT",
     "url": "https://www.sunat.gob.pe/cl-at-ittipcam/tcS01Alias",
-    "compra": 3.34,
-    "venta": 3.345,
+    "compra": 3.35,
+    "venta": 3.355,
     "source": "scraper"
   }
 ]
