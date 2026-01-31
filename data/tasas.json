@@ -144,16 +144,17 @@
     "url": "https://cambiafx.pe/",
     "compra": 3.346,
     "venta": 3.379,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-31",
+    "backup_fecha": "2026-01-20",
+    "scraper_error": "No se pudo scrapear: Page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"https://cambiafx.pe/\", waiting until \"networkidle\"\n"
   },
   {
     "casa": "Acomo",
     "url": "https://acomo.com.pe/",
     "compra": 3.355,
     "venta": 3.376,
-    "source": "last_known",
-    "last_seen": "2026-01-31",
-    "backup_fecha": "2026-01-20"
+    "source": "scraper"
   },
   {
     "casa": "ZonaDólar",
