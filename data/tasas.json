@@ -45,8 +45,8 @@
   {
     "casa": "Okane",
     "url": "https://okanecambiodigital.com/",
-    "compra": 0.0,
-    "venta": 0.0,
+    "compra": 3.33,
+    "venta": 3.38,
     "source": "scraper"
   },
   {
@@ -59,8 +59,8 @@
   {
     "casa": "Dichikash",
     "url": "https://dichikash.com/",
-    "compra": 3.357,
-    "venta": 3.368,
+    "compra": 3.358,
+    "venta": 3.381,
     "source": "scraper"
   },
   {
@@ -148,7 +148,9 @@
     "url": "https://acomo.com.pe/",
     "compra": 3.355,
     "venta": 3.376,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-31",
+    "backup_fecha": "2026-01-20"
   },
   {
     "casa": "ZonaDólar",
