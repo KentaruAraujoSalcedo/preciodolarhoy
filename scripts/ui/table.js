@@ -27,6 +27,9 @@ export function renderTabla() {
 
   let filas = ordenarValidasSegunModo();
 
+  // ✅ Quitar SUNAT de la tabla (SUNAT no es casa de cambio)
+  filas = filas.filter(c => (c.slug ?? '').toLowerCase() !== 'sunat' && String(c.casa).toUpperCase() !== 'SUNAT');
+
   // ✅ Nuevo toggle: checked = Ver todas (muestra todas + scroll)
   const chk = $('#solo-verificadas');
   const showAll = chk ? !!chk.checked : false;

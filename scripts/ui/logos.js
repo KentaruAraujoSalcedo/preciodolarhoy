@@ -52,6 +52,8 @@ const LOGO_BY_CASA = {
   'VipCapital': '/IMG/casas/vipcapital.webp',
   'RissanPE': '/IMG/casas/rissan.webp',
   'CambioSol': '/IMG/casas/cambiosol.webp',
+  'MoneyHouse': '/IMG/casas/moneyhouse.webp',
+  'CambioMundial': '/IMG/casas/cambiomundial.webp',
 };
 
 // 2) Normalizador: hace match aunque tu data venga sin tildes, con espacios, etc.

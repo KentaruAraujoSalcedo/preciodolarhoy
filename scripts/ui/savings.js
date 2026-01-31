@@ -10,6 +10,7 @@ import { getHaveWant } from './haveWant.js';
    - Se calcula SOLO para la winner-row
    - NO altera tus cálculos
    ============================================================ */
+
 export function attachAhorroToWinnerRow() {
   if (!isReadySunat() || !Number.isFinite(state.monto) || state.monto <= 0) return;
 
@@ -22,25 +23,49 @@ export function attachAhorroToWinnerRow() {
   const casa = state.validas.find(x => x.casa === casaName);
   if (!casa) return;
 
-  // Solo en “recibir”
-  if (state.modo !== 'recibir') return;
-
   const { have, want } = getHaveWant();
 
-  // Caso A: USD -> PEN (casa usa COMPRA; SUNAT según tu conversor usa venta)
-  if (have === 'USD' && want === 'PEN') {
-    const solesCasa = state.monto * casa.compra;
-    const solesSunat = state.monto * state.sunat.venta;
-    winnerRow.dataset.ahorroCur = 'PEN';
-    winnerRow.dataset.ahorroVal = String(solesCasa - solesSunat);
-    return;
+  let diff = null;
+  let cur  = null;
+
+  // =========================
+  // MODO: RECIBIR
+  // =========================
+  if (state.modo === 'recibir') {
+
+    // USD -> PEN
+    if (have === 'USD' && want === 'PEN') {
+      diff = (state.monto * casa.compra) - (state.monto * state.sunat.compra);
+      cur = 'PEN';
+    }
+
+    // PEN -> USD
+    if (have === 'PEN' && want === 'USD') {
+      diff = (state.monto / casa.venta) - (state.monto / state.sunat.venta);
+      cur = 'USD';
+    }
   }
 
-  // Caso B: PEN -> USD (casa usa VENTA; SUNAT según tu conversor usa compra)
-  if (have === 'PEN' && want === 'USD') {
-    const usdCasa = state.monto / casa.venta;
-    const usdSunat = state.monto / state.sunat.compra;
-    winnerRow.dataset.ahorroCur = 'USD';
-    winnerRow.dataset.ahorroVal = String(usdCasa - usdSunat);
+  // =========================
+  // MODO: NECESITO
+  // =========================
+  if (state.modo === 'necesito') {
+
+    // Quiero USD, pago PEN
+    if (have === 'PEN' && want === 'USD') {
+      diff = (state.monto * casa.venta) - (state.monto * state.sunat.venta);
+      cur = 'PEN';
+    }
+
+    // Quiero PEN, pago USD
+    if (have === 'USD' && want === 'PEN') {
+      diff = (state.monto / casa.compra) - (state.monto / state.sunat.compra);
+      cur = 'USD';
+    }
+  }
+
+  if (Number.isFinite(diff) && cur) {
+    winnerRow.dataset.ahorroCur = cur;
+    winnerRow.dataset.ahorroVal = String(diff);
   }
 }

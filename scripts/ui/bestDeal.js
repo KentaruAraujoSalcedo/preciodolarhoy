@@ -9,18 +9,26 @@ import { getCasaLogoSrc } from './logos.js';
 // ⚠️ GitHub Pages: si tu repo es /precio-dolar-hoy/, pon '/precio-dolar-hoy/'
 const BASE_PATH = '';
 
+// ✅ helper para excluir SUNAT (y variaciones)
+function isSunatRow(x) {
+  const casa = String(x?.casa ?? '').trim().toUpperCase();
+  const slug = String(x?.slug ?? '').trim().toLowerCase();
+  return casa === 'SUNAT' || slug === 'sunat';
+}
+
 export function renderBestDeal() {
   // IDs reales de tu HTML ✅
   const nameEl = document.getElementById('best-name');
-  const buyEl  = document.getElementById('best-buy');
+  const buyEl = document.getElementById('best-buy');
   const sellEl = document.getElementById('best-sell');
   const noteEl = document.getElementById('best-note');
-  const btnEl  = document.getElementById('btn-ir-mejor');
+  const btnEl = document.getElementById('btn-ir-mejor');
   const logoEl = document.getElementById('best-logo'); // en tu HTML sí existe
 
   if (!nameEl || !buyEl || !sellEl) return;
 
-  const filas = Array.isArray(state.validas) ? state.validas : [];
+  // ✅ pool = validas sin SUNAT
+  const filas = (Array.isArray(state.validas) ? state.validas : []).filter(x => !isSunatRow(x));
 
   // Estado vacío
   if (!filas.length) {
@@ -44,11 +52,11 @@ export function renderBestDeal() {
   const { have, want } = getHaveWant();
 
   const paintCompra =
-    (modo === 'recibir'  && have === 'USD' && want === 'PEN') ||
+    (modo === 'recibir' && have === 'USD' && want === 'PEN') ||
     (modo === 'necesito' && want === 'PEN' && have === 'USD');
 
   const paintVenta =
-    (modo === 'recibir'  && have === 'PEN' && want === 'USD') ||
+    (modo === 'recibir' && have === 'PEN' && want === 'USD') ||
     (modo === 'necesito' && want === 'USD' && have === 'PEN');
 
   // Ganador igual que la tabla:
@@ -67,7 +75,7 @@ export function renderBestDeal() {
       return (x.venta ?? Infinity) < (best.venta ?? Infinity) ? x : best;
     }, null);
   } else {
-    // fallback: usa el primero (si tu tabla ya viene ordenada, coincide)
+    // ✅ fallback: usa el primero (pero ya sin SUNAT)
     winner = filas[0] || null;
   }
 
@@ -85,22 +93,43 @@ export function renderBestDeal() {
 
   // Pintar datos
   nameEl.textContent = winner.casa || '—';
-  buyEl.textContent  = rateFmt(winner.compra);
+  buyEl.textContent = rateFmt(winner.compra);
   sellEl.textContent = rateFmt(winner.venta);
 
-  // Nota: usa ahorro si existe (lo setea savings.js en winner-row)
+  // Nota: diferencia vs SUNAT (texto corto)
   if (noteEl) {
     const row = document.querySelector('tr.winner-row');
     const diff = row?.dataset?.ahorroVal ? parseFloat(row.dataset.ahorroVal) : NaN;
-    const cur  = row?.dataset?.ahorroCur || '';
+    const cur = row?.dataset?.ahorroCur || '';
 
     if (Number.isFinite(diff) && cur) {
-      const verb = diff >= 0 ? 'Ahorras' : 'Pierdes';
-      noteEl.textContent = `${verb} ${moneyFmt(Math.abs(diff), cur)} frente al promedio.`;
+      const abs = moneyFmt(Math.abs(diff), cur);
+
+      if (Math.abs(diff) < 0.01) {
+        noteEl.textContent = 'Muy similar al tipo SUNAT';
+      }
+      else if (state.modo === 'recibir') {
+        noteEl.textContent =
+          diff > 0
+            ? `Recibes ${abs} más que SUNAT`
+            : `Recibes ${abs} menos que SUNAT`;
+      }
+      else {
+        // modo = necesito
+        noteEl.textContent =
+          cur === 'PEN'
+            ? (diff > 0
+              ? `Pagarías ${abs} más que SUNAT`
+              : `Pagarías ${abs} menos que SUNAT`)
+            : (diff > 0
+              ? `Necesitas ${abs} más que SUNAT`
+              : `Necesitas ${abs} menos que SUNAT`);
+      }
     } else {
-      noteEl.textContent = 'Mejor opción según el tipo de cambio.';
+      noteEl.textContent = 'Muy similar al tipo SUNAT';
     }
   }
+
 
   // Logo
   if (logoEl) {
@@ -122,8 +151,6 @@ export function renderBestDeal() {
 
     btnEl.disabled = !hasUrl;
 
-    // Si estás haciendo “logo-first”, este texto se ve más limpio:
-    // (si prefieres el anterior, cambia por: `Ir a ${winner.casa}`)
     btnEl.textContent = hasUrl ? `Ir a ${winner.casa}` : 'Ir';
 
     btnEl.onclick = hasUrl

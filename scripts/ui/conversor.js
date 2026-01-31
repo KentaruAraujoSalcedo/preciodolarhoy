@@ -10,7 +10,8 @@ import { moneyFmt } from './format.js';
    Resultado conversor (TU fórmula intacta)
    + extra: muestra ahorro si existe en winner-row
    ============================================================ */
-export function renderResultadoConversor() {
+
+   export function renderResultadoConversor() {
   const out = $('#resultado-modern');
   if (!out) return;
 
@@ -24,25 +25,28 @@ export function renderResultadoConversor() {
   } else if (monedaTengo === monedaQuiero) {
     texto = 'Selecciona monedas diferentes.';
   }
+
   // MODO: RECIBIR
   else if (modo === 'recibir') {
-    if (monedaTengo === 'USD') texto = `Recibirás S/${(monto * sunat.venta).toFixed(2)} soles.`;
-    else texto = `Recibirás $${(monto / sunat.compra).toFixed(2)} dólares.`;
-  }
-  // MODO: NECESITO
-  else {
-    if (monedaTengo === 'USD') texto = `Necesitas S/${(monto * sunat.compra).toFixed(2)} soles para recibir $${monto}.`;
-    else texto = `Necesitas $${(monto / sunat.venta).toFixed(2)} dólares para recibir S/${monto}.`;
+    // Tengo USD -> recibo PEN: uso COMPRA
+    if (monedaTengo === 'USD') {
+      texto = `Recibirías aproximadamente ${moneyFmt(monto * sunat.compra, 'PEN')} según SUNAT.`;
+    }
+    // Tengo PEN -> recibo USD: uso VENTA
+    else {
+      texto = `Recibirías aproximadamente ${moneyFmt(monto / sunat.venta, 'USD')} según SUNAT.`;
+    }
   }
 
-  // Extra: si el renderTabla dejó un ahorro estimado en la winner-row, lo añadimos
-  const winner = document.querySelector('tr.winner-row');
-  if (winner?.dataset?.ahorroVal && winner?.dataset?.ahorroCur) {
-    const diff = parseFloat(winner.dataset.ahorroVal);
-    const cur = winner.dataset.ahorroCur;
-    if (Number.isFinite(diff)) {
-      const sign = diff >= 0 ? 'Ahorras' : 'Pierdes';
-      texto += ` · ${sign} ${moneyFmt(Math.abs(diff), cur)}`;
+  // MODO: NECESITO
+  else {
+    // Tengo PEN (quiero USD): necesito PEN pagando VENTA
+    if (monedaTengo === 'PEN') {
+      texto = `Necesitarías aproximadamente ${moneyFmt(monto / sunat.compra, 'USD')} según SUNAT.`;
+    }
+    // Tengo USD (quiero PEN): necesito USD usando COMPRA
+    else {
+      texto = `Necesitarías aproximadamente ${moneyFmt(monto * sunat.venta, 'PEN')} según SUNAT.`;
     }
   }
 

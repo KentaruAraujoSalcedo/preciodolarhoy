@@ -100,6 +100,25 @@ def is_valid_rate(item: dict) -> bool:
         return item.get("compra") is not None and item.get("venta") is not None
     except Exception:
         return False
+    
+def fix_inverted_compra_venta(items):
+    """
+    Corrige casas que vienen con compra/venta invertidas.
+    En USD/PEN normalmente compra < venta.
+    Si compra > venta, las intercambia.
+    """
+    for r in items:
+        if not isinstance(r, dict):
+            continue
+        c = r.get("compra")
+        v = r.get("venta")
+
+        if isinstance(c, (int, float)) and isinstance(v, (int, float)):
+            if c > v:
+                r["compra"], r["venta"] = v, c
+                r["swapped"] = True  # opcional (debug)
+    return items
+
 
 def apply_fallbacks(results, last_map, backup_map, fecha_backup=None):
     """
@@ -304,6 +323,9 @@ async def main():
     resultados = apply_fallbacks(resultados_raw, last_map, backup_map, fecha_backup)
     print(f"🧩 Fallbacks aplicados (backup_fecha={fecha_backup}, last_known_updated_at={last_updated_at})")
 
+    # ✅ Fix: si una casa viene con compra/venta invertidas, las corregimos
+    resultados = fix_inverted_compra_venta(resultados)
+
     # ---- Guardar tasas finales (scraper + backup) ----
     os.makedirs("data", exist_ok=True)
     with open("data/tasas.json", "w", encoding="utf-8") as f:
@@ -327,7 +349,7 @@ async def main():
 
 
     # 4) HISTÓRICO SUNAT (solo toma SUNAT y lo guarda por fecha)
-    sunat_data = next((r for r in resultados_raw if r.get("casa") == "SUNAT"), None)
+    sunat_data = next((r for r in resultados_raw if str(r.get("casa","")).strip().lower() == "sunat"), None)
     if sunat_data and sunat_data.get("compra") and sunat_data.get("venta"):
         sunat_compra = sunat_data["compra"]
         sunat_venta = sunat_data["venta"]
