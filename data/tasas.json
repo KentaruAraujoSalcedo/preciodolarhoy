@@ -2,72 +2,51 @@
   {
     "casa": "Yanki",
     "url": "https://yanki.pe",
-    "compra": 3.357,
-    "venta": 3.374,
+    "compra": 3.35,
+    "venta": 3.38,
     "source": "scraper"
   },
   {
     "casa": "Rextie",
     "url": "https://www.rextie.com/",
-<<<<<<< HEAD
     "compra": 3.349,
     "venta": 3.385,
-=======
-    "compra": 3.3455,
-    "venta": 3.3805,
->>>>>>> 80856b0 (Mejoras calculadora, mensajes SUNAT y lógica recibir/necesitar)
     "source": "scraper"
   },
   {
     "casa": "Kambista",
     "url": "https://kambista.com/",
-<<<<<<< HEAD
-    "compra": 3.346,
+    "compra": 3.344,
     "venta": 3.379,
-=======
-    "compra": 3.345,
-    "venta": 3.38,
->>>>>>> 80856b0 (Mejoras calculadora, mensajes SUNAT y lógica recibir/necesitar)
     "source": "scraper"
   },
   {
     "casa": "Tkambio",
     "url": "https://tkambio.com/",
-    "compra": 3.352,
+    "compra": 3.348,
     "venta": 3.377,
     "source": "scraper"
   },
   {
     "casa": "InkaMoney",
     "url": "https://inkamoney.com/",
-<<<<<<< HEAD
-    "compra": 3.374,
-    "venta": 3.349,
-    "source": "scraper"
-=======
-    "compra": 3.354,
+    "compra": 3.349,
     "venta": 3.374,
     "source": "scraper",
     "swapped": true
->>>>>>> 80856b0 (Mejoras calculadora, mensajes SUNAT y lógica recibir/necesitar)
   },
   {
     "casa": "CambioSeguro",
     "url": "https://cambioseguro.com/",
-    "compra": 3.345,
-    "venta": 3.37,
+    "compra": 3.342,
+    "venta": 3.367,
     "source": "scraper"
   },
   {
     "casa": "Okane",
     "url": "https://okanecambiodigital.com/",
-<<<<<<< HEAD
     "compra": 3.33,
     "venta": 3.38,
-=======
-    "compra": 3.356,
-    "venta": 3.367,
->>>>>>> 80856b0 (Mejoras calculadora, mensajes SUNAT y lógica recibir/necesitar)
     "source": "scraper"
   },
   {
@@ -80,13 +59,8 @@
   {
     "casa": "Dichikash",
     "url": "https://dichikash.com/",
-<<<<<<< HEAD
     "compra": 3.357,
-    "venta": 3.366,
-=======
-    "compra": 3.356,
-    "venta": 3.371,
->>>>>>> 80856b0 (Mejoras calculadora, mensajes SUNAT y lógica recibir/necesitar)
+    "venta": 3.368,
     "source": "scraper"
   },
   {
@@ -120,16 +94,10 @@
   {
     "casa": "ChaskiDolar",
     "url": "https://chaskidolar.com/",
-<<<<<<< HEAD
-    "compra": 3.373,
-    "venta": 3.349,
-    "source": "scraper"
-=======
-    "compra": 3.351,
-    "venta": 3.366,
+    "compra": 3.35,
+    "venta": 3.373,
     "source": "scraper",
     "swapped": true
->>>>>>> 80856b0 (Mejoras calculadora, mensajes SUNAT y lógica recibir/necesitar)
   },
   {
     "casa": "Intercambialo",
@@ -150,10 +118,7 @@
     "url": "https://kallpacambios.com/",
     "compra": 3.341,
     "venta": 3.379,
-    "source": "last_known",
-    "last_seen": "2026-01-30",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.wait_for_function: Timeout 25000ms exceeded."
+    "source": "scraper"
   },
   {
     "casa": "Billex",
@@ -174,23 +139,16 @@
   {
     "casa": "CambiaFX",
     "url": "https://cambiafx.pe/",
-<<<<<<< HEAD
     "compra": 3.346,
     "venta": 3.379,
-=======
-    "compra": 3.347,
-    "venta": 3.372,
->>>>>>> 80856b0 (Mejoras calculadora, mensajes SUNAT y lógica recibir/necesitar)
     "source": "scraper"
   },
   {
     "casa": "Acomo",
     "url": "https://acomo.com.pe/",
-    "compra": 3.353,
-    "venta": 3.378,
-    "source": "last_known",
-    "last_seen": "2026-01-30",
-    "backup_fecha": "2026-01-20"
+    "compra": 3.355,
+    "venta": 3.376,
+    "source": "scraper"
   },
   {
     "casa": "ZonaDólar",
@@ -210,13 +168,8 @@
   {
     "casa": "Kambio",
     "url": "https://www.kambio.online/",
-<<<<<<< HEAD
     "compra": 3.34,
     "venta": 3.37,
-=======
-    "compra": 3.36,
-    "venta": 3.365,
->>>>>>> 80856b0 (Mejoras calculadora, mensajes SUNAT y lógica recibir/necesitar)
     "source": "scraper"
   },
   {
@@ -257,13 +210,8 @@
   {
     "casa": "X-Cambio",
     "url": "https://x-cambio.com/",
-<<<<<<< HEAD
     "compra": 3.349,
     "venta": 3.379,
-=======
-    "compra": 3.3455,
-    "venta": 3.38,
->>>>>>> 80856b0 (Mejoras calculadora, mensajes SUNAT y lógica recibir/necesitar)
     "source": "scraper"
   },
   {
@@ -283,13 +231,8 @@
   {
     "casa": "MoneyHouse",
     "url": "https://moneyhouse.pe/",
-<<<<<<< HEAD
     "compra": 3.325,
     "venta": 3.373,
-=======
-    "compra": 3.358,
-    "venta": 3.363,
->>>>>>> 80856b0 (Mejoras calculadora, mensajes SUNAT y lógica recibir/necesitar)
     "source": "scraper"
   },
   {
@@ -297,7 +240,10 @@
     "url": "https://mercadocambiario.pe/",
     "compra": 3.355,
     "venta": 3.365,
-    "source": "scraper"
+    "source": "last_known",
+    "last_seen": "2026-01-30",
+    "backup_fecha": "2026-01-20",
+    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div.buy span.amount\") to be visible\n"
   },
   {
     "casa": "VipCapital",
@@ -320,14 +266,10 @@
     "url": "https://dolarex.pe/",
     "compra": 3.358,
     "venta": 3.364,
-<<<<<<< HEAD
     "source": "last_known",
     "last_seen": "2026-01-30",
     "backup_fecha": "2026-01-20",
     "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\".compra .valor\") to be visible\n"
-=======
-    "source": "scraper"
->>>>>>> 80856b0 (Mejoras calculadora, mensajes SUNAT y lógica recibir/necesitar)
   },
   {
     "casa": "Cambix",
@@ -353,12 +295,8 @@
   {
     "casa": "Securex",
     "url": "https://securex.pe/",
-<<<<<<< HEAD
     "compra": 3.351,
-=======
-    "compra": 3.352,
->>>>>>> 80856b0 (Mejoras calculadora, mensajes SUNAT y lógica recibir/necesitar)
-    "venta": 3.378,
+    "venta": 3.379,
     "source": "scraper"
   },
   {
@@ -371,36 +309,22 @@
   {
     "casa": "TuCambista",
     "url": "https://tucambista.pe/",
-<<<<<<< HEAD
     "compra": 3.349,
     "venta": 3.38,
     "source": "scraper"
-=======
-    "compra": 3.353,
-    "venta": 3.379,
-    "source": "last_known",
-    "last_seen": "2026-01-30",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: No se encontraron suficientes tasas válidas"
->>>>>>> 80856b0 (Mejoras calculadora, mensajes SUNAT y lógica recibir/necesitar)
   },
   {
     "casa": "HirPower",
     "url": "https://hirpower.com/",
-    "compra": 3.35,
+    "compra": 3.34,
     "venta": 3.37,
     "source": "scraper"
   },
   {
     "casa": "CambioDigitalPeru",
     "url": "https://cambiodigitalperu.com",
-<<<<<<< HEAD
     "compra": 3.355,
     "venta": 3.369,
-=======
-    "compra": 3.357,
-    "venta": 3.363,
->>>>>>> 80856b0 (Mejoras calculadora, mensajes SUNAT y lógica recibir/necesitar)
     "source": "scraper"
   },
   {

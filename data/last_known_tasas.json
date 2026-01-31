@@ -4,38 +4,28 @@
     "Yanki": {
       "casa": "Yanki",
       "url": "https://yanki.pe",
-      "compra": 3.357,
-      "venta": 3.374,
+      "compra": 3.35,
+      "venta": 3.38,
       "last_seen": "2026-01-30"
     },
     "Rextie": {
       "casa": "Rextie",
       "url": "https://www.rextie.com/",
-<<<<<<< HEAD
       "compra": 3.349,
       "venta": 3.385,
-=======
-      "compra": 3.3455,
-      "venta": 3.3805,
->>>>>>> 80856b0 (Mejoras calculadora, mensajes SUNAT y lógica recibir/necesitar)
       "last_seen": "2026-01-30"
     },
     "Kambista": {
       "casa": "Kambista",
       "url": "https://kambista.com/",
-<<<<<<< HEAD
-      "compra": 3.346,
+      "compra": 3.344,
       "venta": 3.379,
-=======
-      "compra": 3.345,
-      "venta": 3.38,
->>>>>>> 80856b0 (Mejoras calculadora, mensajes SUNAT y lógica recibir/necesitar)
       "last_seen": "2026-01-30"
     },
     "Tkambio": {
       "casa": "Tkambio",
       "url": "https://tkambio.com/",
-      "compra": 3.352,
+      "compra": 3.348,
       "venta": 3.377,
       "last_seen": "2026-01-30"
     },
@@ -43,30 +33,21 @@
       "casa": "InkaMoney",
       "url": "https://inkamoney.com/",
       "compra": 3.374,
-<<<<<<< HEAD
       "venta": 3.349,
-=======
-      "venta": 3.354,
->>>>>>> 80856b0 (Mejoras calculadora, mensajes SUNAT y lógica recibir/necesitar)
       "last_seen": "2026-01-30"
     },
     "CambioSeguro": {
       "casa": "CambioSeguro",
       "url": "https://cambioseguro.com/",
-      "compra": 3.345,
-      "venta": 3.37,
+      "compra": 3.342,
+      "venta": 3.367,
       "last_seen": "2026-01-30"
     },
     "Okane": {
       "casa": "Okane",
       "url": "https://okanecambiodigital.com/",
-<<<<<<< HEAD
       "compra": 3.33,
       "venta": 3.38,
-=======
-      "compra": 3.356,
-      "venta": 3.367,
->>>>>>> 80856b0 (Mejoras calculadora, mensajes SUNAT y lógica recibir/necesitar)
       "last_seen": "2026-01-30"
     },
     "JetPerú": {
@@ -79,13 +60,8 @@
     "Dichikash": {
       "casa": "Dichikash",
       "url": "https://dichikash.com/",
-<<<<<<< HEAD
       "compra": 3.357,
-      "venta": 3.366,
-=======
-      "compra": 3.356,
-      "venta": 3.371,
->>>>>>> 80856b0 (Mejoras calculadora, mensajes SUNAT y lógica recibir/necesitar)
+      "venta": 3.368,
       "last_seen": "2026-01-30"
     },
     "Instakash": {
@@ -119,13 +95,8 @@
     "ChaskiDolar": {
       "casa": "ChaskiDolar",
       "url": "https://chaskidolar.com/",
-<<<<<<< HEAD
       "compra": 3.373,
-      "venta": 3.349,
-=======
-      "compra": 3.366,
-      "venta": 3.351,
->>>>>>> 80856b0 (Mejoras calculadora, mensajes SUNAT y lógica recibir/necesitar)
+      "venta": 3.35,
       "last_seen": "2026-01-30"
     },
     "Intercambialo": {
@@ -159,8 +130,8 @@
     "Acomo": {
       "casa": "Acomo",
       "url": "https://acomo.com.pe/",
-      "compra": 3.353,
-      "venta": 3.378,
+      "compra": 3.355,
+      "venta": 3.376,
       "last_seen": "2026-01-30"
     },
     "ZonaDólar": {
@@ -194,13 +165,8 @@
     "X-Cambio": {
       "casa": "X-Cambio",
       "url": "https://x-cambio.com/",
-<<<<<<< HEAD
       "compra": 3.349,
       "venta": 3.379,
-=======
-      "compra": 3.3455,
-      "venta": 3.38,
->>>>>>> 80856b0 (Mejoras calculadora, mensajes SUNAT y lógica recibir/necesitar)
       "last_seen": "2026-01-30"
     },
     "RissanPE": {
@@ -227,12 +193,8 @@
     "Securex": {
       "casa": "Securex",
       "url": "https://securex.pe/",
-<<<<<<< HEAD
       "compra": 3.351,
-=======
-      "compra": 3.352,
->>>>>>> 80856b0 (Mejoras calculadora, mensajes SUNAT y lógica recibir/necesitar)
-      "venta": 3.378,
+      "venta": 3.379,
       "last_seen": "2026-01-30"
     },
     "ChapaCambio": {
@@ -252,7 +214,7 @@
     "HirPower": {
       "casa": "HirPower",
       "url": "https://hirpower.com/",
-      "compra": 3.35,
+      "compra": 3.34,
       "venta": 3.37,
       "last_seen": "2026-01-30"
     },
@@ -301,13 +263,8 @@
     "CambiaFX": {
       "casa": "CambiaFX",
       "url": "https://cambiafx.pe/",
-<<<<<<< HEAD
       "compra": 3.346,
       "venta": 3.379,
-=======
-      "compra": 3.347,
-      "venta": 3.372,
->>>>>>> 80856b0 (Mejoras calculadora, mensajes SUNAT y lógica recibir/necesitar)
       "last_seen": "2026-01-30"
     },
     "SRCambio": {
@@ -320,13 +277,8 @@
     "Kambio": {
       "casa": "Kambio",
       "url": "https://www.kambio.online/",
-<<<<<<< HEAD
       "compra": 3.34,
       "venta": 3.37,
-=======
-      "compra": 3.36,
-      "venta": 3.365,
->>>>>>> 80856b0 (Mejoras calculadora, mensajes SUNAT y lógica recibir/necesitar)
       "last_seen": "2026-01-30"
     },
     "TraderPeruFX": {
@@ -353,24 +305,15 @@
     "CambioDigitalPeru": {
       "casa": "CambioDigitalPeru",
       "url": "https://cambiodigitalperu.com",
-<<<<<<< HEAD
       "compra": 3.355,
       "venta": 3.369,
-=======
-      "compra": 3.357,
-      "venta": 3.363,
->>>>>>> 80856b0 (Mejoras calculadora, mensajes SUNAT y lógica recibir/necesitar)
       "last_seen": "2026-01-30"
     },
     "MoneyHouse": {
       "casa": "MoneyHouse",
       "url": "https://moneyhouse.pe/",
-<<<<<<< HEAD
       "compra": 3.325,
       "venta": 3.373,
-=======
-      "compra": 3.358,
-      "venta": 3.363,
       "last_seen": "2026-01-30"
     },
     "CambioMundial": {
@@ -378,7 +321,6 @@
       "url": "https://www.cambiomundial.com/",
       "compra": 3.356,
       "venta": 3.362,
->>>>>>> 80856b0 (Mejoras calculadora, mensajes SUNAT y lógica recibir/necesitar)
       "last_seen": "2026-01-30"
     }
   }
