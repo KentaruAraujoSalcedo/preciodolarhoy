@@ -214,7 +214,7 @@
     "HirPower": {
       "casa": "HirPower",
       "url": "https://hirpower.com/",
-      "compra": 3.34,
+      "compra": 3.35,
       "venta": 3.37,
       "last_seen": "2026-01-31"
     },
@@ -235,9 +235,9 @@
     "Dolarex": {
       "casa": "Dolarex",
       "url": "https://dolarex.pe/",
-      "compra": 3.358,
-      "venta": 3.364,
-      "last_seen": "2026-01-30"
+      "compra": 3.345,
+      "venta": 3.37,
+      "last_seen": "2026-01-31"
     },
     "Safex": {
       "casa": "Safex",
@@ -291,7 +291,7 @@
     "CambioMas": {
       "casa": "CambioMas",
       "url": "https://cambiosmass.com/",
-      "compra": 3.353,
+      "compra": 3.35,
       "venta": 3.37,
       "last_seen": "2026-01-31"
     },
@@ -299,7 +299,7 @@
       "casa": "DinersFX",
       "url": "https://dinersfx.pe/",
       "compra": 3.344,
-      "venta": 3.419,
+      "venta": 3.439,
       "last_seen": "2026-01-31"
     },
     "CambioDigitalPeru": {

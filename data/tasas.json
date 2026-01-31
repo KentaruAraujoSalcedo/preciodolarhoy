@@ -104,10 +104,7 @@
     "url": "https://intercambialo.pe/",
     "compra": 3.346,
     "venta": 3.38,
-    "source": "last_known",
-    "last_seen": "2026-01-31",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://intercambialo.pe/\", waiting until \"load\"\n"
+    "source": "scraper"
   },
   {
     "casa": "WesternUnion",
@@ -154,9 +151,7 @@
     "url": "https://acomo.com.pe/",
     "compra": 3.355,
     "venta": 3.376,
-    "source": "last_known",
-    "last_seen": "2026-01-31",
-    "backup_fecha": "2026-01-20"
+    "source": "scraper"
   },
   {
     "casa": "ZonaDólar",
@@ -235,7 +230,7 @@
   {
     "casa": "CambioMas",
     "url": "https://cambiosmass.com/",
-    "compra": 3.353,
+    "compra": 3.35,
     "venta": 3.37,
     "source": "scraper"
   },
@@ -275,12 +270,9 @@
   {
     "casa": "Dolarex",
     "url": "https://dolarex.pe/",
-    "compra": 3.358,
-    "venta": 3.364,
-    "source": "last_known",
-    "last_seen": "2026-01-30",
-    "backup_fecha": "2026-01-20",
-    "scraper_error": "No se pudo scrapear: Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\".compra .valor\") to be visible\n"
+    "compra": 3.345,
+    "venta": 3.37,
+    "source": "scraper"
   },
   {
     "casa": "Cambix",
@@ -300,7 +292,7 @@
     "casa": "DinersFX",
     "url": "https://dinersfx.pe/",
     "compra": 3.344,
-    "venta": 3.419,
+    "venta": 3.439,
     "source": "scraper"
   },
   {
@@ -327,7 +319,7 @@
   {
     "casa": "HirPower",
     "url": "https://hirpower.com/",
-    "compra": 3.34,
+    "compra": 3.35,
     "venta": 3.37,
     "source": "scraper"
   },
